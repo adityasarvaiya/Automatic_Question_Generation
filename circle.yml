@@ -1,0 +1,12 @@
+deployment:
+  staging:
+    branch: master
+machine:
+  python:
+    version: 2.7.12
+test:
+  override:
+    - nosetests --with-coverage
+  post:
+    - coverage xml
+    - codecov
