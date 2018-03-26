@@ -100,7 +100,9 @@ if __name__ == '__main__':
     
     print "0: bad question; 1: okay question; 2: good question"
     for num,que in enumerate(question_ans_dataframe):
-        print "Question Full: "+" "+str(num+1)+"    "+que["Full_qus"]+" "+"TAG:"+ str(que["Prediction"])
+        print "Question Full: "+" "+str(num+1)+"    "
+        print que["Full_qus"]
+        # print "TAG:"+ str(que["Prediction"])
         print "Question Blank: "+" "+str(num+1)+"    "+que["Question"]+" "+"TAG:"+str(que["Prediction"])
         print "Answer"+" "+str(num+1)+"    "+que["Answer"]
         print " "

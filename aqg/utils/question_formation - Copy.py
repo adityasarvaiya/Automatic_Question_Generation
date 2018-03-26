@@ -88,8 +88,7 @@ class QuestionFormation:
     #                sentence_copy = sentence_copy.replace('_____', 'what')
                      
             
-            print "full_ques is " 
-            print full_ques
+            print "full_ques is " + full_ques
             
             df['Full_qus'] = full_ques
             df['Question'] = candidate['Question']
