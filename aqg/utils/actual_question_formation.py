@@ -115,7 +115,7 @@ class Actual_Question_Formation:
         chunked = chunkParser.parse(tagged)
         print("Here we are")
         print(chunked)
-        chunked.draw()
+        # chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
         chunk = self.tree_to_dict(chunked)
         pattern_strings =[]
@@ -127,8 +127,22 @@ class Actual_Question_Formation:
                 print "pattern_string  :  ", str(pattern_string)
          
         return pattern_strings
+
+    def ignore_pos(self, catch_list, tagged):
+        ignore_words = [] 
+        for word,pos in tagged:
+            if pos in catch_list:
+                ignore_words.append(word)
+        return ignore_words
     
-    def pattern_noun_verb(self, sent, jsondata):
+    def catch_pos(self, catch_list, tagged):
+        take_words = [] 
+        for word,pos in tagged:
+            if pos in catch_list:
+                take_words.append(word)
+        return take_words
+
+    def pattern_verb_dt_adj_noun(self, sent, jsondata):
         """
         Aditya : Takes the sentence and find the chunk (matches the regex)
         input : sentence
@@ -136,21 +150,26 @@ class Actual_Question_Formation:
         """
         words = nltk.word_tokenize(sent)
         tagged = nltk.pos_tag(words)
+        verbs = self.catch_pos(['VB','VBD','VBG','VBN','VBP','VBZ'],tagged)
+        nouns = self.catch_pos(['NN','NNP','NNS','NNPS'], tagged)
 
-        
-        chunkGram = 'Chunk: {<NN.?>+<VB.?>+}'
+        chunkGram = 'Chunk: {<VB.?>+<DT>?<JJ.?>?<NN.?>+}'
         chunkParser = nltk.RegexpParser(chunkGram)
         chunked = chunkParser.parse(tagged)
-        # chunked.draw()
+        print("Here we are")
+        print(chunked)
+        chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
         chunk = self.tree_to_dict(chunked)
-        
-        if chunk.has_key("Chunk"):
-            pattern_string = chunk["Chunk"]
-            print "pattern_string  :  ", str(pattern_string)
-        else:
-            pattern_string = "" 
-        return pattern_string
+        pattern_strings =[]
+        if len(chunk) != 0:
+            for chunk_no in range(len(chunk)):
+
+                pattern_string = chunk["Chunk"+str(chunk_no+1)]
+                pattern_strings.append(pattern_string)
+                print "pattern_string  :  ", str(pattern_string)
+         
+        return pattern_strings, verbs, nouns
 
         
     def form_full_questions(self,candidate,jsondata,tagged):
@@ -164,36 +183,49 @@ class Actual_Question_Formation:
         
         for word,pos in tagged:    
             if ((answer.find(word)) >= 0):
-                if (len(pattern_strings)>0):
+                if (flag==0) and ((answer.find(word))==0):
+                    if ((('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos)) and jsondata.has_key("PERSON")) and (word in jsondata['PERSON']):
+                        full_ques = full_ques.replace("_____" , 'Who')
+                        full_ques = full_ques +"?"
+                        flag=1
+                    elif(jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
+                        
+                        full_ques = full_ques.replace("_____" , 'Where')
+                        full_ques = full_ques +"?"
+                        flag=1
+                    elif ('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos):
+                        full_ques = full_ques.replace("_____" , 'What')
+                        full_ques = full_ques +"?"
+                        flag=1
+
+                if (flag==0 and (len(pattern_strings)>0)):
                     for pattern_string_no in range(len(pattern_strings)):
                         if ((('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos)) and jsondata.has_key("PERSON")) and (word in jsondata['PERSON']):
                             individual_words = pattern_strings[pattern_string_no].split()
                             verb = [word for word in individual_words if word not in jsondata['PERSON']]
                             print "Verb : ", str(verb)
-                            full_ques = sentence.replace( pattern_strings[pattern_string_no] , '')
+                            print "pattern_strings[pattern_string_no] : " , str(pattern_strings[pattern_string_no]) 
+                            full_ques = sentence.replace(str(pattern_strings[pattern_string_no]), '')
                             full_ques = "What " + str(verb[0]) + " " + str(full_ques).lower() + "?"
                             print "word : " + word + "  pos : " + pos
                             flag=1
                             
-                if (flag==0) and ((answer.find(word))==0):
-                    if ((('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos)) and jsondata.has_key("PERSON")) and (word in jsondata['PERSON']):
-                        full_ques = full_ques.replace("_____" , 'Who')
-                        full_ques = full_ques +"?"
-                    elif(jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
-                        full_ques = full_ques.replace("_____" , 'Which')
-                        full_ques = full_ques +"?"
-                    elif ('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos):
-                        full_ques = full_ques.replace("_____" , 'What')
-                        full_ques = full_ques +"?"
+                if (flag==0):
+                    pattern_strings,verbs,nouns = self.pattern_verb_dt_adj_noun(candidate['Sentence'],jsondata)
+                    if (len(pattern_strings)>0):
+                        for pattern_string_no in range(len(pattern_strings)):
+                            if (jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
+                                individual_words = pattern_strings[pattern_string_no].split()
+                                verb = [word for word in individual_words if word in verbs]
+                                print "Verb : ", str(verb)
+                                noun = [word for word in individual_words if word in nouns]
+                                full_ques = sentence.replace( pattern_strings[pattern_string_no] , '')
+                                full_ques = "Where " + str(verb[0]) + " " + str(full_ques).lower() + "?"
+                                print "word : " + word + "  pos : " + pos
+                                flag=1
+
+
         new_full_ques.append(full_ques)
-                # if(flag==0):
-                #     if (jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
-                #         full_ques = sentence.replace( sentence[sentence.rfind(word):] , ' which place')
-                #         full_ques = str(full_ques) + "?"
-                #         print "word : " + word + "  pos : " + pos
-                #         flag=1
-
-
         print new_full_ques
         return new_full_ques, flag
     
