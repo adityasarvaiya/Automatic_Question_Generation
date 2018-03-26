@@ -69,8 +69,9 @@ class QuestionFormation:
     #            if 'NN' in tagged:
     #                sentence_copy = sentence_copy.replace('_____', 'what')
                      
-            
-            print "full_ques is " + full_ques
+            if(len(full_ques)>0):
+                for ques_no in range(len(full_ques)):
+                    print "full_ques is " + full_ques[ques_no]
             
             df['Full_qus'] = full_ques
             df['Question'] = candidate['Question']
