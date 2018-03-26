@@ -9,18 +9,36 @@ class QuestionFormation:
     def __init__(self):
         pass
     
-    def tree_to_dict(self,tree):
+    def tree_to_dict(self, tree):
+        """
+        Aditya : Convert Tree to a usefull dict[] = <list> format
+        input : tree
+        output : dictionary
+        
+        """
         tree_dict = dict()
         for st in tree:
             # not everything gets a NE tag,
             # so we can ignore untagged tokens
             # which are stored in tuples
             if isinstance(st, nltk.Tree):
+                
+                input_chunked = ""
+                for d in range(len(st)):
+                    if (d+1) == len(st):
+                        input_chunked = input_chunked + st[d][0]
+                    else:
+                        input_chunked = input_chunked + st[d][0] + " "
+            
                 if st.label() in tree_dict:
-                    tree_dict[st.label()] = tree_dict[st.label()] + [st[0][0]]
+                    print " before : ",tree_dict[st.label()]
+                    tree_dict[st.label()] = tree_dict[st.label()] + " " +input_chunked
+                    print " after : ",tree_dict[st.label()]
+                    
                 else:
-                    tree_dict[st.label()] = [st[0][0]]
+                    tree_dict[st.label()] = input_chunked
         return tree_dict
+
 
     
     def form_questions(self,candidates):
