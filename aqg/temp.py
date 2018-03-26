@@ -106,10 +106,5 @@ def form_full_questions(sent):
 if __name__ == '__main__':
     form_full_questions("")
 
-
-st = "is aditya"
-i = st.split()
-l = ["aditya","sagar"]
-
-o = [k for k in i if k not in l]
-print o
+st = "thismyhome"
+print st[:5]

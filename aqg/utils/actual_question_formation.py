@@ -7,7 +7,7 @@ from nltk.tree import Tree
 this page will have all the possible chunks on the basis of which we will create the full questions
 """
 class Actual_Question_Formation:
-    def tree_to_dict1(self, tree):
+    def tree_to_dict(self, tree):
         """
         Aditya : Convert Tree to a usefull dict[] = <list> format
         input : tree
@@ -45,7 +45,7 @@ class Actual_Question_Formation:
         return tree_dict
 
 
-    def pattern_noun_verb(self, sent, jsondata):
+    def pattern_verb_noun(self, sent, jsondata):
         """
         Aditya : Takes the sentence and find the chunk (matches the regex)
         input : sentence
@@ -62,7 +62,7 @@ class Actual_Question_Formation:
         print(chunked)
         chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
-        chunk = self.tree_to_dict1(chunked)
+        chunk = self.tree_to_dict(chunked)
         pattern_strings =[]
         if len(chunk) != 0:
             for chunk_no in range(len(chunk)):
@@ -75,10 +75,11 @@ class Actual_Question_Formation:
 
         
     def form_full_questions(self,candidate,jsondata,tagged):
-        pattern_strings = self.pattern_noun_verb(candidate['Sentence'],jsondata)
+        pattern_strings = self.pattern_verb_noun(candidate['Sentence'],jsondata)
         full_ques = candidate['Question']
         new_full_ques = []
         sentence = candidate['Sentence']
+        answer = candidate['Answer']
         flag = 0
         if (len(pattern_strings)>0):
             for pattern_string_no in range(len(pattern_strings)):
