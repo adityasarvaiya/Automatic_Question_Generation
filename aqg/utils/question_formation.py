@@ -68,32 +68,21 @@ class QuestionFormation:
             # print tagged
 
             ne_chunk = nltk.ne_chunk(tagged)
-            print ne_chunk
+            # print ne_chunk
             jsondata = self.tree_to_dict(ne_chunk)
             print jsondata
             
-            full_ques, flag = aqf.form_full_questions(candidate,jsondata,tagged)                
-            
-                        
-                        # if jsondata.has_key("LOCATION") or jsondata.has_key("GPE"):        
-                        #     if (('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos)) and ((word in jsondata['LOCATION']) or ((word in jsondata['GPE']))):
-                        #         sentence_copy = sentence_copy.replace( '_____' , 'Where')
-                        #         print "word : " + word + "  pos : " + pos
-                    
-    #            if 'NN' in tagged:
-    #                sentence_copy = sentence_copy.replace('_____', 'what')
-    #            if 'NN' in tagged:
-    #                sentence_copy = sentence_copy.replace('_____', 'what')
-    #            if 'NN' in tagged:
-    #                sentence_copy = sentence_copy.replace('_____', 'what')
-                     
+            full_ques, ans, flag = aqf.form_full_questions(candidate,jsondata,tagged)                
             
             print "full_ques is " 
             print full_ques
             
             df['Full_qus'] = full_ques
             df['Question'] = candidate['Question']
-            df['Answer'] = candidate['Answer']
+            if ans == 0:
+                df['Answer'] = candidate['Answer']
+            else:
+                df['Answer'] = ans
             df['Prediction'] = candidate['Prediction']
             df['Sentence'] = candidate['Sentence']
             candidates1.append(df)

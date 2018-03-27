@@ -2,6 +2,7 @@
 
 import nltk,re
 from nltk.tree import Tree
+from nltk.stem import PorterStemmer
 
 """
 this page will have all the possible chunks on the basis of which we will create the full questions
@@ -29,9 +30,9 @@ class Actual_Question_Formation:
                         input_chunked = input_chunked + st[d][0] + " "
             
                 if st.label() in tree_dict:
-                    print " before : ",tree_dict[st.label()]
+                    # print " before : ",tree_dict[st.label()]
                     tree_dict[st.label()] = tree_dict[st.label()] + " " +input_chunked
-                    print " after : ",tree_dict[st.label()]
+                    # print " after : ",tree_dict[st.label()]
                     
                 else:
                     tree_dict[st.label()] = input_chunked
@@ -51,7 +52,7 @@ class Actual_Question_Formation:
         chunkGram = 'Chunk: {<VB.?>+<NN.?>+}'
         chunkParser = nltk.RegexpParser(chunkGram)
         chunked = chunkParser.parse(tagged)
-        chunked.draw()
+        # chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
         chunk = self.tree_to_dict(chunked)
         
@@ -81,7 +82,7 @@ class Actual_Question_Formation:
                 print(len(st))
                 input_chunked = ""
                 for d in range(len(st)):
-                    print "input__chunked"+input_chunked
+                    # print "input__chunked"+input_chunked
                     if (d+1) == len(st):
                         input_chunked = input_chunked + st[d][0]
                     else:
@@ -113,8 +114,8 @@ class Actual_Question_Formation:
         chunkGram = 'Chunk: {<VB.?>+<NN.?>+}'
         chunkParser = nltk.RegexpParser(chunkGram)
         chunked = chunkParser.parse(tagged)
-        print("Here we are")
-        print(chunked)
+        # print("Here we are")
+        # print(chunked)
         # chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
         chunk = self.tree_to_dict(chunked)
@@ -156,9 +157,9 @@ class Actual_Question_Formation:
         chunkGram = 'Chunk: {<VB.?>+<DT>?<JJ.?>?<NN.?>+}'
         chunkParser = nltk.RegexpParser(chunkGram)
         chunked = chunkParser.parse(tagged)
-        print("Here we are")
+        # print("Here we are")
         print(chunked)
-        chunked.draw()
+        # chunked.draw()
         # chunked = nltk.ne_chunk(tagged)
         chunk = self.tree_to_dict(chunked)
         pattern_strings =[]
@@ -173,17 +174,27 @@ class Actual_Question_Formation:
 
         
     def form_full_questions(self,candidate,jsondata,tagged):
+        """
+        flag : is a flag to distinguis the blank ques nd actual ques 
+        0 = blank ques    1 = actual ques
+        ans : is a flag to keep a track of modified answer
+        0 = no change in answer  
+        ans = <other then 0> is the modified ans 
+        """
         full_ques = candidate['Question']
         sentence = candidate['Sentence']
         answer = candidate['Answer']
         flag = 0
+        ans = 0
         new_full_ques = [] 
         
         pattern_strings = self.pattern_verb_noun(candidate['Sentence'],jsondata)
         
         for word,pos in tagged:    
+            # to check is word is in answer 
             if ((answer.find(word)) >= 0):
-                if (flag==0) and ((answer.find(word))==0):
+                #to check if blank is in starting 
+                if (flag==0) and ((sentence.find(word))==0):
                     if ((('NN' == pos) or ('NNP' == pos) or ('NNPS' == pos)) and jsondata.has_key("PERSON")) and (word in jsondata['PERSON']):
                         full_ques = full_ques.replace("_____" , 'Who')
                         full_ques = full_ques +"?"
@@ -212,22 +223,32 @@ class Actual_Question_Formation:
                             
                 if (flag==0):
                     pattern_strings,verbs,nouns = self.pattern_verb_dt_adj_noun(candidate['Sentence'],jsondata)
+                    print "pattern_strings : "
+                    print pattern_strings
                     if (len(pattern_strings)>0):
-                        for pattern_string_no in range(len(pattern_strings)):
-                            if (jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
-                                individual_words = pattern_strings[pattern_string_no].split()
-                                verb = [word for word in individual_words if word in verbs]
-                                print "Verb : ", str(verb)
-                                noun = [word for word in individual_words if word in nouns]
-                                full_ques = sentence.replace( pattern_strings[pattern_string_no] , '')
-                                full_ques = "Where " + str(verb[0]) + " " + str(full_ques).lower() + "?"
-                                print "word : " + word + "  pos : " + pos
-                                flag=1
+                        if (jsondata.has_key("LOCATION") and (word in jsondata['LOCATION'])) or (jsondata.has_key("GPE") and (word in jsondata['GPE'])):
+                            for pattern_string_no in range(len(pattern_strings)):
+                                if (pattern_strings[pattern_string_no].find(answer)>=0):
+                                    print "pattern_string_no : ", pattern_string_no
+                                    individual_words = pattern_strings[pattern_string_no].split()
+                                    print "individual_words :"
+                                    print individual_words
+                                    verb = [word for word in individual_words if word in verbs]
+                                    print "Verb : ", str(verb)
+                                    print "pattern_strings[pattern_string_no] : ", pattern_strings[pattern_string_no]
+                                    full_ques = sentence.replace( pattern_strings[pattern_string_no] , '')
+                                    full_ques = "Where " + str(verb[0]) + " " + str(full_ques).lower() + "?"
+                                    
+                                    noun = [word for word in individual_words if word in nouns]
+                                    ps = PorterStemmer()
+                                    ans = ps.stem(word)
+                                    # print "word : " + word + "  pos : " + pos
+                                    flag=1
 
 
         new_full_ques.append(full_ques)
         print new_full_ques
-        return new_full_ques, flag
+        return new_full_ques, ans, flag
     
 # if __name__ == '__main__':
 #     form_full_questions("Ahmedabad is walking run a very good city")
