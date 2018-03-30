@@ -1,0 +1,23 @@
+https://github.com/bwanglzu/Automatic-Question-Generation
+
+Git Commands
+1) Git status
+2) Git add . 
+3) Git push
+4) Git Commit 
+5) Git pull
+
+
+1) download and set everything according to this link
+2) Set environment variable by creating ".env" file by renaming it to ".env."
+3) change in app.py -- Change the code to take the inbuilt value rather then taking values from command line
+4) .eve file - Variation of selection can be handled by variable SENTENCE_RATIO (we set in env variable). more close to 1 more sentences will be selected. For the development purpose it is recommended to keep it lower to reduce the process time.
+5) utils/gap_selection line 58 - here len(entities) > 7 eleminated all the sentences having more than 7 entities which makes sence as it will create more than 7 similar type of questions later on
+6) Now make utils/question_formation.py for the generation of the proper questions. 
+7) actual_question_formation.py is also the helper file for the question_formation.py. it contains the rules for the ques formation.
+8) self.ratio = SENTENCE_RATIO -- sentence_selection.py -- line 24 
+9) gap_selection.py all environment
+10) feature_construction.py all environment
+11) to load every environments from the file -> change the python27\Lib\site-packages\dotenv\main.py line 97
+os.environ[k] = v --- to ----> os.environ[k] = str(v) and many changes in it 
+12) change debug = True to nothing 

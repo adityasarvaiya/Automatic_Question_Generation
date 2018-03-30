@@ -10,13 +10,13 @@ from nltk.tag import StanfordNERTagger
 class FeatureConstruction:
 
     def __init__(self):
-        os.environ['STANFORD_PARSER'] = os.environ.get(
-            'STANFORD_JARS')
-        os.environ['STANFORD_MODELS'] = os.environ.get(
-            'STANFORD_JARS')
-        os.environ['CLASSPATH'] = os.environ.get('STANFORD_NER_CLASSPATH')
-        self.model_path = os.environ.get(
-            'STANFORD_JARS') + 'english.all.3class.distsim.crf.ser.gz'
+        os.environ['STANFORD_PARSER'] = str(os.environ.get(
+            'STANFORD_JARS'))
+        os.environ['STANFORD_MODELS'] = str(os.environ.get(
+            'STANFORD_JARS'))
+        os.environ['CLASSPATH'] = str(os.environ.get('STANFORD_NER_CLASSPATH'))
+        self.model_path = str(os.environ.get(
+            'STANFORD_JARS') + 'english.all.3class.distsim.crf.ser.gz')
 
         self.st = StanfordNERTagger(self.model_path)
 

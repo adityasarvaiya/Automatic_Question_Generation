@@ -12,14 +12,13 @@ from sentence_selection import SentenceSelection
 class GapSelection:
 
     def __init__(self):
-        os.environ['STANFORD_PARSER'] = os.environ.get(
-            'STANFORD_JARS')
-        os.environ['STANFORD_MODELS'] = os.environ.get(
-            'STANFORD_JARS')
-        os.environ['CLASSPATH'] = os.environ.get(
-        	'STANFORD_PARSER_CLASSPATH')
-        self.model_path = os.environ.get(
-            'STANFORD_JARS') + 'englishPCFG.ser.gz'
+        os.environ['STANFORD_PARSER'] = str(os.environ.get(
+            'STANFORD_JARS'))
+        os.environ['STANFORD_MODELS'] = str(os.environ.get(
+            'STANFORD_JARS'))
+        os.environ['CLASSPATH'] = str(os.environ.get(
+        	'STANFORD_PARSER_CLASSPATH'))
+        self.model_path = str(os.environ.get('STANFORD_JARS')) + 'englishPCFG.ser.gz'
 
     def _prepare_parser(self):
         """Prepare stanford parser

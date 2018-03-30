@@ -21,7 +21,8 @@ class SentenceSelection:
     """Select topically import sentences from given document"""
     def __init__(self):
         self.fr = File_Reader()
-        self.ratio = os.environ.get("SENTENCE_RATIO")
+        # self.ratio = os.environ.get("SENTENCE_RATIO")
+        self.ratio = 0.05
 
     def _load_sentences(self, file_name):
         """Load sentences from given document
