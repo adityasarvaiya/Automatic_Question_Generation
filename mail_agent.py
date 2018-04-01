@@ -14,7 +14,7 @@ class mail_agent:
         msg['To'] = toaddr
         msg['Subject'] = "Question Answer of PDF "
 
-        body = "Please Check for Attachments."
+        body = "Please Check for Attachments. Badlo"
 
         msg.attach(MIMEText(body, 'plain'))
 

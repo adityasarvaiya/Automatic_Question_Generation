@@ -41,7 +41,7 @@ class QuestionFormation:
 
 
     
-    def form_questions(self,candidates):
+    def form_questions(self,candidates,outputformat):
         """Ques formation
         - Args:
             df(pandas.dataframe): dataframe of df[['Question', 'Answer', 'Sentence','Prediction']] 
@@ -61,12 +61,11 @@ class QuestionFormation:
             # print candidate['Answer']
             # sentence_copy = candidate['Question']
             
+            print "outputformat :" , outputformat
+
             tokens = nltk.word_tokenize(str(candidate['Sentence']))
             tagged = nltk.pos_tag(tokens)
-            
-            # print "tagged : " 
-            # print tagged
-
+    
             ne_chunk = nltk.ne_chunk(tagged)
             # print ne_chunk
             jsondata = self.tree_to_dict(ne_chunk)
@@ -77,20 +76,41 @@ class QuestionFormation:
             print "full_ques is " 
             print full_ques
             
-            df['Full_qus'] = full_ques
-            df['Question'] = candidate['Question']
-            if ans == 0:
-                df['Answer'] = candidate['Answer']
-            else:
-                df['Answer'] = ans
-            df['Prediction'] = candidate['Prediction']
-            df['Sentence'] = candidate['Sentence']
-            df['flag'] = flag
-            candidates1.append(df)
+            if str(outputformat) == "fullqus":
+                if flag == 1:
+                    df['Full_qus'] = full_ques[0]
+                    if ans == 0:
+                        df['Answer'] = candidate['Answer']
+                    else:
+                        df['Answer'] = ans
+            
+            if str(outputformat) == "blanks":
+                if flag == 0:
+                    df['Full_qus'] = candidate['Question']
+                    if ans == 0:
+                        df['Answer'] = candidate['Answer']
+                    else:
+                        df['Answer'] = ans
+
+            if str(outputformat) == "both":
+                df['Full_qus'] = full_ques[0]
+                if ans == 0:
+                    df['Answer'] = candidate['Answer']
+                else:
+                    df['Answer'] = ans
+                
+            # df['Question'] = candidate['Question']
+            
+            # df['Prediction'] = candidate['Prediction']
+            # df['Sentence'] = candidate['Sentence']
+            # df['flag'] = flag
+            if len(df.items()) != 0:
+                candidates1.append(df)
             df = {}
             print " "
             print " "
-            
+        print "new final output :"
+        print candidates1
         return candidates1
     
         

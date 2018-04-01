@@ -108,3 +108,21 @@ if __name__ == '__main__':
 
 st = "thismyhome"
 print st[:5]
+
+
+#    for num,que in enumerate(question_ans_dataframe):
+#             tmp_list = []
+#             temp_df = pd.DataFrame()
+#             if outputformat == str("fullqus"):
+#                 if que["flag"] == 1 :
+#                     temp_df = pd.DataFrame([que["Full_qus"][0],que["Answer"]],columns= ["Full_ques", "Answer"])
+#                     new_data_frame.append(temp_df)
+#                     count+=1
+#             if outputformat == "blanks1":
+#                 new_data_frame.insert(count,"Full_ques",que["Question"])
+#                 new_data_frame.insert(count,"Answer",que["Answer"])
+#                 count+=1
+#             if outputformat == "both1":
+#                 new_data_frame.insert(count,"Full_ques",que["Full_qus"])
+#                 new_data_frame.insert(count,"Answer",que["Answer"])
+#                 count+=1

@@ -184,35 +184,53 @@
     </div>
     <div class="widget-content">
       <div class="widget-box">
-        <form class="form-horizontal well">
+        <form class="form-horizontal well" action="question.html" method="POST">
           <fieldset>
               
               <div class="control-group">
                 <label class="control-label" for="input01">Name</label>
                 <div class="controls">
-                  <input type="text" class="input-xlarge text-tip" id="name" title="Name">
+                  <input type="text" class="input-xlarge text-tip" id="name" title="Name" name="Name">
                 </div>
               </div>
 
               <div class="control-group">
                 <label class="control-label" for="input01">Phone Number</label>
                 <div class="controls">
-                  <input type="number" class="input-xlarge text-tip" id="phonenub" title="Phone Number">
+                  <input type="number" class="input-xlarge text-tip" id="phonenub" title="Phone Number" name="Number">
                 </div>
               </div>
 
               <div class="control-group">
                 <label class="control-label">Email Address</label>
                 <div class="controls">
-                  <input id="email" class="input-xlarge text-tip" name="email" type="email" title="Email Address" data-validation="email"/>
+                  <input id="email" class="input-xlarge text-tip" name="Email" type="email" title="Email Address" data-validation="email"/>
                   <p class="help-block">
                      You will recieve the output file as a mail on this Email.
                   </p>
                 </div>
               </div>
-              
+             
              <div class="control-group">
-              <label class="control-label">Select the mode of input :</label>
+              <label class="control-label">Question Format Options:</label>
+              <div class="controls">
+                <label class="radio">
+                  <input type="radio" value="blanks" name="outputformat" id="blanks1">
+                  Fill in the blanks
+                </label>
+                <label class="radio">
+                  <input type="radio" value="fullqus" name="outputformat" id="fullqus1">
+                  Full Questions
+                </label>
+                <label class="radio">
+                  <input type="radio" value="both" name="outputformat" id="both1">
+                  Both
+                </label>
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label">Select the mode of Input :</label>
               <div class="controls">
                 <label class="radio">
                   <input type="radio" value="text" name="optionsRadios" id="text1">
@@ -233,7 +251,7 @@
               <div class="control-group">
                 <label class="control-label">Textarea</label>
                 <div class="controls">
-                  <textarea class="input-xlarge" rows="6"></textarea>
+                  <textarea class="input-xlarge" rows="6" name="Text1"></textarea>
                 </div>
               </div>
             </div>
@@ -242,7 +260,7 @@
               <div class="control-group">
                 <label class="control-label">File input</label>
                 <div class="controls">
-                  <input class="input-file" type="file">
+                  <input class="input-file" type="file" name="File1">
                 </div>
               </div>
             </div>
@@ -251,7 +269,7 @@
               <div class="control-group linkinput">
                 <label class="control-label" for="input01">Link Input</label>
                 <div class="controls">
-                  <input type="text" class="input-xlarge text-tip" id="input01" title="Link Input">
+                  <input type="text" class="input-xlarge text-tip" id="input01" title="Link Input" name="Link1">
                   <p class="help-block">
                      Paste your link here.
                   </p>

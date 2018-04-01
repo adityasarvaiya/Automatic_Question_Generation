@@ -58,7 +58,7 @@ class Application:
         question_answers['Prediction'] = 0
         return question_answers
 
-    def pipeline(self, document):
+    def pipeline(self, document, outputformat):
         """Pipeline of Automatic Question Generation 
         - Args:
             document(str): path of input document
@@ -84,14 +84,15 @@ class Application:
         # changed : aditya
         # changed : aditya --  QuestionFormation() -- added
         qf = QuestionFormation()
-        question_answers = qf.form_questions(question_answers1)
+        question_answers = qf.form_questions(question_answers1,outputformat)
         # question_answers = qf.form_questions(candidates)
         
         return question_answers
 
 
     # if __name__ == '__main__':
-    def ques_application(self):
+    def ques_application(self,filename, outputformat):
+        
     #    parser = argparse.ArgumentParser()
     #    parser.add_argument("-f", "--input", help="input document")
     #    args = parser.parse_args()
@@ -99,16 +100,19 @@ class Application:
     #    question_ans_dataframe = (pipeline(args.input))
         
         # Change : Aditya -- put file name as the argument in the following
-        question_ans_dataframe = self.pipeline("obama.txt")
+        question_ans_dataframe = self.pipeline(filename,outputformat)
         print "App.py output."
         # print(question_ans_dataframe)
-        
+
         print "0: bad question; 1: okay question; 2: good question"
+    
         for num,que in enumerate(question_ans_dataframe):
+           
+            
             print "Question Full: "+" "+str(num+1)+"    "
-            print que["Full_qus"]
+            print que['Full_qus']
             # print "TAG:"+ str(que["Prediction"])
-            print "Question Blank: "+" "+str(num+1)+"    "+que["Question"]+" "+"TAG:"+str(que["Prediction"])
+            # print "Question Blank: "+" "+str(num+1)+"    "+que["Question"]+" "+"TAG:"+str(que["Prediction"])
             print "Answer"+" "+str(num+1)+"    "+que["Answer"]
             print " "
         
@@ -121,5 +125,5 @@ class Application:
         pdf2 = pdf()
         pdf2.generate_pdf_quesans(question_ans_dataframe)
         mail_age = ma()
-        mail_age.mail_pdf("adityasarvaiya96@gmail.com")
+        mail_age.mail_pdf("sagarparikh2010@gmail.com")
         return question_ans_dataframe
