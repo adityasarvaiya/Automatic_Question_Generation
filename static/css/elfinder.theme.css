@@ -1,0 +1,59 @@
+/**
+ * MacOS X like theme for elFinder.
+ * Required jquery ui "smoothness" theme.
+ *
+ * @author Dmitry (dio) Levashov
+ **/
+
+/* dialogs */
+.std42-dialog, .std42-dialog .ui-widget-content { background-color:#ededed; background-image:none; background-clip: content-box; }
+
+/* navbar */
+.elfinder .elfinder-navbar { background:#eee !important; }
+.elfinder-navbar .ui-state-hover  { background:transparent; border-color:transparent; }
+.elfinder-navbar .ui-state-active { background: #28364c;    border-color:#0e1218; color:#fff; }
+/* disabled elfinder */
+.elfinder-disabled .elfinder-navbar .ui-state-active { background: #dadada; border-color:#aaa; color:#fff; }
+
+
+/* current directory */
+/* selected file in "icons" view */
+.elfinder-cwd-view-icons .elfinder-cwd-file .ui-state-hover { background:#ccc; }
+/* list view*/
+.elfinder-cwd table tr:nth-child(odd) { background-color:#edf3fe; }
+.elfinder-cwd table tr { border-top:1px solid #fff; }
+
+/* common selected background/color */
+.elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-cwd table td.ui-state-hover,
+.elfinder-button-menu .ui-state-hover { background: #3875d7; color:#fff;}
+/* disabled elfinder */
+.elfinder-disabled .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
+.elfinder-disabled .elfinder-cwd table td.ui-state-hover { background:#dadada;}
+
+/* statusbar */
+.elfinder .elfinder-statusbar { color:#555; }
+.elfinder .elfinder-statusbar a { text-decoration:none; color:#555;}
+
+
+.std42-dialog .elfinder-help, .std42-dialog .elfinder-help .ui-widget-content { background:#fff;}
+
+/* contextmenu */
+.elfinder-contextmenu .ui-state-hover { background: #3875d7; color:#fff; }
+.elfinder-contextmenu .ui-state-hover .elfinder-contextmenu-arrow { background-image:url('../img/arrows-active.png'); }
+
+#file-manager .ui-widget-header{ border-bottom:#aaa 1px solid; border-left:0px; border-right:0px; border-top:0px;}
+.elfinder-statusbar{ border-bottom:0px !important; border-top: #CCC 1px solid !important;  background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+

@@ -11,7 +11,7 @@ from collections import OrderedDict
 import nltk
 #nltk.download("punkt")
 #nltk.download("stopwords")
-#nltk.download("averaged_perceptron_tagger")
+#nltk.download("averaged_perceptron_taggepython r")
 
 import argparse
 import numpy as np
@@ -26,8 +26,9 @@ from utils.gap_selection import GapSelection
 from utils.sentence_selection import SentenceSelection
 from utils.feature_construction import FeatureConstruction
 from utils.question_formation import QuestionFormation
-
+from utils.pdfgenration import pdfgeneration as pdf
 from dotenv import load_dotenv, find_dotenv
+from mail_agent import mail_agent as ma
 print "find_dotenv() : ", find_dotenv()
 load_dotenv(find_dotenv())
 
@@ -39,11 +40,11 @@ class Application:
         - Returns:
             question_answers(pandas.dataframe): Question, Answer, Prediction (label)
         """
-        model_path = os.path.dirname(os.path.abspath(__file__)) + '/models/clf.pkl'
+        #model_path = os.path.dirname(os.path.abspath(__file__)) + '/models/clf.pkl'
     #    model_path = "%s%s" %(str(os.getcwd),"/models/clf.pkl")
         print "Your model path is"
     #    print model_path
-        clf = joblib.load(model_path)
+        #clf = joblib.load(model_path)
         
         
         """
@@ -52,9 +53,9 @@ class Application:
         purpose : to add sentence in dataframe for question_formation
         """
         question_answers = df[['Question', 'Answer', 'Sentence']]
-        X = df.drop(['Answer', 'Question', 'Sentence'], axis=1).as_matrix()
-        y = clf.predict(X)
-        question_answers['Prediction'] = y
+        # X = df.drop(['Answer', 'Question', 'Sentence'], axis=1).as_matrix()
+        # y = clf.predict(X)
+        question_answers['Prediction'] = 0
         return question_answers
 
     def pipeline(self, document):
@@ -77,6 +78,7 @@ class Application:
         
         fc = FeatureConstruction()
         candidates_with_features = fc.extract_feature(candidates)
+        candidates_with_features = pd.DataFrame(candidates)
         question_answers1 = self._classify(candidates_with_features)
         
         # changed : aditya
@@ -97,7 +99,7 @@ class Application:
     #    question_ans_dataframe = (pipeline(args.input))
         
         # Change : Aditya -- put file name as the argument in the following
-        question_ans_dataframe = self.pipeline("one.txt")
+        question_ans_dataframe = self.pipeline("obama.txt")
         print "App.py output."
         # print(question_ans_dataframe)
         
@@ -111,4 +113,13 @@ class Application:
             print " "
         
         print "0: bad question; 1: okay question; 2: good question"
+        f = open("test_dataframe.txt","w+")
+        print("DICTIONARY")
+        print(question_ans_dataframe)
+        
+        f.close()
+        pdf2 = pdf()
+        pdf2.generate_pdf_quesans(question_ans_dataframe)
+        mail_age = ma()
+        mail_age.mail_pdf("adityasarvaiya96@gmail.com")
         return question_ans_dataframe

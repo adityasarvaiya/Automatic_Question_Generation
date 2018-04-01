@@ -1,0 +1,1828 @@
+.nav-icon{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-3px;
+ vertical-align: text-top;
+ background:url(../img/sprite-icons/white-icons.png) no-repeat;}
+
+.glossy-icons{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-3px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/icons-glossy.png) no-repeat;}
+
+.white-icons{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-3px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/white-icons.png) no-repeat;}
+
+.black-icons{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-3px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/icon-black.png) no-repeat;}
+
+.color-icons{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-3px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/icons-color.png) no-repeat;}
+
+
+.dashboard-icons{ display: inline-block;
+ width: 40px;
+ height: 40px;
+ *margin-right: .3em;
+ line-height: 40px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/dashboard-icons-dark.png) no-repeat;}
+
+.dashboard-icons-colors{display: inline-block;
+ width: 40px;
+ height: 40px;
+ *margin-right: .3em;
+ line-height: 40px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/icon_sl.png) no-repeat !important;}
+
+.icon-small-black{ display: inline-block;
+ width: 20px;
+ height: 20px;
+ *margin-right: .3em;
+ line-height: 20px;
+ margin-top:-5px;
+ vertical-align: text-top;
+background:url(../img/sprite-icons/actions-small.png) no-repeat; }
+
+
+/*CS_H*/ 
+       
+.folder_sc{background-position:0px -20px !important}
+.home_sc{background-position:0px -60px !important}
+.magnifying_sc{background-position:0px -100px !important}
+.trashcan_sc{background-position:0px -140px !important}
+.paperclip_sc{background-position:0px -180px !important}
+.shopping_sc{background-position:0px -220px !important}
+.flag_sc{background-position:0px -260px !important}
+.locked_sc{background-position:0px -300px !important}
+.cup_sc{background-position:0px -340px !important}
+.info_sc{background-position:0px -380px !important}
+.help_sc{background-position:0px -420px !important}
+.key_sc{background-position:0px -460px !important}
+.safari_sc{background-position:0px -500px !important}
+.alarm_clock_sc{background-position:0px -540px !important}
+.tag_sc{background-position:0px -580px !important}
+.mail_sc{background-position:0px -620px !important}
+.acces_sc{background-position:0px -660px !important}
+.tags_2_sc{background-position:0px -700px !important}
+.alert_sc{background-position:0px -740px !important}
+.alert_2_sc{background-position:0px -780px !important}
+.speech_2_sc{background-position:0px -820px !important}
+.users_sc{background-position:0px -860px !important}
+.bended_left_sc{background-position:0px -900px !important}
+.phone_sc{background-position:0px -940px !important}
+.bended_right_sc{background-position:0px -980px !important}
+.user_sc{background-position:0px -1020px !important}
+.speech_bubble_sc{background-position:0px -1060px !important}
+.light_bulb_sc{background-position:0px -1100px !important}
+.day_calendar_sc{background-position:0px -1140px !important}
+.cog_3_sc{background-position:0px -1180px !important}
+.refresh_sc{background-position:0px -1220px !important}
+.user_comment_sc{background-position:0px -1260px !important}
+.shopping_cart_sc{background-position:0px -1300px !important}
+.cog_2_sc{background-position:0px -1340px !important}
+.refresh_3_sc{background-position:0px -1380px !important}
+
+/*ICON_H_C*/
+
+.lifebuoy_c{background-position:0px -20px !important}
+.link_c{background-position:0px -60px !important}
+.user_business_c{background-position:0px -100px !important}
+.user_silhouette_c{background-position:0px -140px !important}
+.lightbulb_c{background-position:0px -180px !important}
+.lock_c{background-position:0px -220px !important}
+.cog_c{background-position:0px -260px !important}
+.error_c{background-position:0px -300px !important}
+.exclamation_c{background-position:0px -340px !important}
+.compress_c{background-position:0px -380px !important}
+.comment_c{background-position:0px -420px !important}
+.attach_c{background-position:0px -460px !important}
+.folder_c{background-position:0px -500px !important}
+.add_c{background-position:0px -540px !important}
+.userfemale_c{background-position:0px -580px !important}
+.connect_c{background-position:0px -620px !important}
+.help_c{background-position:0px -660px !important}
+.find_c{background-position:0px -700px !important}
+.flag_blue_c{background-position:0px -740px !important}
+.bin_closed_c{background-position:0px -780px !important}
+.exclamation_octagon_fram_c{background-position:0px -820px !important}
+.accept_c{background-position:0px -860px !important}
+.magnifier_c{background-position:0px -900px !important}
+.bullet_key_c{background-position:0px -940px !important}
+.attach_2_c{background-position:0px -980px !important}
+.key_c{background-position:0px -1020px !important}
+.award_star_gold_c{background-position:0px -1060px !important}
+.trophy_bronze_c{background-position:0px -1100px !important}
+.heart_c{background-position:0px -1140px !important}
+.cross_octagon_c{background-position:0px -1180px !important}
+.medal_gold_1_c{background-position:0px -1220px !important}
+.cross_c{background-position:0px -1260px !important}
+.crossfram_c{background-position:0px -1300px !important}                            
+.clock_c{background-position:0px -1340px !important}
+.alarm_c{background-position:0px -1380px !important}
+.monitor_c{background-position:0px -1420px !important}
+.disconnect_c{background-position:0px -1460px !important}
+.arrow_out_c{background-position:0px -1500px !important}
+.chart_pie_c{background-position:0px -1540px !important}
+.hammer_screwdriver_c{background-position:0px -1580px !important}
+.cancel_c{background-position:0px -1620px !important}
+.delete_c{background-position:0px -1660px !important}
+.world_c{background-position:0px -1700px !important}
+.email_c{background-position:0px -1740px !important}
+.webcam_c{background-position:0px -1780px !important}
+.email_open_c{background-position:0px -1820px !important}
+.disk_c{background-position:0px -1860px !important}
+.images_c{background-position:0px -1900px !important}
+.page_white_edit_c{background-position:0px -1940px !important}
+.page_white_delete_c{background-position:0px -1980px !important}
+.pencil_c{background-position:0px -2020px !important}
+
+
+/*16X16 BLACK*/
+.magnifying_glass{ background-position:0px 0px !important}
+.trashcan{ background-position:-20px 0px !important}
+.dress{background-position:-40px 0px !important}
+.upload{background-position:-60px 0px !important}
+.download{background-position:-80px 0px !important}
+.winner_podium{background-position:-100px 0px !important}
+.cup{background-position: -120px 0px !important}
+.flag{background-position: -140px 0px !important}
+.home{background-position: -160px 0px !important}
+.trashcan_2{background-position: -180px 0px !important}
+.presentation{background-position: -200px 0px !important}
+.flag_2{background-position: -220px 0px !important}
+.finish_flag{background-position: -240px 0px !important}
+.download_to_computer{background-position: -260px 0px !important}
+.book{background-position: -280px 0px !important}
+.home_2{background-position: -300px 0px !important}
+.link{background-position: -320px 0px !important}
+.book_large{background-position: -340px 0px !important}
+.books{background-position: -360px 0px !important}
+.note_book{background-position: -380px 0px !important}
+.help{background-position: -400px 0px !important}
+.mail{background-position: -420px 0px !important}
+.umbrella{background-position: -440px 0px !important}
+.companies{background-position: -460px 0px !important}
+.apartment_building{background-position: -480px 0px !important}
+.strategy_2{background-position: -500px 0px !important}
+.under_construction{background-position: -520px 0px !important}
+.link_2{background-position: -540px 0px !important}
+.tree{background-position: -560px 0px !important}
+.file_cabinet{background-position: -580px 0px !important}
+.rss{background-position: -600px 0px !important}
+.strategy{background-position: -620px 0px !important}
+.vault{background-position: -640px 0px !important}
+.archive{background-position: -660px 0px !important}
+.pacman{background-position: -680px 0px !important}
+.alert_2{background-position: -700px 0px !important}
+.alert{background-position: -720px 0px !important}
+.alarm_bell{background-position: -740px 0px !important}
+.post_card{background-position: -760px 0px !important}
+.pacman_ghost{background-position: -780px 0px !important}
+.bandaid{background-position: -800px 0px !important}
+.globe_2{background-position: -820px 0px !important}
+.alarm_bell_2{background-position: -840px 0px !important}
+.robot{background-position: -860px 0px !important}
+.globe{background-position: -880px 0px !important}
+.cloud{background-position: -900px 0px !important}
+.light_bulb{background-position: -920px 0px !important}
+.chemical{background-position: -940px 0px !important}
+.lamp{background-position: -960px 0px !important}
+.cloud_upload{background-position: -980px 0px !important}
+.cloud_download{background-position: 0px -20px !important}
+.ice_cream{background-position: -20px -20px !important}
+.ice_cream_2{background-position: -40px -20px !important}
+.paperclip{background-position: -60px -20px !important}
+.footprints{background-position: -80px -20px !important}
+.firefox{background-position: -100px -20px !important}
+.chrome{background-position: -120px -20px !important}
+.safari{background-position: -140px -20px !important}
+.loading_bar{background-position: -160px -20px !important}
+.bulls_eye{background-position: -180px -20px !important}
+.folder{background-position: -200px -20px !important}
+.locked{background-position: -220px -20px !important}
+.locked_2{background-position: -240px -20px !important}
+.unlocked{background-position: -260px -20px !important}
+.tag{background-position: -280px -20px !important}
+.macos{background-position: -300px -20px !important}
+.tags_2{background-position: -320px -20px !important}
+.windows{background-position: -340px -20px !important}
+.create_write{background-position: -360px -20px !important}
+.linux{background-position: -380px -20px !important}
+.exposé{background-position: -400px -20px !important}
+.key{background-position: -420px -20px !important}
+.key_2{background-position: -440px -20px !important}
+.table{background-position: -460px -20px !important}
+.acces_denied_sign{background-position: -480px -20px !important}
+.cat{background-position: -500px -20px !important}
+.balloons{background-position: -520px -20px !important}
+.airplane{background-position: -540px -20px !important}
+.truck{background-position: -560px -20px !important}
+.chair{background-position: -580px -20px !important}
+.info_about{background-position: -600px -20px !important}
+.car{background-position: -620px -20px !important}
+.alarm_clock{background-position: -640px -20px !important}
+.timer{background-position: -660px -20px !important}
+.stop_watch{background-position: -680px -20px !important}
+.clock{background-position: -700px -20px !important}
+.day_calendar{background-position: -720px -20px !important}
+.month_calendar{background-position: -740px -20px !important}
+.paypal{background-position: -760px -20px !important}
+.payPal_3{background-position: -780px -20px !important}
+.paypal_2{background-position: -800px -20px !important}
+.money{background-position: -820px -20px !important}
+.piggy_bank{background-position: -840px -20px !important}
+.price_tags{background-position: -860px -20px !important}
+.price_tag{background-position: -880px -20px !important}
+.lemonade_stand{background-position: -900px -20px !important}
+.money_2{background-position: -920px -20px !important}
+.shopping_basket_2{background-position: -940px -20px !important}
+.scan_label_2{background-position: -960px -20px !important}
+.shopping_cart_3{background-position: -980px -20px !important}
+.shopping_basket_2{background-position: 0px -40px !important}
+.shopping_cart{background-position: -20px -40px !important}
+.shopping_cart_4{background-position: -40px -40px !important}
+.shopping_cart_2{background-position: -60px -40px !important}
+.digg{background-position: -80px -40px !important}
+.digg_2{background-position: -100px -40px !important}
+.google_buzz{background-position: -120px -40px !important}
+.delicious{background-position: -140px -40px !important}
+.twitter{background-position: -160px -40px !important}
+.twitter_2{background-position: -180px -40px !important}
+.tumbler{background-position: -200px -40px !important}
+.plixi{background-position: -220px -40px !important}
+.dribbble{background-position: -240px -40px !important}
+.dribbble_2{background-position: -260px -40px !important}
+.stubleupon{background-position: -280px -40px !important}
+.lastfm_2{background-position: -300px -40px !important}
+.mobypicture{background-position: -320px -40px !important}
+.facebook{background-position: -340px -40px !important}
+.youtube{background-position: -360px -40px !important}
+.youtube_2{background-position: -380px -40px !important}
+.vimeo{background-position: -400px -40px !important}
+.vimeo_2{background-position: -420px -40px !important}
+.skype{background-position: -440px -40px !important}
+.ichat{background-position: -460px -40px !important}
+.facebook_like{background-position: -480px -40px !important}
+.dropbox{background-position: -500px -40px !important}
+.myspace_2{background-position: -520px -40px !important}
+.walking_man{background-position: -540px -40px !important}
+.user{background-position: -560px -40px !important}
+.running_man{background-position: -580px -40px !important}
+.exit{background-position: -600px -40px !important}
+.male_contour{background-position: -620px -40px !important}
+.admin_user{background-position: -640px -40px !important}
+.female_contour{background-position: -660px -40px !important}
+.male_symbol{background-position: -680px -40px !important}
+.female_symbol{background-position: -700px -40px !important}
+.user_2{background-position: -720px -40px !important}
+.users{background-position: -740px -40px !important}
+.users_2{background-position: -760px -40px !important}
+.admin_user_2{background-position: -780px -40px !important}
+.user_comment{background-position: -800px -40px !important}
+.cog{background-position: -820px -40px !important}
+.cog_2{background-position: -840px -40px !important}
+.cog_3{background-position: -860px -40px !important}
+.cog_4{background-position: -880px -40px !important}
+.settings_tools{background-position: -900px -40px}
+.settings_2{background-position: -920px -40px !important}
+.hd{background-position: -940px -40px !important}
+.hd_2{background-position: -960px -40px !important}
+.hd_3{background-position: -980px -40px !important}
+.sd_3{background-position: 0px -60px !important}
+.sd{background-position: -20px -60px !important}
+.sd_2{background-position: -40px -60px !important}
+.dvd{background-position: -60px -60px !important}
+.blu_ray{background-position: -80px -60px !important}
+.record{background-position: -100px -60px !important}
+.cd{background-position: -120px -60px !important}
+.cassette{background-position: -140px -60px !important}
+.image{background-position: -160px -60px !important}
+.image_1{background-position: -180px -60px !important}
+.megaphone{background-position: -200px -60px !important}
+.image_2{background-position: -220px -60px !important}
+.film_strip{background-position: -240px -60px !important}
+.image2_2{background-position: -260px -60px !important}
+.film_strip_2{background-position: -280px -60px !important}
+.sound{background-position: -300px -60px !important}
+.headphones{background-position: -320px -60px !important}
+.microphone{background-position: -340px -60px !important}
+.printer{background-position: -360px -60px !important}
+.radio{background-position: -380px -60px !important}
+.television{background-position: -400px -60px !important}
+.computer_imac{background-position: -420px -60px !important}
+.laptop{background-position: -440px -60px !important}
+.mighty_mouse{background-position: -460px -60px !important}
+.magic_mouse{background-position: -480px -60px !important}
+.camera{background-position: -500px -60px !important}
+.camera_2{background-position: -520px -60px !important}
+.monitor{background-position: -540px -60px !important}
+.mouse_wires{background-position: -560px -60px !important}
+.ipod_classic{background-position: -580px -60px !important}
+.film_camera{background-position: -600px -60px !important}
+.ipad{background-position: -620px -60px !important}
+.ipod_nano{background-position: -640px -60px !important}
+.fax{background-position: -660px -60px !important}
+.calculator{background-position: -680px -60px !important}
+.cash_register{background-position: -700px -60px !important}
+.bended_arrow_right{background-position: -720px -60px !important}
+.bended_arrow_left{background-position: -740px -60px !important}
+.bended_arrow_down{background-position: -760px -60px !important}
+.bended_arrow_up{background-position: -780px -60px !important}
+.refresh{background-position: -800px -60px !important}
+.refresh_2{background-position: -820px -60px !important}
+.refresh_4{background-position: -840px -60px !important}
+.repeat{background-position: -860px -60px !important}
+.shuffle{background-position: -880px -60px !important}
+.refresh_3{background-position: -900px -60px !important}
+.go_back_from_full_screen{background-position: -920px -60px !important}
+.go_full_screen{background-position: -940px -60px !important}
+.recycle_symbol{background-position: -960px -60px !important}
+.go_back_from_screen{background-position: -980px -60px !important}
+.frames{background-position: 0px -80px !important}
+.blocks_images{background-position: -20px -80px !important}
+.list_images{background-position: -40px -80px !important}
+.coverflow{background-position: -60px -80px !important}
+.list_image{background-position: -80px -80px !important}
+.list{background-position: -100px -80px !important}
+.wordpress{background-position: -120px -80px !important}
+.wordpress_2{background-position: -140px -80px !important}
+.joomla{background-position: -160px -80px !important}
+.expression_engine{background-position: -180px -80px !important}
+.drupal{background-position: -200px -80px !important}
+.iphone_3g{background-position: -220px -80px !important}
+.iphone_4{background-position: -240px -80px !important}
+.blackberry{background-position: -260px -80px !important}
+.android{background-position: -280px -80px !important}
+.mobile_phone{background-position: -300px -80px !important}
+.bluetooth{background-position: -320px -80px !important}
+.bluetooth_2{background-position: -340px -80px !important}
+.wifi_signal{background-position: -360px -80px !important}
+.wifi_signal_2{background-position: -380px -80px !important}
+.box_outgoing{background-position: -400px -80px !important}
+.inbox{background-position: -420px -80px !important}
+.box_incoming{background-position: -440px -80px !important}
+.speech_bubble{background-position: -460px -80px !important}
+.speech_bubble_2{background-position: -480px -80px !important}
+.phone{background-position: -500px -80px !important}
+.speech_bubbles_2{background-position: -520px -80px !important}
+.phone_3{background-position: -540px -80px !important}
+.speech_bubbles{background-position: -560px -80px !important}
+.phone_hook{background-position: -580px -80px !important}
+.battery_full{background-position: -600px -80px !important}
+.electricity_input{background-position: -620px -80px !important}
+.battery_almost_full{background-position: -640px -80px !important}
+.battery_almost_empty{background-position: -660px -80px !important}
+.battery_empty{background-position: -680px -80px !important}
+.battery{background-position: -700px -80px !important}
+.power{background-position: -720px -80px !important}
+.electricity_plug{background-position: -740px -80px !important}
+.paint_brush{background-position: -760px -80px !important}
+.small_brush{background-position: -780px -80px !important}
+.fountain_pen{background-position: -800px -80px !important}
+.big_brush{background-position: -820px -80px !important}
+.pencil{background-position: -840px -80px !important}
+.cut_scissors{background-position: -860px -80px !important}
+.abacus{background-position: -880px -80px !important}
+.ruler_2{background-position: -900px -80px !important}
+.clipboard{background-position: -920px -80px !important}
+.ruler{background-position: -940px -80px !important}
+.eyedropper{background-position: -960px -80px !important}
+.marker{background-position: -980px -80px !important}
+.map{background-position: 0px -100px !important}
+.google_maps{background-position: -20px -100px !important}
+.sign_post{background-position: -40px -100px !important}
+.document{background-position: -60px -100px !important}
+.documents{background-position: -80px -100px !important}
+.pdf_document{background-position: -100px -100px !important}
+.pdf_documents{background-position: -120px -100px !important}
+.word_document{background-position: -140px -100px !important}
+.word_documents{background-position: -160px -100px !important}
+.zip_file{background-position: -180px -100px !important}
+.zip_files{background-position: -200px -100px !important}
+.powerpoint_document{background-position: -220px -100px !important}
+.powerpoint_documents{background-position: -240px -100px !important}
+.excel_document{background-position: -260px -100px !important}
+.excel_documents{background-position: -280px -100px !important}
+.v_card{background-position: -300px -100px !important}
+.v_card_2{background-position: -320px -100px !important}
+.address_book{background-position: -340px -100px !important}
+.chart{background-position: -360px -100px !important}
+.chart_2{background-position: -380px -100px !important}
+.chart_3{background-position: -400px -100px !important}
+.chart_4{background-position: -420px -100px !important}
+.chart_5{background-position: -440px -100px !important}
+.chart_6{background-position: -460px -100px !important}
+.chart_7{background-position: -480px -100px !important}
+.graph{background-position: -500px -100px !important}
+.chart_8{background-position: -520px -100px !important}
+.p_next{background-position: -540px -100px !important}
+.p_last{background-position: -560px -100px !important}
+.p_prev{background-position: -580px -100px !important}
+.p_first{background-position: -600px -100px !important}
+
+
+
+/*icon_sl*/
+.donate_sl{background-position: 0px 0px !important;}
+.document_library_sl{background-position: -40px 0px !important;}
+.delicious_sl{background-position:-80px 0px !important;}
+.date_sl{background-position:-120px 0px !important;}
+.database_sl{background-position:-160px 0px !important;}
+.cv_sl{background-position:-200px 0px !important;}
+.customers_sl{background-position:-240px 0px !important;}
+.current_work_sl{background-position:-280px 0px !important;}
+.credit_card_sl{background-position:-320px 0px !important;}
+.credit_sl{background-position:-360px 0px !important;}
+.cost_sl{background-position:-400px 0px !important;}
+.contact_sl{background-position:-440px 0px !important;}
+.consulting_sl{background-position:-480px 0px !important;}
+.communication_sl{background-position:-520px 0px !important;}
+.config_sl{background-position:-560px 0px !important;}
+.comment_sl{background-position:-600px 0px !important;}
+.check_sl{background-position:-640px 0px !important;}
+.collaboration_sl{background-position:-680px 0px !important;}
+.calendar_sl{background-position:-720px 0px !important;}
+.busy_sl{background-position:-760px 0px !important;}
+.category_sl{background-position:-800px 0px !important;}
+.business_contact_sl{background-position:-840px 0px !important;}
+.brainstorming_sl{background-position:-880px 0px !important;}
+.bookmark_sl{background-position:-920px 0px !important;}
+.billing_sl{background-position:-960px 0px !important;}
+
+.bestseller_sl{background-position: 0px -40px !important;}
+.basket_sl{background-position: -40px -40px !important;}
+.bank_sl{background-position:-80px -40px !important;}
+.attibutes_sl{background-position:-120px -40px !important;}
+.archives_sl{background-position:-160px -40px !important;}
+.advertising_sl{background-position:-200px -40px !important;}
+.administrative_docs_sl{background-position:-240px -40px !important;}
+.address_sl{background-position:-280px -40px !important;}
+.payment_card_sl{background-position:-320px -40px !important;}
+.order_1_sl{background-position:-360px -40px !important;}
+.order_sl{background-position:-400px -40px !important;}
+.old_versions_sl{background-position:-440px -40px !important;}
+.networking_sl{background-position:-480px -40px !important;}
+.my_account_sl{background-position:-520px -40px !important;}
+.logout_sl{background-position:-560px -40px !important;}
+.milestone_sl{background-position:-600px -40px !important;}
+.login_sl{background-position:-640px -40px !important;}
+.lock_sl{background-position:-680px -40px !important;}
+.link_sl{background-position:-720px -40px !important;}
+.limited_edition_sl{background-position:-760px -40px !important;}
+.lightbulb_sl{background-position:-800px -40px !important;}
+.library_sl{background-position:-840px -40px !important;}
+.issue_sl{background-position:-880px -40px !important;}
+.invoice_sl{background-position:-920px -40px !important;}
+.illustration_sl{background-position:-960px -40px !important;}
+   
+.home_sl{background-position: 0px -80px !important;}
+.hire_me_sl{background-position: -40px -80px !important;}
+.heart_sl{background-position:-80px -80px !important;}
+.graphic_design_sl{background-position:-120px -80px !important;}
+.future_projects_sl{background-position:-160px -80px !important;}
+.full_time_sl{background-position:-200px -80px !important;}
+.freelance_sl{background-position:-240px -80px !important;}
+.folder_sl{background-position:-280px -80px !important;}
+.free_for_job_sl{background-position:-320px -80px !important;}
+.flag_sl{background-position:-360px -80px !important;}
+.finished_work_sl{background-position:-400px -80px !important;}
+.feed_sl{background-position:-440px -80px !important;}
+.featured_sl{background-position:-480px -80px !important;}
+.email_sl{background-position:-520px -80px !important;}
+.edit_sl{background-position:-560px -80px !important;}
+.drawings_sl{background-position:-600px -80px !important;}
+.paypal_sl{background-position:-640px -80px !important;}
+.pen_sl{background-position:-680px -80px !important;}
+.zoom_sl{background-position:-720px -80px !important;}
+.world_sl{background-position:-760px -80px !important;}
+.user_sl{background-position:-800px -80px !important;}
+.upcoming_work_sl{background-position:-840px -80px !important;}
+.twitter_sl{background-position:-880px -80px !important;}
+.ticket_sl{background-position:-920px -80px !important;}
+.tag_sl{background-position:-960px -80px !important;}
+
+.suppliers_sl{background-position: 0px -120px !important;}
+.statistics_sl{background-position: -40px -120px !important;}
+.star_sl{background-position:-80px -120px !important;}
+.sign_up_sl{background-position:-120px -120px !important;}
+.special_offer_sl{background-position:-160px -120px !important;}
+.sign_out_sl{background-position:-200px -120px !important;}
+.sitemap_sl{background-position:-240px -120px !important;}
+.sign_in_sl{background-position:-280px -120px !important;}
+.showreel_sl{background-position:-320px -120px !important;}
+.shipping_sl{background-position:-360px -120px !important;}
+.settings_sl{background-position:-400px -120px !important;}
+.search_sl{background-position:-440px -120px !important;}
+.refresh_sl{background-position:-480px -120px !important;}
+.publish_sl{background-position:-520px -120px !important;}
+.project_sl{background-position:-560px -120px !important;}
+.product_design_sl{background-position:-600px -120px !important;}
+.product_1_sl{background-position:-640px -120px !important;}
+.product_sl{background-position:-680px -120px !important;}
+.process_sl{background-position:-720px -120px !important;}
+.print_sl{background-position:-760px -120px !important;}
+.premium_sl{background-position:-800px -120px !important;}
+.plus_sl{background-position:-840px -120px !important;}
+.photography_sl{background-position:-880px -120px !important;}
+.phone_sl{background-position:-920px -120px !important;}
+.pencil_sl{background-position:-960px -120px !important;}
+
+
+
+
+/*16x16 COLOR*/
+
+
+
+
+.accept_co{background-position:0px 0px !important;}
+.add_co{background-position:-20px 0px !important;}
+.alarm_co{background-position:-40px 0px !important;}
+.anchor_co{background-position:-60px 0px !important;}
+.application_co{background-position:-80px 0px !important;}
+.application_add_co{background-position:-100px 0px !important;}
+.application_cascade_co{background-position:-120px 0px !important;}
+.application_delete_co{background-position:-140px 0px !important;}
+.application_double_co{background-position:-160px 0px !important;}
+.application_edit_co{background-position:-180px 0px !important;}
+.application_error_co{background-position:-200px 0px !important;}
+.application_form_co{background-position:-220px 0px !important;}
+.application_get_co{background-position:-240px 0px !important;}
+.application_go_co{background-position:-260px 0px !important;}
+.application_home_co{background-position:-280px 0px !important;}
+.application_key_co{background-position:-300px 0px !important;}
+.application_lightning_co{background-position:-320px 0px !important;}
+.application_link_co{background-position:-340px 0px !important;}
+.application_osx_co{background-position:-360px 0px !important;}
+.application_terminal_co{background-position:-380px 0px !important;}
+.application_put_co{background-position:-400px 0px !important;}
+.application_boxes_co{background-position:-420px 0px !important;}
+.application_contract_co{background-position:-440px 0px !important;}
+.application_expand_co{background-position:-460px 0px !important;}
+.application_list_co{background-position:-480px 0px !important;}
+.application_tree_co{background-position:-500px 0px !important;}
+.application_split_co{background-position:-520px 0px !important;}
+.application_horizontal_co{background-position:-540px 0px !important;}
+.application_vertical_co{background-position:-560px 0px !important;}
+.application_columns_co{background-position:-580px 0px !important;}
+.application_detail_co{background-position:-600px 0px !important;}
+.application_gallery_co{background-position:-620px 0px !important;}
+.application_icons_co{background-position:-640px 0px !important;}
+.application_view_list_co{background-position:-660px 0px !important;}
+.application_view_tile_co{background-position:-680px 0px !important;}
+.application_view_xp_co{background-position:-700px 0px !important;}
+.application_xp_terminal_co{background-position:-720px 0px !important;}
+.application2_co{background-position:-740px 0px !important;}
+.arrow_branch_co{background-position:-760px 0px !important;}
+.arrow_divide_co{background-position:-780px 0px !important;}
+.arrow_in_co{background-position:-800px 0px !important;}
+.arrow_inout_co{background-position:-820px 0px !important;}
+.arrow_join_co{background-position:-840px 0px !important;}
+.arrow_left_co{background-position:-860px 0px !important;}
+.arrow_right_co{background-position:-880px 0px !important;}
+.arrow_out_co{background-position:-900px 0px !important;}
+.arrow_refresh_co{background-position:-920px 0px !important;}
+.arrow_redo_co{background-position:-940px 0px !important;}
+.arrow_undo_co{background-position:-960px 0px !important;}
+.attach_2_co{background-position:-980px 0px !important;}
+.asterisk_orange_co{background-position:0px -20px !important;}
+.arrow_merge_co{background-position:-20px -20px !important;}
+.attach_co{background-position:-40px -20px !important;}
+.award_star_gold_co{background-position:-60px -20px !important;}
+.bandaid_co{background-position:-80px -20px !important;}
+.basket_co{background-position:-100px -20px !important;}
+.bell_co{background-position:-120px -20px !important;}
+.bin_closed_co{background-position:-140px -20px !important;}
+.blog_co{background-position:-160px -20px !important;}
+.blueprint_co{background-position:-180px -20px !important;}
+.blueprint_horizontal_co{background-position:-200px -20px !important;}
+.bluetooth_co{background-position:-220px -20px !important;}
+.bomb_co{background-position:-240px -20px !important;}
+.book_co{background-position:-260px -20px !important;}
+.book_addresses_co{background-position:-280px -20px !important;}
+.book_next_co{background-position:-300px -20px !important;}
+.book_open_co{background-position:-320px -20px !important;}
+.book_previous_co{background-position:-340px -20px !important;}
+.bookmark_co{background-position:-360px -20px !important;}
+.bookmark_book_co{background-position:-380px -20px !important;}
+.bookmark_book_open_co{background-position:-400px -20px !important;}
+.bookmark_document_co{background-position:-420px -20px !important;}
+.bookmark_folder_co{background-position:-440px -20px !important;}
+.books_co{background-position:-460px -20px !important;}
+.box_co{background-position:-480px -20px !important;}
+.brick_co{background-position:-500px -20px !important;}
+.bricks_co{background-position:-520px -20px !important;}
+.briefcase_co{background-position:-540px -20px !important;}
+.bug_co{background-position:-560px -20px !important;}
+.buildings_co{background-position:-580px -20px !important;}
+.bullet_add_1_co{background-position:-600px -20px !important;}
+.bullet_add_2_co{background-position:-620px -20px !important;}
+.bullet_key_co{background-position:-640px -20px !important;}
+.cake_co{background-position:-660px -20px !important;}
+.calculator_co{background-position:-680px -20px !important;}
+.calendar_1_co{background-position:-700px -20px !important;}
+.calendar_2_co{background-position:-720px -20px !important;}
+.camera_co{background-position:-740px -20px !important;}
+.cancel_co{background-position:-760px -20px !important;}
+.car_co{background-position:-780px -20px !important;}
+.cart_co{background-position:-800px -20px !important;}
+.cd_co{background-position:-820px -20px !important;}
+.chart_bar_co{background-position:-840px -20px !important;}
+.chart_curve_co{background-position:-860px -20px !important;}
+.chart_line_co{background-position:-880px -20px !important;}
+.chart_organisation_co{background-position:-900px -20px !important;}
+.chart_pie_co{background-position:-920px -20px !important;}
+.clipboard_paste_image_co{background-position:-940px -20px !important;}
+.clipboard_sign_co{background-position:-960px -20px !important;}
+.clipboard_text_co{background-position:-980px -20px !important;}
+.clock_co{background-position:0px -40px !important;}
+.cog_co{background-position:-20px -40px !important;}
+.coins_co{background-position:-40px -40px !important;}
+.color_swatch_1_co{background-position:-60px -40px !important;}
+.color_swatch_2_co{background-position:-80px -40px !important;}
+.comment_co{background-position:-100px -40px !important;}
+.compass_co{background-position:-120px -40px !important;}
+.compress_co{background-position:-140px -40px !important;}
+.computer_co{background-position:-160px -40px !important;}
+.connect_co{background-position:-180px -40px !important;}
+.contrast_co{background-position:-200px -40px !important;}
+.control_eject_co{background-position:-220px -40px !important;}
+.control_end_co{background-position:-240px -40px !important;}
+.control_equalizer_co{background-position:-260px -40px !important;}
+.control_fastforward_co{background-position:-280px -40px !important;}
+.control_pause_co{background-position:-300px -40px !important;}
+.control_play_co{background-position:-320px -40px !important;}
+.control_repeat_co{background-position:-340px -40px !important;}
+.control_rewind_co{background-position:-360px -40px !important;}
+.control_start_co{background-position:-380px -40px !important;}
+.control_stop_co{background-position:-400px -40px !important;}
+.control_wheel_co{background-position:-420px -40px !important;}
+.counter_co{background-position:-440px -40px !important;}
+.counter_count_co{background-position:-460px -40px !important;}
+.counter_count_up_co{background-position:-480px -40px !important;}
+.counter_reset_co{background-position:-500px -40px !important;}
+.counter_stop_co{background-position:-520px -40px !important;}
+.cross_co{background-position:-540px -40px !important;}
+.cross_octagon_co{background-position:-560px -40px !important;}
+.cross_octagon_fram_co{background-position:-580px -40px !important;}
+.cross_shield_co{background-position:-600px -40px !important;}
+.cross_shield_2_co{background-position:-620px -40px !important;}
+.crown_co{background-position:-640px -40px !important;}
+.crown_bronze_co{background-position:-660px -40px !important;}
+.crown_silver_co{background-position:-680px -40px !important;}
+.css_co{background-position:-700px -40px !important;}
+.cursor_co{background-position:-720px -40px !important;}
+.cut_co{background-position:-740px -40px !important;}
+.dashboard_co{background-position:-760px -40px !important;}
+.data_co{background-position:-780px -40px !important;}
+.database_co{background-position:-800px -40px !important;}
+.databases_co{background-position:-820px -40px !important;}
+.delete_co{background-position:-840px -40px !important;}
+.delivery_co{background-position:-860px -40px !important;}
+.desktop_co{background-position:-880px -40px !important;}
+.desktop_empty_co{background-position:-900px -40px !important;}
+.direction_co{background-position:-920px -40px !important;}
+.disconnect_co{background-position:-940px -40px !important;}
+.disk_co{background-position:-960px -40px !important;}
+.doc_access_co{background-position:-980px -40px !important;}
+.doc_break_co{background-position:0px -60px !important;}
+.doc_convert_co{background-position:-20px -60px !important;}
+.doc_excel_csv_co{background-position:-40px -60px !important;}
+.doc_excel_table_co{background-position:-60px -60px !important;}
+.doc_film_co{background-position:-80px -60px !important;}
+.doc_illustrator_co{background-position:-100px -60px !important;}
+.doc_music_co{background-position:-120px -60px !important;}
+.doc_music_playlist_co{background-position:-140px -60px !important;}
+.doc_offlice_co{background-position:-160px -60px !important;}
+.doc_page_co{background-position:-180px -60px !important;}
+.doc_page_previous_co{background-position:-200px -60px !important;}
+.doc_pdf_co{background-position:-220px -60px !important;}
+.doc_photoshop_co{background-position:-240px -60px !important;}
+.doc_resize_co{background-position:-260px -60px !important;}
+.doc_resize_actual_co{background-position:-280px -60px !important;}
+.doc_shred_co{background-position:-300px -60px !important;}
+.doc_stand_co{background-position:-320px -60px !important;}
+.doc_table_co{background-position:-340px -60px !important;}
+.doc_tag_co{background-position:-360px -60px !important;}
+.doc_text_image_co{background-position:-380px -60px !important;}
+.door_co{background-position:-400px -60px !important;}
+.door_in_co{background-position:-420px -60px !important;}
+.drawer_co{background-position:-440px -60px !important;}
+.drink_co{background-position:-460px -60px !important;}
+.drink_empty_co{background-position:-480px -60px !important;}
+.drive_co{background-position:-500px -60px !important;}
+.drive_burn_co{background-position:-520px -60px !important;}
+.drive_cd_co{background-position:-540px -60px !important;}
+.drive_cd_empty_co{background-position:-560px -60px !important;}
+.drive_delete_co{background-position:-580px -60px !important;}
+.drive_disk_co{background-position:-600px -60px !important;}
+.drive_error_co{background-position:-620px -60px !important;}
+.drive_go_co{background-position:-640px -60px !important;}
+.drive_link_co{background-position:-660px -60px !important;}
+.drive_network_co{background-position:-680px -60px !important;}
+.drive_rename_co{background-position:-700px -60px !important;}
+.dvd_co{background-position:-720px -60px !important;}
+.email_co{background-position:-740px -60px !important;}
+.email_open_co{background-position:-760px -60px !important;}
+.email_open_image_co{background-position:-780px -60px !important;}
+.emoticon_evilgrin_co{background-position:-800px -60px !important;}
+.emoticon_grin_co{background-position:-820px -60px !important;}
+.emoticon_happy_co{background-position:-840px -60px !important;}
+.emoticon_smile_co{background-position:-860px -60px !important;}
+.emoticon_surprised_co{background-position:-880px -60px !important;}
+.emoticon_tongue_co{background-position:-900px -60px !important;}
+.emoticon_unhappy_co{background-position:-920px -60px !important;}
+.emoticon_waii_co{background-position:-940px -60px !important;}
+.emoticon_wink_co{background-position:-960px -60px !important;}
+.envelope_co{background-position:-980px -60px !important;}
+.envelope_2_co{background-position:0px -80px !important;}
+.error_co{background-position:-20px -80px !important;}
+.exclamation_co{background-position:-40px -80px !important;}
+.exclamation_octagon_fram_co{background-position:-60px -80px !important;}
+.eye_co{background-position:-80px -80px !important;}
+.feed_co{background-position:-100px -80px !important;}
+.feed_ballon_co{background-position:-120px -80px !important;}
+.feed_document_co{background-position:-140px -80px !important;}
+.female_co{background-position:-160px -80px !important;}
+.group_co{background-position:-180px -80px !important;}
+.grid_co{background-position:-200px -80px !important;}
+.funnel_co{background-position:-220px -80px !important;}
+.font_co{background-position:-240px -80px !important;}
+.folder_co{background-position:-260px -80px !important;}
+.flag_blue_co{background-position:-280px -80px !important;}
+.find_co{background-position:-300px -80px !important;}
+.films_co{background-position:-320px -80px !important;}
+.film_co{background-position:-340px -80px !important;}
+.grid_dot_co{background-position:-360px -80px !important;}
+.highlighter_co{background-position:-380px -80px !important;}
+.help_co{background-position:-400px -80px !important;}
+.heart_small_co{background-position:-420px -80px !important;}
+.heart_half_co{background-position:-440px -80px !important;}
+.heart_empty_co{background-position:-460px -80px !important;}
+.heart_break_co{background-position:-480px -80px !important;}
+.heart_co{background-position:-500px -80px !important;}
+.hand_point_co{background-position:-520px -80px !important;}
+.hand_co{background-position:-540px -80px !important;}
+.hammer_screwdriver_co{background-position:-560px -80px !important;}
+.hammer_co{background-position:-580px -80px !important;}
+.key_co{background-position:-600px -80px !important;}
+.keyboard_co{background-position:-620px -80px !important;}
+.joystick_co{background-position:-640px -80px !important;}
+.ipod_cast_co{background-position:-660px -80px !important;}
+.ipod_co{background-position:-680px -80px !important;}
+.inbox_co{background-position:-700px -80px !important;}
+.images_co{background-position:-720px -80px !important;}
+.image_2_co{background-position:-740px -80px !important;}
+.image_1_co{background-position:-760px -80px !important;}
+.html_co{background-position:-780px -80px !important;}
+.house_co{background-position:-800px -80px !important;}
+.layout_select_sidebar_co{background-position:-820px -80px !important;}
+.layout_select_footer_co{background-position:-840px -80px !important;}
+.layout_select_content_co{background-position:-860px -80px !important;}
+.layout_select_co{background-position:-880px -80px !important;}
+.layout_join_vertical_co{background-position:-900px -80px !important;}
+.layout_join_co{background-position:-920px -80px !important;}
+.layout_mix_co{background-position:-940px -80px !important;}
+.layout_3_co{background-position:-960px -80px !important;}
+.layout_co{background-position:-980px -80px !important;}
+.layers_co{background-position:0px -100px !important;}
+.layer_treansparent_co{background-position:-20px -100px !important;}
+.lock_unlock_co{background-position:-40px -100px !important;}
+.magnet_co{background-position:-60px -100px !important;}
+.lock_co{background-position:-80px -100px !important;}
+.link_co{background-position:-100px -100px !important;}
+.link_break_co{background-position:-120px -100px !important;}
+.lightning_co{background-position:-140px -100px !important;}
+.lightbulb_off_co{background-position:-160px -100px !important;}
+.lightbulb_co{background-position:-180px -100px !important;}
+.layout_split_vertical_co{background-position:-200px -100px !important;}
+.lifebuoy_co{background-position:-220px -100px !important;}
+.layout_split_co{background-position:-240px -100px !important;}
+.money_co{background-position:-260px -100px !important;}
+.mobile_phone_co{background-position:-280px -100px !important;}
+.microphone_co{background-position:-300px -100px !important;}
+.media_player_small_blue_co{background-position:-320px -100px !important;}
+.medal_gold_1_co{background-position:-340px -100px !important;}
+.medal_bronze_1_co{background-position:-360px -100px !important;}
+.map_co{background-position:-380px -100px !important;}
+.marker_co{background-position:-400px -100px !important;}
+.male_co{background-position:-420px -100px !important;}
+.magnifier_zoom_in_co{background-position:-440px -100px !important;}
+.magnifier_co{background-position:-460px -100px !important;}
+.newspaper_co{background-position:-480px -100px !important;}
+.new_co{background-position:-500px -100px !important;}
+.neutral_co{background-position:-520px -100px !important;}
+.music_co{background-position:-540px -100px !important;}
+.mouse_co{background-position:-560px -100px !important;}
+.monitor_co{background-position:-580px -100px !important;}
+.money_yen_co{background-position:-600px -100px !important;}
+.money_pound_co{background-position:-620px -100px !important;}
+.money_euro_co{background-position:-640px -100px !important;}
+.money_dollar_co{background-position:-660px -100px !important;}
+.music_beam_co{background-position:-680px -100px !important;}
+.page_paste_co{background-position:-700px -100px !important;}
+.page_lightning_co{background-position:-720px -100px !important;}
+.page_excel_co{background-position:-740px -100px !important;}
+.page_copy_co{background-position:-760px -100px !important;}
+.page_code_co{background-position:-780px -100px !important;}
+.page_2_copy_co{background-position:-800px -100px !important;}
+.page_2_co{background-position:-820px -100px !important;}
+.page_co{background-position:-840px -100px !important;}
+.package_co{background-position:-860px -100px !important;}
+.nuclear_co{background-position:-880px -100px !important;}
+.note_co{background-position:-900px -100px !important;}
+.page_white_error_co{background-position:-920px -100px !important;}
+.page_white_edit_co{background-position:-940px -100px !important;}
+.page_white_dvd_co{background-position:-960px -100px !important;}
+.page_white_delete_co{background-position:-980px -100px !important;}
+.page_white_database_co{background-position:0px -120px !important;}
+.page_red_co{background-position:-20px -120px !important;}
+.page_white_csharp_co{background-position:-40px -120px !important;}
+.page_white_cup_co{background-position:-60px -120px !important;}
+.page_white_cplusplus_co{background-position:-80px -120px !important;}
+.page_save_co{background-position:-100px -120px !important;}
+.page_refresh_co{background-position:-120px -120px !important;}
+.page_white_width_co{background-position:-140px -120px !important;}
+.page_white_visualstudio_co{background-position:-160px -120px !important;}
+.page_white_vector_co{background-position:-180px -120px !important;}
+.page_white_tux_co{background-position:-200px -120px !important;}
+.page_white_text_width_co{background-position:-220px -120px !important;}
+.page_white_text_co{background-position:-240px -120px !important;}
+.page_white_swoosh_co{background-position:-260px -120px !important;}
+.page_white_star_co{background-position:-280px -120px !important;}
+.page_white_stack_co{background-position:-300px -120px !important;}
+.page_white_ruby_co{background-position:-320px -120px !important;}
+.page_white_put_co{background-position:-340px -120px !important;}
+.page_white_powerpoint_co{background-position:-360px -120px !important;}
+.page_white_picture_co{background-position:-380px -120px !important;}
+.page_white_php_co{background-position:-400px -120px !important;}
+.page_white_paste_co{background-position:-420px -120px !important;}
+.page_white_paintbrush_co{background-position:-440px -120px !important;}
+.page_white_get_co{background-position:-460px -120px !important;}
+.page_white_gear_co{background-position:-480px -120px !important;}
+.page_white_freehand_co{background-position:-500px -120px !important;}
+.page_white_flash_co{background-position:-520px -120px !important;}
+.page_white_find_co{background-position:-540px -120px !important;}
+.page_white_excel_co{background-position:-560px -120px !important;}
+.plug_co{background-position:-580px -120px !important;}
+.plaing_card_co{background-position:-600px -120px !important;}
+.pipette_co{background-position:-620px -120px !important;}
+.pill_co{background-position:-640px -120px !important;}
+.pin_co{background-position:-660px -120px !important;}
+.picture_co{background-position:-680px -120px !important;}
+.piano_co{background-position:-700px -120px !important;}
+.pilcrow_co{background-position:-720px -120px !important;}
+.photos_co{background-position:-740px -120px !important;}
+.photo_album_co{background-position:-760px -120px !important;}
+.photo_co{background-position:-780px -120px !important;}
+.paste_word_co{background-position:-800px -120px !important;}
+.pencil_co{background-position:-820px -120px !important;}
+.page_white_word_co{background-position:-840px -120px !important;}
+.page_white_world_co{background-position:-860px -120px !important;}
+.paste_plain_co{background-position:-880px -120px !important;}
+.palette_co{background-position:-900px -120px !important;}
+.paintbrush_co{background-position:-920px -120px !important;}
+.page_white_wrench_co{background-position:-940px -120px !important;}
+.paintcan_co{background-position:-960px -120px !important;}
+.page_white_zip_co{background-position:-980px -120px !important;}
+.paper_bag_co{background-position:0px -140px !important;}
+.shape_aling_bottom_co{background-position:-20px -140px !important;}
+.shading_co{background-position:-40px -140px !important;}
+.server_co{background-position:-60px -140px !important;}
+.selection_select_co{background-position:-80px -140px !important;}
+.script_co{background-position:-100px -140px !important;}
+.safe_co{background-position:-120px -140px !important;}
+.ruler_crop_co{background-position:-140px -140px !important;}
+.ruler_2_co{background-position:-160px -140px !important;}
+.ruler_triangle_co{background-position:-180px -140px !important;}
+.ruby_co{background-position:-200px -140px !important;}
+.rss_co{background-position:-220px -140px !important;}
+.rosette_co{background-position:-240px -140px !important;}
+.rocket_co{background-position:-260px -140px !important;}
+.report_co{background-position:-280px -140px !important;}
+.rainbow_co{background-position:-300px -140px !important;}
+.projection_screen_present_co{background-position:-320px -140px !important;}
+.projection_screen_co{background-position:-340px -140px !important;}
+.printer_co{background-position:-360px -140px !important;}
+.plugin_co{background-position:-380px -140px !important;}
+.ruler_1_co{background-position:-400px -140px !important;}
+.selection_co{background-position:-420px -140px !important;}
+.smiley_cry_co{background-position:-440px -140px !important;}
+.smiley_cool_co{background-position:-460px -140px !important;}
+.smiley_confuse_co{background-position:-480px -140px !important;}
+.slides_stack_co{background-position:-500px -140px !important;}
+.slides_co{background-position:-520px -140px !important;}
+.slide_co{background-position:-540px -140px !important;}
+.shield_co{background-position:-560px -140px !important;}
+.sitemap_co{background-position:-580px -140px !important;}
+.shape_square_co{background-position:-600px -140px !important;}
+.shape_move_front_co{background-position:-620px -140px !important;}
+.shape_move_forwards_co{background-position:-640px -140px !important;}
+.shape_move_backwards_co{background-position:-660px -140px !important;}
+.shape_move_back_co{background-position:-680px -140px !important;}
+.shape_handles_co{background-position:-700px -140px !important;}
+.shape_group_co{background-position:-720px -140px !important;}
+.shape_flip_vertical_co{background-position:-740px -140px !important;}
+.shape_flip_horizontal_co{background-position:-760px -140px !important;}
+.shape_aling_top_co{background-position:-780px -140px !important;}
+.shape_aling_right_co{background-position:-800px -140px !important;}
+.shape_aling_middle_co{background-position:-820px -140px !important;}
+.shape_aling_left_co{background-position:-840px -140px !important;}
+.shape_aling_center_co{background-position:-860px -140px !important;}
+.sport_football_co{background-position:-880px -140px !important;}
+.sport_basketball_co{background-position:-900px -140px !important;}
+.sport_8ball_co{background-position:-920px -140px !important;}
+.sound_note_co{background-position:-940px -140px !important;}
+.spellcheck_co{background-position:-960px -140px !important;}
+.sound_co{background-position:-980px -140px !important;}
+.sort_rating_co{background-position:0px -160px !important;}
+.sort_quantity_co{background-position:-20px -160px !important;}
+.sort_price_co{background-position:-40px -160px !important;}
+.sort_number_co{background-position:-60px -160px !important;}
+.sort_disable_co{background-position:-80px -160px !important;}
+.sort_date_co{background-position:-100px -160px !important;}
+.sort_alphabet_co{background-position:-120px -160px !important;}
+.sort_co{background-position:-140px -160px !important;}
+.sockets_co{background-position:-160px -160px !important;}
+.socket_co{background-position:-180px -160px !important;}
+.smiley_yell_co{background-position:-200px -160px !important;}
+.smiley_slim_co{background-position:-220px -160px !important;}
+.smiley_roll_co{background-position:-240px -160px !important;}
+.smiley_red_co{background-position:-260px -160px !important;}
+.smiley_mad_co{background-position:-280px -160px !important;}
+.smiley_fat_co{background-position:-300px -160px !important;}
+.align_center_co{background-position:-320px -160px !important;}
+.television_co{background-position:-340px -160px !important;}
+.telephone_co{background-position:-360px -160px !important;}
+.target_co{background-position:-380px -160px !important;}
+.tag_blue_co{background-position:-400px -160px !important;}
+.tag_co{background-position:-420px -160px !important;}
+.table_co{background-position:-440px -160px !important;}
+.tab_co{background-position:-460px -160px !important;}
+.switch_co{background-position:-480px -160px !important;}
+.style_co{background-position:-500px -160px !important;}
+.stop_co{background-position:-520px -160px !important;}
+.sum_2_co{background-position:-540px -160px !important;}
+.status_online_co{background-position:-560px -160px !important;}
+.star_2_co{background-position:-580px -160px !important;}
+.star_1_co{background-position:-600px -160px !important;}
+.sport_golf_co{background-position:-620px -160px !important;}
+.stamp_co{background-position:-640px -160px !important;}
+.raquet_co{background-position:-660px -160px !important;}
+.soccer_co{background-position:-680px -160px !important;}
+.tennis_co{background-position:-700px -160px !important;}
+.sum_co{background-position:-720px -160px !important;}
+.shuttlecock_co{background-position:-740px -160px !important;}
+.padding_right_co{background-position:-760px -160px !important;}
+.lowercase_co{background-position:-780px -160px !important;}
+.padding_bottom_co{background-position:-800px -160px !important;}
+.padding_left_co{background-position:-820px -160px !important;}
+.list_numbers_co{background-position:-840px -160px !important;}
+.list_bullets_co{background-position:-860px -160px !important;}
+.kerning_co{background-position:-880px -160px !important;}
+.letter_omega_co{background-position:-900px -160px !important;}
+.italic_co{background-position:-920px -160px !important;}
+.linespacing_co{background-position:-940px -160px !important;}
+.horizontalrule_co{background-position:-960px -160px !important;}
+.letterspacing_co{background-position:-980px -160px !important;}
+.text_indent_remove_co{background-position:0px -180px !important;}
+.text_bold_co{background-position:-20px -180px !important;}
+.text_heading_1_co{background-position:-40px -180px !important;}
+.text_allcaps_co{background-position:-60px -180px !important;}
+.text_align_right_co{background-position:-80px -180px !important;}
+.text_align_justify_co{background-position:-100px -180px !important;}
+.text_indent_co{background-position:-120px -180px !important;}
+.text_dropcaps_co{background-position:-140px -180px !important;}
+.text_columns_co{background-position:-160px -180px !important;}
+.text_align_left_co{background-position:-180px -180px !important;}
+.ui_tab_side_co{background-position:-200px -180px !important;}
+.ui_tab_disable_co{background-position:-220px -180px !important;}
+.ui_tab_content_co{background-position:-240px -180px !important;}
+.ui_tab_bottom_co{background-position:-260px -180px !important;}
+.ui_saccordion_co{background-position:-280px -180px !important;}
+.ui_combo_box_co{background-position:-300px -180px !important;}
+.trophy_silver_co{background-position:-320px -180px !important;}
+.trophy_bronze_co{background-position:-340px -180px !important;}
+.ui_slider_2_co{background-position:-360px -180px !important;}
+.ui_slider_1_co{background-position:-380px -180px !important;}
+.trophy_co{background-position:-400px -180px !important;}
+.transmit_co{background-position:-420px -180px !important;}
+.traffic_co{background-position:-440px -180px !important;}
+.timeline_marker_co{background-position:-460px -180px !important;}
+.ticket_co{background-position:-480px -180px !important;}
+.textfield_rename_co{background-position:-500px -180px !important;}
+.textfield_co{background-position:-520px -180px !important;}
+.text_subscript_co{background-position:-540px -180px !important;}
+.text_strikethrough_co{background-position:-560px -180px !important;}
+.text_smallcaps_co{background-position:-580px -180px !important;}
+.text_signature_co{background-position:-600px -180px !important;}
+.text_padding_top_co{background-position:-620px -180px !important;}
+.zones_co{background-position:-640px -180px !important;}
+.zone_money_co{background-position:-660px -180px !important;}
+.zone_co{background-position:-680px -180px !important;}
+.world_co{background-position:-700px -180px !important;}
+.webcam_co{background-position:-720px -180px !important;}
+.weather_sun_co{background-position:-740px -180px !important;}
+.weather_snow_co{background-position:-760px -180px !important;}
+.weather_rain_co{background-position:-780px -180px !important;}
+.weather_lightning_co{background-position:-800px -180px !important;}
+.weather_cloudy_co{background-position:-820px -180px !important;}
+.weather_clouds_co{background-position:-840px -180px !important;}
+.wand_co{background-position:-860px -180px !important;}
+.wall_disable_co{background-position:-880px -180px !important;}
+.wall_brick_co{background-position:-900px -180px !important;}
+.wall_co{background-position:-920px -180px !important;}
+.wall_break_co{background-position:-940px -180px !important;}
+.wait_co{background-position:-960px -180px !important;}
+.vcard_co{background-position:-980px -180px !important;}
+.ui_text_field_hidden_co{background-position:0px -200px !important;}
+.user_co{background-position:-20px -200px !important;}
+.user_thief_baldie_co{background-position:-40px -200px !important;}
+.user_business_co{background-position:-60px -200px !important;}
+.ui_text_field_password_co{background-position:-80px -200px !important;}
+.vector_co{background-position:-100px -200px !important;}
+.user_thief_co{background-position:-120px -200px !important;}
+.user_silhouette_co{background-position:-140px -200px !important;}
+.user_female_co{background-position:-160px -200px !important;}
+.user_black_female_co{background-position:-180px -200px !important;}
+.user_business_boss_co{background-position:-200px -200px !important;}
+.umbrella_co{background-position:-220px -200px !important;}
+
+
+
+
+/*=========================*/
+/*        24x24 BLACK      */
+/*=========================*/
+
+
+.magnifying_glass_b{ background-position:0px 0px !important;}
+.trashcan_b{ background-position:-30px 0px !important;}
+.dress_b{background-position:-60px 0px !important;}
+.upload_b{background-position:-90px 0px !important;}
+.download_b{background-position:-120px 0px !important;}
+.winner_podium_b{background-position:-150px 0px !important;}
+.cup_b{background-position: -180px 0px !important;}
+.flag_b{background-position: -210px 0px !important;}
+.home_b{background-position: -240px 0px !important;}
+.trashcan_2_b{background-position: -270px 0px !important;}
+.presentation_b{background-position: -300px 0px !important;}
+.flag_2_b{background-position: -330px 0px !important;}
+.finish_flag_b{background-position: -360px 0px !important;}
+.download_to_computer_b{background-position: -390px 0px !important;}
+.book_b{background-position: -420px 0px !important;}
+.home_2_b{background-position: -450px 0px !important;}
+.link_b{background-position: -480px 0px !important;}
+.book_large_b{background-position: -510px 0px !important;}
+.books_b{background-position: -540px 0px !important;}
+.note_book_b{background-position: -570px 0px !important;}
+.help_b{background-position: -600px 0px !important;}
+.mail_b{background-position: -630px 0px !important;}
+.umbrella_b{background-position: -660px 0px !important;}
+.companies_b{background-position: -690px 0px !important;}
+.apartment_building_b{background-position: -720px 0px !important;}
+.strategy_2_b{background-position: -750px 0px !important;}
+.under_construction_b{background-position: -780px 0px !important;}
+.link_2_b{background-position: -810px 0px !important;}
+.tree_b{background-position: -840px 0px !important;}
+.file_cabinet_b{background-position: -870px 0px !important;}
+.rss_b{background-position: -900px 0px !important;}
+.strategy_b{background-position: -930px 0px !important;}
+.vault_b{background-position: -960px 0px !important;}
+
+
+
+.archive_b{background-position: 0px -30px !important;}
+.pacman_b{background-position: -30px -30px !important;}
+.alert_2_b{background-position: -60px -30px !important;}
+.alert_b{background-position: -90px -30px !important;}
+.alarm_bell_b{background-position: -120px -30px !important;}
+.post_card_b{background-position: -150px -30px !important;}
+.pacman_ghost_b{background-position: -180px -30px !important;}
+.bandaid_b{background-position: -210px -30px !important;}
+.globe_2_b{background-position: -240px -30px !important;}
+.alarm_bell_2_b{background-position: -270px -30px !important;}
+.robot_b{background-position: -300px -30px !important;}
+.globe_b{background-position: -330px -30px !important;}
+.cloud_b{background-position: -360px -30px !important;}
+.light_bulb_b{background-position: -390px -30px !important;}
+.chemical_b{background-position: -420px -30px !important;}
+.lamp_b{background-position: -450px -30px !important;}
+.cloud_upload_b{background-position: -480px -30px !important;}
+.cloud_download_b{background-position: -510px -30px !important;}
+.ice_cream_b{background-position: -540px -30px !important;}
+.ice_cream_2_b{background-position: -570px -30px !important;}
+.paperclip_b{background-position: -600px -30px !important;}
+.footprints_b{background-position: -630px -30px !important;}
+.firefox_b{background-position: -660px -30px !important;}
+.chrome_b{background-position: -690px -30px !important;}
+.safari_b{background-position: -720px -30px !important;}
+.loading_bar_b{background-position: -750px -30px !important;}
+.bulls_eye_b{background-position: -780px -30px !important;}
+.folder_b{background-position: -810px -30px !important;}
+.locked_b{background-position: -840px -30px !important;}
+.locked_2_b{background-position: -870px -30px !important;}
+.unlocked_b{background-position: -900px -30px !important;}
+.tag_b{background-position: -930px -30px !important;}
+.macos_b{background-position: -960px -30px !important;}
+
+
+
+
+.tags_2_b{background-position: 0px -60px !important;}
+.windows_b{background-position: -30px -60px !important;}
+.create_write_b{background-position: -60px -60px !important;}
+.linux_b{background-position: -90px -60px !important;}
+.exposé_b{background-position: -120px -60px !important;}
+.key_b{background-position: -150px -60px !important;}
+.key_2_b{background-position: -180px -60px !important;}
+.table_b{background-position: -210px -60px !important;}
+.acces_denied_sign_b{background-position: -240px -60px !important;}
+.cat_b{background-position: -270px -60px !important;}
+.balloons_b{background-position: -300px -60px !important;}
+.airplane_b{background-position: -330px -60px !important;}
+.truck_b{background-position: -360px -60px !important;}
+.chair_b{background-position: -390px -60px !important;}
+.info_about_b{background-position: -420px -60px !important;}
+.car_b{background-position: -450px -60px !important;}
+.alarm_clock_b{background-position: -480px -60px !important;}
+.timer_b{background-position: -510px -60px !important;}
+.stop_watch_b{background-position: -540px -60px !important;}
+.clock_b{background-position: -570px -60px !important;}
+.day_calendar_b{background-position: -600px -60px !important;}
+.month_calendar_b{background-position: -630px -60px !important;}
+.paypal_b{background-position: -660px -60px !important;}
+.payPal_3_b{background-position: -690px -60px !important;}
+.paypal_2_b{background-position: -720px -60px !important;}
+.money_b{background-position: -750px -60px !important;}
+.piggy_bank_b{background-position: -780px -60px !important;}
+.price_tags_b{background-position: -810px -60px !important;}
+.price_tag_b{background-position: -840px -60px !important;}
+.lemonade_stand_b{background-position: -870px -60px !important;}
+.money_2_b{background-position: -900px -60px !important;}
+.shopping_basket_2_b{background-position: -930px -60px !important;}
+.scan_label_2_b{background-position: -960px -60px !important;}
+
+
+
+
+
+.shopping_cart_3_b{background-position: 0px -90px !important;}
+.shopping_basket_2_b{background-position: -30px -90px !important;}
+.shopping_cart_b{background-position: -60px -90px !important;}
+.shopping_cart_4_b{background-position: -90px -90px !important;}
+.shopping_cart_2_b{background-position: -120px -90px !important;}
+.digg_b{background-position: -150px -90px !important;}
+.digg_2_b{background-position: -180px -90px !important;}
+.google_buzz_b{background-position: -210px -90px !important;}
+.delicious_b{background-position: -240px -90px !important;}
+.twitter_b{background-position: -270px -90px !important;}
+.twitter_2_b{background-position: -300px -90px !important;}
+.tumbler_b{background-position: -330px -90px !important;}
+.plixi_b{background-position: -360px -90px !important;}
+.dribbble_b{background-position: -390px -90px !important;}
+.dribbble_2_b{background-position: -420px -90px !important;}
+.stubleupon_b{background-position: -450px -90px !important;}
+.lastfm_2_b{background-position: -480px -90px !important;}
+.mobypicture_b{background-position: -510px -90px !important;}
+.facebook_b{background-position: -540px -90px !important;}
+.youtube_b{background-position: -570px -90px !important;}
+.youtube_2_b{background-position: -600px -90px !important;}
+.vimeo_b{background-position: -630px -90px !important;}
+.vimeo_2_b{background-position: -660px -90px !important;}
+.skype_b{background-position: -690px -90px !important;}
+.ichat_b{background-position: -720px -90px !important;}
+.facebook_like_b{background-position: -750px -90px !important;}
+.dropbox_b{background-position: -780px -90px !important;}
+.myspace_2_b{background-position: -810px -90px !important;}
+.walking_man_b{background-position: -840px -90px !important;}
+.user_b{background-position: -870px -90px !important;}
+.running_man_b{background-position: -900px -90px !important;}
+.exit_b{background-position: -930px -90px !important;}
+.male_contour_b{background-position: -960px -90px !important;}
+
+
+.admin_user_b{background-position: 0px -120px !important;}
+.female_contour_b{background-position: -30px -120px !important;}
+.male_symbol_b{background-position: -60px -120px !important;}
+.female_symbol_b{background-position: -90px -120px !important;}
+.user_2_b{background-position: -120px -120px !important;}
+.users_b{background-position: -150px -120px !important;}
+.users_2_b{background-position: -180px -120px !important;}
+.admin_user_2_b{background-position: -210px -120px !important;}
+.user_comment_b{background-position: -240px -120px !important;}
+.cog_b{background-position: -270px -120px !important;}
+.cog_2_b{background-position: -300px -120px !important;}
+.cog_3_b{background-position: -330px -120px !important;}
+.cog_4_b{background-position: -360px -120px !important;}
+.settings_b{background-position: -390px -120px !important;}
+.settings_2_b{background-position: -420px -120px !important;}
+.hd_b{background-position: -450px -120px !important;}
+.hd_2_b{background-position: -480px -120px !important;}
+.hd_3_b{background-position: -510px -120px !important;}
+.sd_3_b{background-position: -540px -120px !important;}
+.sd_b{background-position: -570px -120px !important;}
+.sd_2_b{background-position: -600px -120px !important;}
+.dvd_b{background-position: -630px -120px !important;}
+.blu_ray_b{background-position: -660px -120px !important;}
+.record_b{background-position: -690px -120px !important;}
+.cd_b{background-position: -720px -120px !important;}
+.cassette_b{background-position: -750px -120px !important;}
+.image_b{background-position: -780px -120px !important;}
+.image_1_b{background-position: -810px -120px !important;}
+.megaphone_b{background-position: -840px -120px !important;}
+.image_2_b{background-position: -870px -120px !important;}
+.film_strip_b{background-position: -900px -120px !important;}
+.image2_2_b{background-position: -930px -120px !important;}
+.film_strip_2_b{background-position: -960px -120px !important;}
+
+
+
+.sound_b{background-position: 0px -150px !important;}
+.headphones_b{background-position: -30px -150px !important;}
+.microphone_b{background-position: -60px -150px !important;}
+.printer_b{background-position: -90px -150px !important;}
+.radio_b{background-position: -120px -150px !important;}
+.television_b{background-position: -150px -150px !important;}
+.computer_imac_b{background-position: -180px -150px !important;}
+.laptop_b{background-position: -440px -210px !important;}
+.mighty_mouse_b{background-position: -240px -150px !important;}
+.magic_mouse_b{background-position: -270px -150px !important;}
+.camera_b{background-position: -300px -150px !important;}
+.camera_2_b{background-position: -330px -150px !important;}
+.monitor_b{background-position: -360px -150px !important;}
+.mouse_wires_b{background-position: -390px -150px !important;}
+.ipod_classic_b{background-position: -420px -150px !important;}
+.film_camera_b{background-position: -450px -150px !important;}
+.ipad_b{background-position: -480px -150px !important;}
+.ipod_nano_b{background-position: -510px -150px !important;}
+.fax_b{background-position: -540px -150px !important;}
+.calculator_b{background-position: -570px -150px !important;}
+.cash_register_b{background-position: -600px -150px !important;}
+.bended_arrow_right_b{background-position: -630px -150px !important;}
+.bended_arrow_left_b{background-position: -660px -150px !important;}
+.bended_arrow_down_b{background-position: -690px -150px !important;}
+.bended_arrow_up_b{background-position: -720px -150px !important;}
+.refresh_b{background-position: -750px -150px !important;}
+.refresh_2_b{background-position: -780px -150px !important;}
+.refresh_4_b{background-position: -810px -150px !important;}
+.repeat_b{background-position: -840px -150px !important;}
+.shuffle_b{background-position: -870px -150px !important;}
+.refresh_3_b{background-position: -900px -150px !important;}
+.go_back_from_full_screen_b{background-position: -930px -150px !important;}
+.go_full_screen_b{background-position: -960px -150px !important;}
+
+
+
+
+.recycle_symbol_b{background-position: 0px -180px !important;}
+.go_back_from_screen_b{background-position: -30px -180px !important;}
+.frames_b{background-position: -60px -180px !important;}
+.blocks_images_b{background-position: -90px -180px !important;}
+.list_images_b{background-position: -120px -180px !important;}
+.coverflow_b{background-position: -150px -180px !important;}
+.list_image_b{background-position: -180px -180px !important;}
+.list_b{background-position: -210px -180px !important;}
+.wordpress_b{background-position: -240px -180px !important;}
+.wordpress_2_b{background-position: -270px -180px !important;}
+.joomla_b{background-position: -300px -180px !important;}
+.expression_engine_b{background-position: -330px -180px !important;}
+.drupal_b{background-position: -360px -180px !important;}
+.iphone_3g_b{background-position: -390px -180px !important;}
+.iphone_4_b{background-position: -420px -180px !important;}
+.blackberry_b{background-position: -450px -180px !important;}
+.android_b{background-position: -480px -180px !important;}
+.mobile_phone_b{background-position: -510px -180px !important;}
+.bluetooth_b{background-position: -540px -180px !important;}
+.bluetooth_2_b{background-position: -570px -180px !important;}
+.wifi_signal_b{background-position: -600px -180px !important;}
+.wifi_signal_2_b{background-position: -630px -180px !important;}
+.box_outgoing_b{background-position: -660px -180px !important;}
+.inbox_b{background-position: -690px -180px !important;}
+.box_incoming_b{background-position: -720px -180px !important;}
+.speech_bubble_b{background-position: -750px -180px !important;}
+.speech_bubble_2_b{background-position: -780px -180px !important;}
+.phone_b{background-position: -810px -180px !important;}
+.speech_bubbles_2_b{background-position: -840px -180px !important;}
+.phone_3_b{background-position: -870px -180px !important;}
+.speech_bubbles_b{background-position: -900px -180px !important;}
+.phone_hook_b{background-position: -930px -180px !important;}
+.battery_full_b{background-position: -960px -180px !important;}
+
+
+
+.electricity_input_b{background-position: 0px -210px !important;}
+.battery_almost_full_b{background-position: -30px -210px !important;}
+.battery_almost_empty_b{background-position: -60px -210px !important;}
+.battery_empty_b{background-position: -90px -210px !important;}
+.battery_b{background-position: -120px -210px !important;}
+.power_b{background-position: -150px -210px !important;}
+.electricity_plug_b{background-position: -180px -210px !important;}
+.paint_brush_b{background-position: -210px -210px !important;}
+.small_brush_b{background-position: -240px -210px !important;}
+.fountain_pen_b{background-position: -270px -210px !important;}
+.big_brush_b{background-position: -300px -210px !important;}
+.pencil_b{background-position: -330px -210px !important;}
+.cut_scissors_b{background-position: -360px -210px !important;}
+.abacus_b{background-position: -390px -210px !important;}
+.ruler_2_b{background-position: -420px -210px !important;}
+.clipboard_b{background-position: -450px -210px !important;}
+.ruler_b{background-position: -480px -210px !important;}
+.eyedropper_b{background-position: -510px -210px !important;}
+.marker_b{background-position: -540px -210px !important;}
+.map_b{background-position: -570px -210px !important;}
+.google_maps_b{background-position: -600px -210px !important;}
+.sign_post_b{background-position: -630px -210px !important;}
+.document_b{background-position: -660px -210px !important;}
+.documents_b{background-position: -690px -210px !important;}
+.pdf_document_b{background-position: -720px -210px !important;}
+.pdf_documents_b{background-position: -750px -210px !important;}
+.word_document_b{background-position: -780px -210px !important;}
+.word_documents_b{background-position: -810px -210px !important;}
+.zip_file_b{background-position: -840px -210px !important;}
+.zip_files_b{background-position: -870px -210px !important;}
+.powerpoint_document_b{background-position: -900px -210px !important;}
+.powerpoint_documents_b{background-position: -930px -210px !important;}
+.excel_document_b{background-position: -960px -210px !important;}
+
+
+.excel_documents_b{background-position: 0px -240px !important;}
+.v_card_b{background-position: -30px -240px !important;}
+.v_card_2_b{background-position: -60px -240px !important;}
+.address_book_b{background-position: -90px -240px !important;}
+.chart_b{background-position: -120px -240px !important;}
+.chart_2_b{background-position: -150px -240px !important;}
+.chart_3_b{background-position: -180px -240px !important;}
+.chart_4_b{background-position: -210px -240px !important;}
+.chart_5_b{background-position: -240px -240px !important;}
+.chart_6_b{background-position: -270px -240px !important;}
+.chart_7_b{background-position: -300px -240px !important;}
+.graph_b{background-position: -330px -240px !important;}
+.chart_8_b{background-position: -360px -240px !important;}
+
+
+
+/*=========================*/
+/*      32X32 BLACK        */
+/*=========================*/
+
+.magnifying_glass_blk{ background-position:0px 0px;}
+.trashcan_blk{ background-position:-40px 0px;}
+.dress_blk{background-position:-80px 0px;}
+.upload_blk{background-position:-120px 0px;}
+.download_blk{background-position:-160px 0px;}
+.winner_podium_blk{background-position:-200px 0px;}
+.cup_blk{background-position: -240px 0px;}
+.flag_blk{background-position: -280px 0px;}
+.home_blk{background-position: -320px 0px;}
+.trashcan_2_blk{background-position: -360px 0px;}
+.presentation_blk{background-position: -400px 0px;}
+.flag_2_blk{background-position: -440px 0px;}
+.finish_flag_blk{background-position: -480px 0px;}
+.download_to_computer_blk{background-position: -520px 0px;}
+.book_blk{background-position: -560px 0px;}
+.home_2_blk{background-position: -600px 0px;}
+.link_blk{background-position: -640px 0px;}
+.book_large_blk{background-position: -680px 0px;}
+.books_blk{background-position: -720px 0px;}
+.note_book_blk{background-position: -760px 0px;}
+.help_blk{background-position: -800px 0px;}
+.mail_blk{background-position: -840px 0px;}
+.umbrella_blk{background-position: -880px 0px;}
+.companies_blk{background-position: -920px 0px;}
+.apartment_building_blk{background-position: -960px 0px;}
+
+
+
+.strategy_2_blk{background-position: 0px -40px;}
+.under_construction_blk{background-position: -40px -40px;}
+.link_2_blk{background-position: -80px -40px;}
+.tree_blk{background-position: -120px -40px;}
+.file_cabinet_blk{background-position: -160px -40px;}
+.rss_blk{background-position: -200px -40px;}
+.strategy_blk{background-position: -240px -40px;}
+.vault_blk{background-position: -280px -40px;}
+.archive_blk{background-position: -320px -40px;}
+.pacman_blk{background-position: -360px -40px;}
+.alert_2_blk{background-position: -400px -40px;}
+.alert_blk{background-position: -440px -40px;}
+.alarm_bell_blk{background-position: -480px -40px;}
+.post_card_blk{background-position: -520px -40px;}
+.pacman_ghost_blk{background-position: -560px -40px;}
+.bandaid_blk{background-position: -600px -40px;}
+.globe_2_blk{background-position: -640px -40px;}
+.alarm_bell_2_blk{background-position: -680px -40px;}
+.robot_blk{background-position: -720px -40px;}
+.globe_blk{background-position: -760px -40px;}
+.cloud_blk{background-position: -800px -40px;}
+.light_bulb_blk{background-position: -840px -40px;}
+.chemical_blk{background-position: -880px -40px;}
+.lamp_blk{background-position: -920px -40px;}
+.cloud_upload_blk{background-position: -960px -40px;}
+
+
+
+
+
+
+
+
+.cloud_download_blk{background-position: 0px -80px;}
+.ice_cream_blk{background-position: -40px -80px;}
+.ice_cream_2_blk{background-position: -80px -80px;}
+.paperclip_blk{background-position: -120px -80px;}
+.footprints_blk{background-position: -160px -80px;}
+.firefox_blk{background-position: -200px -80px;}
+.chrome_blk{background-position: -240px -80px;}
+.safari_blk{background-position: -280px -80px;}
+.loading_bar_blk{background-position: -320px -80px;}
+.bulls_eye_blk{background-position: -360px -80px;}
+.folder_blk{background-position: -400px -80px;}
+.locked_blk{background-position: -440px -80px;}
+.locked_2_blk{background-position: -480px -80px;}
+.unlocked_blk{background-position: -520px -80px;}
+.tag_blk{background-position: -560px -80px;}
+.macos_blk{background-position: -600px -80px;}
+.tags_2_blk{background-position: -640px -80px;}
+.windows_blk{background-position: -680px -80px;}
+.create_write_blk{background-position: -720px -80px;}
+.linux_blk{background-position: -760px -80px;}
+.exposé_blk{background-position: -800px -80px;}
+.key_blk{background-position: -840px -80px;}
+.key_2_blk{background-position: -880px -80px;}
+.table_blk{background-position: -920px -80px;}
+.acces_denied_sign_blk{background-position: -960px -80px;}
+
+
+
+
+.cat_blk{background-position: 0px -120px;}
+.balloons_blk{background-position: -40px -120px;}
+.airplane_blk{background-position: -80px -120px;}
+.truck_blk{background-position: -120px -120px;}
+.chair_blk{background-position: -160px -120px;}
+.info_about_blk{background-position: -200px -120px;}
+.car_blk{background-position: -240px -120px;}
+.alarm_clock_blk{background-position: -280px -120px;}
+.timer_blk{background-position: -320px -120px;}
+.stop_watch_blk{background-position: -360px -120px;}
+.clock_blk{background-position: -400px -120px;}
+.day_calendar_blk{background-position: -440px -120px;}
+.month_calendar_blk{background-position: -480px -120px;}
+.paypal_blk{background-position: -520px -120px;}
+.payPal_3_blk{background-position: -560px -120px;}
+.paypal_2_blk{background-position: -600px -120px;}
+.money_blk{background-position: -640px -120px;}
+.piggy_bank_blk{background-position: -680px -120px;}
+.price_tags_blk{background-position: -720px -120px;}
+.price_tag_blk{background-position: -760px -120px;}
+.lemonade_stand_blk{background-position: -800px -120px;}
+.money_2_blk{background-position: -840px -120px;}
+.shopping_basket_2_blk{background-position: -880px -120px;}
+.scan_label_2_blk{background-position: -920px -120px;}
+.shopping_cart_3_blk{background-position: -960px -120px;}
+
+
+
+.shopping_basket_2_blk{background-position: 0px -160px;}
+.shopping_cart_blk{background-position: -40px -160px;}
+.shopping_cart_4_blk{background-position: -80px -160px;}
+.shopping_cart_2_blk{background-position: -120px -160px;}
+.digg_blk{background-position: -160px -160px;}
+.digg_2_blk{background-position: -200px -160px;}
+.google_buzz_blk{background-position: -240px -160px;}
+.delicious_blk{background-position: -280px -160px;}
+.twitter_blk{background-position: -320px -160px;}
+.twitter_2_blk{background-position: -360px -160px;}
+.tumbler_blk{background-position: -400px -160px;}
+.plixi_blk{background-position: -440px -160px;}
+.dribbble_blk{background-position: -480px -160px;}
+.dribbble_2_blk{background-position: -520px -160px;}
+.stubleupon_blk{background-position: -560px -160px;}
+.lastfm_2_blk{background-position: -600px -160px;}
+.mobypicture_blk{background-position: -640px -160px;}
+.facebook_blk{background-position: -680px -160px;}
+.youtube_blk{background-position: -720px -160px;}
+.youtube_2_blk{background-position: -760px -160px;}
+.vimeo_blk{background-position: -800px -160px;}
+.vimeo_2_blk{background-position: -840px -160px;}
+.skype_blk{background-position: -880px -160px;}
+.ichat_blk{background-position: -920px -160px;}
+.facebook_like_blk{background-position: -960px -160px;}
+
+.dropbox_blk{background-position: 0px -200px;}
+.myspace_2_blk{background-position: -40px -200px;}
+.walking_man_blk{background-position: -80px -200px;}
+.user_blk{background-position: -120px -200px;}
+.running_man_blk{background-position: -160px -200px;}
+.exit_blk{background-position: -200px -200px;}
+.male_contour_blk{background-position: -240px -200px;}
+.admin_user_blk{background-position: -280px -200px;}
+.female_contour_blk{background-position: -320px -200px;}
+.male_symbol_blk{background-position: -360px -200px;}
+.female_symbol_blk{background-position: -400px -200px;}
+.user_2_blk{background-position: -440px -200px;}
+.users_blk{background-position: -480px -200px;}
+.users_2_blk{background-position: -520px -200px;}
+.admin_user_2_blk{background-position: -560px -200px;}
+.user_comment_blk{background-position: -600px -200px;}
+.cog_blk{background-position: -640px -200px;}
+.cog_2_blk{background-position: -680px -200px;}
+.cog_3_blk{background-position: -720px -200px;}
+.cog_4_blk{background-position: -760px -200px;}
+.settings_blk{background-position: -800px -200px;}
+.settings_2_blk{background-position: -840px -200px;}
+.hd_blk{background-position: -880px -200px;}
+.hd_2_blk{background-position: -920px -200px;}
+.hd_3_blk{background-position: -960px -200px;}
+
+
+
+
+
+
+.sd_3_blk{background-position: 0px -240px;}
+.sd_blk{background-position: -40px -240px;}
+.sd_2_blk{background-position: -80px -240px;}
+.dvd_blk{background-position: -120px -240px;}
+.blu_ray_blk{background-position: -160px -240px;}
+.record_blk{background-position: -200px -240px;}
+.cd_blk{background-position: -240px -240px;}
+.cassette_blk{background-position: -280px -240px;}
+.image_blk{background-position: -320px -240px;}
+.image_1_blk{background-position: -360px -240px;}
+.megaphone_blk{background-position: -400px -240px;}
+.image_2_blk{background-position: -440px -240px;}
+.film_strip_blk{background-position: -480px -240px;}
+.image2_2_blk{background-position: -520px -240px;}
+.film_strip_2_blk{background-position: -560px -240px;}
+.sound_blk{background-position: -600px -240px;}
+.headphones_blk{background-position: -640px -240px;}
+.microphone_blk{background-position: -680px -240px;}
+.printer_blk{background-position: -720px -240px;}
+.radio_blk{background-position: -760px -240px;}
+.television_blk{background-position: -800px -240px;}
+.computer_imac_blk{background-position: -840px -240px;}
+.laptop_blk{background-position: -880px -240px;}
+.mighty_mouse_blk{background-position: -920px -240px;}
+.magic_mouse_blk{background-position: -960px -240px;}
+
+
+
+.camera_blk{background-position: 0px -280px;}
+.camera_2_blk{background-position: -40px -280px;}
+.monitor_blk{background-position: -80px -280px;}
+.mouse_wires_blk{background-position: -120px -280px;}
+.ipod_classic_blk{background-position: -160px -280px;}
+.film_camera_blk{background-position: -200px -280px;}
+.ipad_blk{background-position: -240px -280px;}
+.ipod_nano_blk{background-position: -280px -280px;}
+.fax_blk{background-position: -320px -280px;}
+.calculator_blk{background-position: -360px -280px;}
+.cash_register_blk{background-position: -400px -280px;}
+.bended_arrow_right_blk{background-position: -440px -280px;}
+.bended_arrow_left_blk{background-position: -480px -280px;}
+.bended_arrow_down_blk{background-position: -520px -280px;}
+.bended_arrow_up_blk{background-position: -560px -280px;}
+.refresh_blk{background-position: -600px -280px;}
+.refresh_2_blk{background-position: -640px -280px;}
+.refresh_4_blk{background-position: -680px -280px;}
+.repeat_blk{background-position: -720px -280px;}
+.shuffle_blk{background-position: -760px -280px;}
+.refresh_3_blk{background-position: -80px -280px;}
+.go_back_from_full_screen_blk{background-position: -840px -280px;}
+.go_full_screen_blk{background-position: -880px -280px;}
+.recycle_symbol_blk{background-position: -920px -280px;}
+.go_back_from_screen_blk{background-position: -960px -280px;}
+
+
+
+
+.frames_blk{background-position: 0px -320px;}
+.blocks_images_blk{background-position: -40px -320px;}
+.list_images_blk{background-position: -80px -320px;}
+.coverflow_blk{background-position: -120px -320px;}
+.list_image_blk{background-position: -160px -320px;}
+.list_blk{background-position: -200px -320px;}
+.wordpress_blk{background-position: -240px -320px;}
+.wordpress_2_blk{background-position: -280px -320px;}
+.joomla_blk{background-position: -320px -320px;}
+.expression_engine_blk{background-position: -360px -320px;}
+.drupal_blk{background-position: -400px -320px;}
+.iphone_3g_blk{background-position: -440px -320px;}
+.iphone_4_blk{background-position: -480px -320px;}
+.blackberry_blk{background-position: -520px -320px;}
+.android_blk{background-position: -560px -320px;}
+.mobile_phone_blk{background-position: -600px -320px;}
+.bluetooth_blk{background-position: -640px -320px;}
+.bluetooth_2_blk{background-position: -680px -320px;}
+.wifi_signal_blk{background-position: -720px -320px;}
+.wifi_signal_2_blk{background-position: -760px -320px;}
+.box_outgoing_blk{background-position: -800px -320px;}
+.inbox_blk{background-position: -840px -320px;}
+.box_incoming_blk{background-position: -880px -320px;}
+.speech_bubble_blk{background-position: -920px -320px;}
+.speech_bubble_2_blk{background-position: -960px -320px;}
+
+
+
+
+
+
+.phone_blk{background-position: 0px -360px;}
+.speech_bubbles_2_blk{background-position: -40px -360px;}
+.phone_3_blk{background-position: -80px -360px;}
+.speech_bubbles_blk{background-position: -120px -360px;}
+.phone_hook_blk{background-position: -160px -360px;}
+.battery_full_blk{background-position: -200px -360px;}
+.electricity_input_blk{background-position: -240px -360px;}
+.battery_almost_full_blk{background-position: -280px -360px;}
+.battery_almost_empty_blk{background-position: -320px -360px;}
+.battery_empty_blk{background-position: -360px -360px;}
+.battery_blk{background-position: -400px -360px;}
+.power_blk{background-position: -440px -360px;}
+.electricity_plug_blk{background-position: -480px -360px;}
+.paint_brush_blk{background-position: -520px -360px;}
+.small_brush_blk{background-position: -560px -360px;}
+.fountain_pen_blk{background-position: -600px -360px;}
+.big_brush_blk{background-position: -640px -360px;}
+.pencil_blk{background-position: -680px -360px;}
+.cut_scissors_blk{background-position: -720px -360px;}
+.abacus_blk{background-position: -760px -360px;}
+.ruler_2_blk{background-position: -800px -360px;}
+.clipboard_blk{background-position: -840px -360px;}
+.ruler_blk{background-position: -880px -360px;}
+.eyedropper_blk{background-position: -920px -360px;}
+.marker_blk{background-position: -960px -360px;}
+
+
+
+
+.map_blk{background-position: 0px -400px;}
+.google_maps_blk{background-position: -40px -400px;}
+.sign_post_blk{background-position: -80px -400px;}
+.document_blk{background-position: -120px -400px;}
+.documents_blk{background-position: -160px -400px;}
+.pdf_document_blk{background-position: -200px -400px;}
+.pdf_documents_blk{background-position: -240px -400px;}
+.word_document_blk{background-position: -280px -400px;}
+.word_documents_blk{background-position: -320px -400px;}
+.zip_file_blk{background-position: -360px -400px;}
+.zip_files_blk{background-position: -400px -400px;}
+.powerpoint_document_blk{background-position: -440px -400px;}
+.powerpoint_documents_blk{background-position: -480px -400px;}
+.excel_document_blk{background-position: -520px -400px;}
+.excel_documents_blk{background-position: -560px -400px;}
+.v_card_blk{background-position: -600px -400px;}
+.v_card_2_blk{background-position: -640px -400px;}
+.address_book_blk{background-position: -680px -400px;}
+.chart_blk{background-position: -720px -400px;}
+.chart_2_blk{background-position: -760px -400px;}
+.chart_3_blk{background-position: -800px -400px;}
+.chart_4_blk{background-position: -840px -400px;}
+.chart_5_blk{background-position: -880px -400px;}
+.chart_6_blk{background-position: -920px -400px;}
+.chart_7_blk{background-position: -960px -400px;}
+
+
+
+
+.graph_blk{background-position: 0px -440px;}
+.chart_8_blk{background-position: -40px -440px;}
+
+
+
+
+/*=========================*/
+/*  ICON_COLOR_CLR 16X16   */
+/*=========================*/
+
+
+.contact_clr{ background-position:0px 0px;}
+.consulting_clr{ background-position:-20px 0px;}
+.config_clr{background-position:-40px 0px;}
+.communication_clr{background-position:-60px 0px;}
+.comment_clr{background-position:-80px 0px;}
+.collaboration_clr{background-position:-100px 0px;}
+.check_clr{background-position: -120px 0px;}
+.category_clr{background-position: -140px 0px;}
+.calendar_clr{background-position: -160px 0px;}
+.busy_clr{background-position: -180px 0px;}
+.business_contact_clr{background-position: -200px 0px;}
+.brainstorming_clr{background-position: -220px 0px;}
+.billing_clr{background-position: -240px 0px;}
+.bookmark_clr{background-position: -260px 0px;}
+.bestseller_clr{background-position: -280px 0px;}
+.basket_clr{background-position: -300px 0px;}
+.bank_clr{background-position: -320px 0px;}
+.attibutes_clr{background-position: -340px 0px;}
+.archives_clr{background-position: -360px 0px;}
+.advertising_clr{background-position: -380px 0px;}
+.administrative_docs_clr{background-position: -400px 0px;}
+.address_clr{background-position: -420px 0px;}
+.freelance_clr{background-position: -440px 0px;}
+.free_for_job_clr{background-position: -460px 0px;}
+.folder_clr{background-position: -480px 0px;}
+.flag_clr{background-position: -500px 0px;}
+.finished_work_clr{background-position: -520px 0px;}
+.feed_clr{background-position: -540px 0px;}
+.featured_clr{background-position: -560px 0px;}
+.facebook_clr{background-position: -580px 0px;}
+.email_clr{background-position: -600px 0px;}
+.edit_clr{background-position: -620px 0px;}
+.donate_clr{background-position: -640px 0px;}
+.document_library_clr{background-position: -660px 0px;}
+.drawings_clr{background-position: -680px 0px;}
+.delicious_clr{background-position: -700px 0px;}
+.date_clr{background-position: -720px 0px;}
+.database_clr{background-position: -740px 0px;}
+.cv_clr{background-position: -760px 0px;}
+.customers_clr{background-position: -780px 0px;}
+.current_work_clr{background-position: -800px 0px;}
+.credit_card_clr{background-position: -820px 0px;}
+.credit_clr{background-position: -840px 0px;}
+.cost_clr{background-position: -860px 0px;}
+.order_192_clr{background-position: -880px 0px;}
+.order_clr{background-position: -900px 0px;}
+.old_versions_clr{background-position: -920px 0px;}
+.networking_clr{background-position: -940px 0px;}
+.my_account_clr{background-position: -960px 0px;}
+.milestone_clr{background-position: -980px 0px;}
+.logout_clr{ background-position:0px -20px;}
+.consulting_clr{ background-position:-20px -20px;}
+.lock_clr{background-position:-40px -20px;}
+.limited_edition_clr{background-position:-60px -20px;}
+.lightbulb_clr{background-position:-80px -20px;}
+.library_clr{background-position:-100px -20px;}
+.issue_clr{background-position: -120px -20px;}
+.invoice_clr{background-position: -140px -20px;}
+.illustration_clr{background-position: -160px -20px;}
+.home_clr{background-position: -180px -20px;}
+.hire_me_clr{background-position: -200px -20px;}
+.graphic_design_clr{background-position: -220px -20px;}
+.link_clr{background-position: -240px -20px;}
+.heart_clr{background-position: -260px -20px;}
+.future_projects_clr{background-position: -280px -20px;}
+.full_time_clr{background-position: -300px -20px;}
+.sign_in_clr{background-position: -320px -20px;}
+.showreel_clr{background-position: -340px -20px;}
+.shipping_clr{background-position: -360px -20px;}
+.settings_clr{background-position: -380px -20px;}
+.search_clr{background-position: -400px -20px;}
+.refresh_clr{background-position: -420px -20px;}
+.publish_clr{background-position: -440px -20px;}
+.project_clr{background-position: -460px -20px;}
+.product_design_clr{background-position: -480px -20px;}
+.product_193_clr{background-position: -500px -20px;}
+.product_clr{background-position: -520px -20px;}
+.process_clr{background-position: -540px -20px;}
+.print_clr{background-position: -560px -20px;}
+.premium_clr{background-position: -580px -20px;}
+.plus_clr{background-position: -600px -20px;}
+.photography_clr{background-position: -620px -20px;}
+.phone_clr{background-position: -640px -20px;}
+.pencil_clr{background-position: -660px -20px;}
+.pc_clr{background-position: -680px -20px;}
+.pen_clr{background-position: -700px -20px;}
+.paypal_clr{background-position: -720px -20px;}
+.payment_card_clr{background-position: -740px -20px;}
+.zoom_clr{background-position: -760px -20px;}
+.world_clr{background-position: -780px -20px;}
+.user_clr{background-position: -800px -20px;}
+.upcoming_work_clr{background-position: -820px -20px;}
+.twitter_clr{background-position: -840px -20px;}
+.ticket_clr{background-position: -860px -20px;}
+.tag_clr{background-position: -880px -20px;}
+.suppliers_clr{background-position: -900px -20px;}
+.statistics_clr{background-position: -920px -20px;}
+.star_clr{background-position: -940px -20px;}
+.special_offer_clr{background-position: -960px -20px;}
+.sitemap_clr{background-position: -980px -20px;}
+.sign_up_clr{ background-position:0px -40px;}
+.sign_out_clr{ background-position:-20px -40px;}

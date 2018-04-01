@@ -85,6 +85,7 @@ class QuestionFormation:
                 df['Answer'] = ans
             df['Prediction'] = candidate['Prediction']
             df['Sentence'] = candidate['Sentence']
+            df['flag'] = flag
             candidates1.append(df)
             df = {}
             print " "

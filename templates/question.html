@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from www.lab.westilian.com/srabon-admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Mar 2018 18:16:57 GMT -->
+<head>
+<meta charset="utf-8">
+<title>SRABON - Responsive, Touch Friendly Admin Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Admin Panel Template">
+<meta name="author" content="Westilian: Kamrujaman Shohel">
+<!-- styles -->
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+<link href="static/css/jquery.jqplot.css" rel="stylesheet">
+<link href="static/css/prettify.css" rel="stylesheet">
+<link href="static/css/elfinder.min.css" rel="stylesheet">
+<link href="static/css/elfinder.theme.css" rel="stylesheet">
+<link href="static/css/fullcalendar.css" rel="stylesheet">
+<link href="static/js/plupupload/jquery.plupload.queue/static/css/jquery.plupload.queue.css" rel="stylesheet">
+<link href="static/css/styles.css" rel="stylesheet">
+<link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="static/css/icons-sprite.css" rel="stylesheet">
+<link id="themes" href="static/css/themes.css" rel="stylesheet">
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="static/css/ie/ie7.css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="static/css/ie/ie8.css" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="static/css/ie/ie9.css" />
+<![endif]-->
+<!--fav and touch icons -->
+<link rel="shortcut icon" href="static/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="branding">
+        <div class="logo"> <a href="index.html"><img src="img/logo.png" width="168" height="40" alt="Logo"></a> </div>
+      </div>
+      <ul class="nav pull-right">
+        <li class="dropdown search-responsive"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="nav-icon magnifying_glass"></i><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="top-search">
+              <form action="#" method="get">
+                <div class="input-prepend"> <span class="add-on"><i class="icon-search"></i></span>
+                  <input type="text" id="searchIcon">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="lang-icons"><img src="img/flag-icons/us.png" width="16" height="11" alt="language"></i><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/gb.png" width="16" height="11" alt="language"></i> English UK</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/fr.png" width="16" height="11" alt="language"></i> French</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/sa.png" width="16" height="11" alt="language"></i> Arabic</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/it.png" width="16" height="11" alt="language"></i> Italian</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Admin <span class="alert-noty">20</span><i class="white-icons admin_user"></i><b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="icon-inbox"></i> Inbox <span class="alert-noty">10</span></a></li>
+            <li><a href="#"><i class="icon-envelope"></i> Notifications <span class="alert-noty">15</span></a></li>
+            <li><a href="#"><i class="icon-briefcase"></i> My Account</a></li>
+            <li><a href="#"><i class="icon-file"></i> View Profile</a></li>
+            <li><a href="#"><i class="icon-pencil"></i> Edit Profile</a></li>
+            <li><a href="#"><i class="icon-cog"></i> Account Settings</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="icon-off"></i><strong> Logout</strong></a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="nav-icon list"></i> Forms <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="form-elements.html">All Form Elements</a></li>
+              <li><a href="extendable-forms.html">Extendable Form</a></li>
+              <li><a href="form-stepy.html">Stepy Forms</a></li>
+              <li><a href="form-validation.html">Form Validation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="nav-icon cup"></i> Features<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="table-default.html">Basic Table</a></li>
+              <li><a href="typography.html">Typography</a></li>
+              <li><a href="widgets.html">Widgets</a></li>
+              <li><a href="grid.html">Grid</a></li>
+              <li class=" divider"></li>
+              <li><a href="login.html">Login Page</a></li>
+              <li><a href="login2.html"><span class="sidenav-icon"><span class="sidenav-link-color"></span></span>Another Login Page</a></li>
+              <li class=" divider"></li>
+              <li class="nav-header">UI Elements</li>
+              <li><a href="button-icons.html">Buttons &amp; Icons</a></li>
+              <li><a href="ui-elements.html">All UI Elements</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="nav-icon shuffle"></i> Others <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="table.html">Data Table</a></li>
+              <li><a href="chart.html">Chart and Graph</a></li>
+              <li><a href="file-explorer.html">File Manager</a></li>
+              <li><a href="calendar.html">Full Calendar</a></li>
+              <li><a href="colorbox.html">Colorbox</a></li>
+              <li class=" divider"></li>
+              <li class=" nav-header">More Pages</li>
+              <li><a href="inbox.html">Message Box</a></li>
+              <li><a href="content.html">Content Post</a></li>
+              <li><a href="forgot-pass.html">Forgot Password Page</a></li>
+              <li><a href="error.html"><span class="sidenav-icon"><span class="sidenav-link-color"></span></span>Error Page</a></li>
+              <li><a href="another-error-page.html"><span class="sidenav-icon"><span class="sidenav-link-color"></span></span>Another Error Page</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="nav-icon cog_3"></i> Themes Settings<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-header">Colors</li>
+              <li class=" clearfix color-block"><span class="theme-color theme-blue" title="theme-blue"></span><span class="theme-color theme-light-blue" title="theme-light-blue"></span><span class="theme-color theme-dark" title="theme-dark"></span><span class="theme-color theme-chrome" title="theme-chrome"></span><span class="theme-color theme-chayam" title="theme-chayam"></span><span class="theme-color theme-default" title="theme-default"></span></li>
+              <li class=" divider hidden-phone hidden-tablet"></li>
+              <li class="nav-header hidden-phone hidden-tablet">Sidebar</li>
+              <li class="theme-settings clearfix hidden-phone hidden-tablet">
+                <div class="btn-group">
+                  <button id="sidebar-on" disabled="disabled" class="btn btn-success">On</button>
+                  <button id="sidebar-off" class="btn btn-inverse">Off</button>
+                </div>
+              </li>
+              <li class=" divider"></li>
+              <li class="nav-header hidden-phone hidden-tablet">Sidebar Placement</li>
+              <li class="theme-settings clearfix hidden-phone hidden-tablet">
+                <div class="btn-group">
+                  <button disabled="disabled" id="left-sidebar" class="btn btn-inverse">Left</button>
+                  <button id="right-sidebar" class="btn btn-info">Right</button>
+                </div>
+              </li>
+              <li class="nav-header">Layout</li>
+              
+              <li><a href="http://www.lab.westilian.com/fixed-layout/index.html">Fixed Layout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- <ul class="breadcrumb">
+    <li><a href="#">Home</a><span class="divider">&raquo;</span></li>
+    <li class="active">Question Answers</li>
+  </ul> -->
+  <div class="dashboard-widget">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="dashboard-wid-wrap">
+          <div class="dashboard-wid-content"> <a href="index.html"> <i class="dashboard-icons-colors graphic_design_sl"></i> <span class="dasboard-icon-title">Question Generation</span> </a> </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="dashboard-wid-wrap">
+          <div class="dashboard-wid-content"> <a href="summarization.html"> <i class="dashboard-icons-colors settings_sl"></i> <span class="dasboard-icon-title">Summerization</span> </a> </div>
+        </div>
+      </div>
+      <div class="span4">
+        <div class="dashboard-wid-wrap">
+          <div class="dashboard-wid-content"> <a href="procedure.html"> <i class="dashboard-icons-colors customers_sl"></i> <span class="dasboard-icon-title">Procedure</span> </a> </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">  
+  <div class="span10 page-center">
+    <div class="widget-block">
+      <div class="widget-head">
+        <h5><i class="black-icons users"></i> Question Answer</h5>
+        <div class="widget-control pull-right"> 
+          <a href="#" data-toggle="dropdown" class="btn dropdown-toggle"><i class="icon-cog"></i>
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="icon-plus"></i> Add User</a></li>
+            <li><a href="#"><i class="icon-remove"></i> Remove User</a></li>
+            <li><a href="#"><i class="icon-pencil"></i> Edit User</a></li>
+            <li><a href="#"><i class="icon-ok"></i> Approve User</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><i class="icon-heart"></i> Add Favorites</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="widget-content">
+        <div class="widget-searchbox">
+          <ul>
+            <li class="row-counts">Total User: 30</li>
+            <li class="right">
+              <form action="#" method="get">
+                <div class="input-prepend"> <span class="add-on"><i class="icon-search"></i></span>
+                  <input type="text" class="span2">
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="widget-box">
+          <table class="table user-tbl table-head">
+            <thead>
+              <tr>
+                <th class="center"> <input type="checkbox" name="checkbox12" class="checkall-user">
+                </th>
+                <!-- <th class="center"> User </th> -->
+                <th> Info </th>
+                <!-- <th> Rated </th>
+                <th class="center"> Action </th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <!-- <td class="center"><span class="user-thumb"><img src="img/user-thumb.png" width="40" height="40" alt="User"></span></td> -->
+                <td> Jhon Defer Man<span class="user-position">UI Developer</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> Jhon Doe is the best man available on this world. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="user-position">Author</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+              <tr>
+                <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
+                <td> UI Jaman<span class="user-position">Sr. Softwrae Eng</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- <div class="widget-bottom">
+          <div class="pagination">
+            <ul>
+              <li><a href="#">Prev</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="static/js/jquery.js"></script> 
+<script src="static/js/jquery-ui-1.8.16.custom.min.js"></script> 
+<script src="static/js/jquery.ui.touch-punch.js"></script> 
+<script src="static/js/bootstrap.js"></script> 
+<script src="static/js/prettify.js"></script> 
+<script src="static/js/jquery.sparkline.min.js"></script> 
+<script src="static/js/jquery.nicescroll.min.js"></script> 
+<script src="static/js/accordion.jquery.js"></script> 
+<script src="static/js/smart-wizard.jquery.js"></script> 
+<script src="static/js/vaidation.jquery.js"></script> 
+<script src="static/js/jquery-dynamic-form.js"></script> 
+<script src="static/js/fullcalendar.js"></script> 
+<script src="static/js/raty.jquery.js"></script> 
+<script src="static/js/jquery.noty.js"></script> 
+<script src="static/js/jquery.cleditor.min.js"></script> 
+<script src="static/js/data-table.jquery.js"></script> 
+<script src="static/js/TableTools.min.js"></script> 
+<script src="static/js/ColVis.min.js"></script> 
+<script src="static/js/plupload.full.js"></script> 
+<script src="static/js/elfinder/elfinder.min.js"></script> 
+<script src="static/js/chosen.jquery.js"></script> 
+<script src="static/js/uniform.jquery.js"></script> 
+<script src="static/js/jquery.tagsinput.js"></script> 
+<script src="static/js/jquery.colorbox-min.js"></script> 
+<script src="static/js/check-all.jquery.js"></script> 
+<script src="static/js/inputmask.jquery.js"></script> 
+<script src="../../bp.yahooapis.com/2.4.21/browserplus-min.js"></script> 
+<script src="static/js/plupupload/jquery.plupload.queue/jquery.plupload.queue.js"></script> 
+<script src="static/js/excanvas.min.js"></script> 
+<script src="static/js/jquery.jqplot.min.js"></script> 
+<script src="static/js/chart/jqplot.highlighter.min.js"></script> 
+<script src="static/js/chart/jqplot.cursor.min.js"></script> 
+<script src="static/js/chart/jqplot.dateAxisRenderer.min.js"></script> 
+<script src="static/js/custom-script.js"></script> 
+<!-- html5.js for IE less than 9 --> 
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<script>
+$(function(){
+  var line1=[['23-May-08', 299.14], ['20-Jun-08', 320.45], ['25-Jul-08', 480.88], ['22-Aug-08', 509.84],
+      ['26-Sep-08', 654.13], ['24-Oct-08', 779.75], ['21-Nov-08', 803], ['26-Dec-08', 908.56],
+      ['23-Jan-09', 501.14], ['20-Feb-09', 1056.51], ['20-Mar-09', 1225.99], ['24-Apr-09', 1386.15]];
+  var plot1 = $.jqplot('chart1', [line1], {
+      title:'THIS MONTH REVENUE',
+      axes:{
+        xaxis:{
+          renderer:$.jqplot.DateAxisRenderer,
+          tickOptions:{
+            formatString:'%b&nbsp;%#d'
+          }
+        },
+        yaxis:{
+          tickOptions:{
+            formatString:'$%.2f'
+            }
+        }
+      },
+	  seriesDefaults: {
+        show: true,     // wether to render the series.
+        xaxis: 'xaxis', // either 'xaxis' or 'x2axis'.
+        yaxis: 'yaxis', // either 'yaxis' or 'y2axis'.
+        color: '#196795',      // CSS color spec to use for the line.  Determined automatically.
+        lineWidth: 3, // Width of the line in pixels.
+        shadow: false  // show shadow or not.
+	  },
+      highlighter: {
+        show: true,
+        sizeAdjust: 7.5
+      },
+	   grid: {
+            background: '#fff',
+            drawBorder: false,
+            shadow: false,
+            gridLineColor: '#ccc',
+            gridLineWidth: 1
+        },
+      cursor: {
+        show: false
+      }
+  });
+});
+	$(function() {
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		$('#calendar-widget').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			buttonText: {
+			prev: 'Prev',
+			next: 'Next',
+			today: 'Today',
+			month: 'Month',
+			week: 'Week',
+			day: 'Day'
+		},
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			]
+		});
+	});
+</script>
+<script src="static/js/respond.min.js"></script>
+<script src="static/js/ios-orientationchange-fix.js"></script>
+</body>
+
+<!-- Mirrored from www.lab.westilian.com/srabon-admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Mar 2018 18:18:27 GMT -->
+</html>

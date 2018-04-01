@@ -484,231 +484,231 @@ class FeatureConstruction:
         	sys.exit()
         print "Start build features ..."
         df = pd.DataFrame(candidates)
-        rows = []
-        for idx, row in df.iterrows():
-            try:
-                row = self._num_token_in_answer(row)
-                row = self._num_token_in_sentence(row)
-                row = self._num_row_tokens_matching_in_out(row)
-                row = self._percentage_token_in_answer(row)
-                row = self._percentage_token_in_out_answer(row)
-                row = self._answer_capitalized_word_density(row)
-                row = self._answer_stop_word_density(row)
-                row = self._answer_end_with_quantifier(row)
-                row = self._answer_start_with_quantifier(row)
-                row = self._answer_quantifier_density(row)
-                row = self._percentage_capitalized_word_in_answer(row)
-                row = self._percentage_pronoun_in_answer(row)
-                row = self._sentence_start_with_discourse(row)
-                row['GRAM_AFTER_ANSWER_quoation'] = self._pos1_gram_after_answer(
-                    row, "'")
-                row['GRAM_AFTER_ANSWER_comma'] = self._pos1_gram_after_answer(
-                    row, ",")
-                row['GRAM_AFTER_ANSWER_LRB'] = self._pos1_gram_after_answer(
-                    row, "LRB")
-                row['GRAM_AFTER_ANSWER_RRB'] = self._pos1_gram_after_answer(
-                    row, "RRB")
-                row['GRAM_AFTER_ANSWER_Stop'] = self._pos1_gram_after_answer(
-                    row, ".")
-                row['GRAM_AFTER_ANSWER_Colon'] = self._pos1_gram_after_answer(
-                    row, ":")
-                row['GRAM_AFTER_ANSWER_CC'] = self._pos1_gram_after_answer(
-                    row, "CC")
-                row['GRAM_AFTER_ANSWER_CD'] = self._pos1_gram_after_answer(
-                    row, "CD")
-                row['GRAM_AFTER_ANSWER_DT'] = self._pos1_gram_after_answer(
-                    row, "DT")
-                row['GRAM_AFTER_ANSWER_EX'] = self._pos1_gram_after_answer(
-                    row, "EX")
-                row['GRAM_AFTER_ANSWER_IN'] = self._pos1_gram_after_answer(
-                    row, "IN")
-                row['GRAM_AFTER_ANSWER_JJ'] = self._pos1_gram_after_answer(
-                    row, "JJ")
-                row['GRAM_AFTER_ANSWER_JJR'] = self._pos1_gram_after_answer(
-                    row, "JJR")
-                row['GRAM_AFTER_ANSWER_JJS'] = self._pos1_gram_after_answer(
-                    row, "JJS")
-                row['GRAM_AFTER_ANSWER_MD'] = self._pos1_gram_after_answer(
-                    row, "MD")
-                row['GRAM_AFTER_ANSWER_NN'] = self._pos1_gram_after_answer(
-                    row, "NN")
-                row['GRAM_AFTER_ANSWER_NNP'] = self._pos1_gram_after_answer(
-                    row, "NNP")
-                row['GRAM_AFTER_ANSWER_NNPS'] = self._pos1_gram_after_answer(
-                    row, "NNPS")
-                row['GRAM_AFTER_ANSWER_NNS'] = self._pos1_gram_after_answer(
-                    row, "NNS")
-                row['GRAM_AFTER_ANSWER_POS'] = self._pos1_gram_after_answer(
-                    row, "POS")
-                row['GRAM_AFTER_ANSWER_PRP'] = self._pos1_gram_after_answer(
-                    row, "PRP")
-                row['GRAM_AFTER_ANSWER_RB'] = self._pos1_gram_after_answer(
-                    row, "RB")
-                row['GRAM_AFTER_ANSWER_RBR'] = self._pos1_gram_after_answer(
-                    row, "RBR")
-                row['GRAM_AFTER_ANSWER_RBS'] = self._pos1_gram_after_answer(
-                    row, "RBS")
-                row['GRAM_AFTER_ANSWER_RP'] = self._pos1_gram_after_answer(
-                    row, "RP")
-                row['GRAM_AFTER_ANSWER_TO'] = self._pos1_gram_after_answer(
-                    row, "TO")
-                row['GRAM_AFTER_ANSWER_VB'] = self._pos1_gram_after_answer(
-                    row, "VB")
-                row['GRAM_AFTER_ANSWER_VBD'] = self._pos1_gram_after_answer(
-                    row, "VBD")
-                row['GRAM_AFTER_ANSWER_VBG'] = self._pos1_gram_after_answer(
-                    row, "VBG")
-                row['GRAM_AFTER_ANSWER_VBN'] = self._pos1_gram_after_answer(
-                    row, "VBN")
-                row['GRAM_AFTER_ANSWER_VBP'] = self._pos1_gram_after_answer(
-                    row, "VBP")
-                row['GRAM_AFTER_ANSWER_VBZ'] = self._pos1_gram_after_answer(
-                    row, "VBZ")
-                row['GRAM_AFTER_ANSWER_WDT'] = self._pos1_gram_after_answer(
-                    row, "WDT")
-                row['GRAM_AFTER_ANSWER_WP'] = self._pos1_gram_after_answer(
-                    row, "WP")
-                row['GRAM_AFTER_ANSWER_WRB'] = self._pos1_gram_after_answer(
-                    row, "WRB")
-                row['GRAM_BEFORE_ANSWER_Comma'] = self._pos1_gram_before_answer(
-                    row, ",")
-                row['GRAM_BEFORE_ANSWER_LRB'] = self._pos1_gram_before_answer(
-                    row, "LRB")
-                row['GRAM_BEFORE_ANSWER_RRB'] = self._pos1_gram_before_answer(
-                    row, "RRB")
-                row['GRAM_BEFORE_ANSWER_Colon'] = self._pos1_gram_before_answer(
-                    row, ":")
-                row['GRAM_BEFORE_ANSWER_CC'] = self._pos1_gram_after_answer(
-                    row, "CC")
-                row['GRAM_BEFORE_ANSWER_CD'] = self._pos1_gram_before_answer(
-                    row, "CD")
-                row['GRAM_BEFORE_ANSWER_DT'] = self._pos1_gram_before_answer(
-                    row, "DT")
-                row['GRAM_BEFORE_ANSWER_EX'] = self._pos1_gram_before_answer(
-                    row, "EX")
-                row['GRAM_BEFORE_ANSWER_IN'] = self._pos1_gram_before_answer(
-                    row, "IN")
-                row['GRAM_BEFORE_ANSWER_JJ'] = self._pos1_gram_before_answer(
-                    row, "JJ")
-                row['GRAM_BEFORE_ANSWER_MD'] = self._pos1_gram_before_answer(
-                    row, "MD")
-                row['GRAM_BEFORE_ANSWER_NN'] = self._pos1_gram_before_answer(
-                    row, "NN")
-                row['GRAM_BEFORE_ANSWER_NNP'] = self._pos1_gram_before_answer(
-                    row, "NNP")
-                row['GRAM_BEFORE_ANSWER_NNPS'] = self._pos1_gram_before_answer(
-                    row, "NNPS")
-                row['GRAM_BEFORE_ANSWER_NNS'] = self._pos1_gram_before_answer(
-                    row, "NNS")
-                row['GRAM_BEFORE_ANSWER_POS'] = self._pos1_gram_before_answer(
-                    row, "POS")
-                row['GRAM_BEFORE_ANSWER_PRP$'] = self._pos1_gram_before_answer(
-                    row, "PRP$")
-                row['GRAM_BEFORE_ANSWER_RB'] = self._pos1_gram_before_answer(
-                    row, "RB")
-                row['GRAM_BEFORE_ANSWER_RBS'] = self._pos1_gram_before_answer(
-                    row, "RBS")
-                row['GRAM_BEFORE_ANSWER_RP'] = self._pos1_gram_before_answer(
-                    row, "RP")
-                row['GRAM_BEFORE_ANSWER_TO'] = self._pos1_gram_before_answer(
-                    row, "TO")
-                row['GRAM_BEFORE_ANSWER_VB'] = self._pos1_gram_before_answer(
-                    row, "VB")
-                row['GRAM_BEFORE_ANSWER_VBD'] = self._pos1_gram_before_answer(
-                    row, "VBD")
-                row['GRAM_BEFORE_ANSWER_VBG'] = self._pos1_gram_before_answer(
-                    row, "VBG")
-                row['GRAM_BEFORE_ANSWER_VBN'] = self._pos1_gram_before_answer(
-                    row, "VBN")
-                row['GRAM_BEFORE_ANSWER_VBP'] = self._pos1_gram_before_answer(
-                    row, "VBP")
-                row['GRAM_BEFORE_ANSWER_VBZ'] = self._pos1_gram_before_answer(
-                    row, "VBZ")
-                row['GRAM_BEFORE_ANSWER_WDT'] = self._pos1_gram_before_answer(
-                    row, "WDT")
-                row['GRAM_BEFORE_ANSWER_WP'] = self._pos1_gram_before_answer(
-                    row, "WP")
-                row['GRAM_BEFORE_ANSWER_WRB'] = self._pos1_gram_before_answer(
-                    row, "WRB")
-                row['GRAM_IN_ANSWER_COUNT_Quotation'] = self._pos_gram_count_answer(
-                    row, "'")
-                row['GRAM_IN_ANSWER_COUNT_Comma'] = self._pos_gram_count_answer(
-                    row, ",")
-                row['GRAM_IN_ANSWER_COUNT_LRB'] = self._pos_gram_count_answer(
-                    row, "LRB")
-                row['GRAM_IN_ANSWER_COUNT_RRB'] = self._pos_gram_count_answer(
-                    row, "RRB")
-                row['GRAM_IN_ANSWER_COUNT_Colon'] = self._pos_gram_count_answer(
-                    row, ":")
-                row['GRAM_IN_ANSWER_COUNT_CC'] = self._pos_gram_count_answer(
-                    row, "CC")
-                row['GRAM_IN_ANSWER_COUNT_CD'] = self._pos_gram_count_answer(
-                    row, "CD")
-                row['GRAM_IN_ANSWER_COUNT_DT'] = self._pos_gram_count_answer(
-                    row, "DT")
-                row['GRAM_IN_ANSWER_COUNT_EX'] = self._pos_gram_count_answer(
-                    row, "EX")
-                row['GRAM_IN_ANSWER_COUNT_IN'] = self._pos_gram_count_answer(
-                    row, "IN")
-                row['GRAM_IN_ANSWER_COUNT_JJ'] = self._pos_gram_count_answer(
-                    row, "JJ")
-                row['GRAM_IN_ANSWER_COUNT_JJR'] = self._pos_gram_count_answer(
-                    row, "JJR")
-                row['GRAM_IN_ANSWER_COUNT_JJS'] = self._pos_gram_count_answer(
-                    row, "JJS")
-                row['GRAM_IN_ANSWER_COUNT_MD'] = self._pos_gram_count_answer(
-                    row, "MD")
-                row['GRAM_IN_ANSWER_COUNT_NN'] = self._pos_gram_count_answer(
-                    row, "NN")
-                row['GRAM_IN_ANSWER_COUNT_NNP'] = self._pos_gram_count_answer(
-                    row, "NNP")
-                row['GRAM_IN_ANSWER_COUNT_NNPS'] = self._pos_gram_count_answer(
-                    row, "NNPS")
-                row['GRAM_IN_ANSWER_COUNT_NNS'] = self._pos_gram_count_answer(
-                    row, "NNS")
-                row['GRAM_IN_ANSWER_COUNT_POS'] = self._pos_gram_count_answer(
-                    row, "POS")
-                row['GRAM_IN_ANSWER_COUNT_PRP'] = self._pos_gram_count_answer(
-                    row, "PRP")
-                row['GRAM_IN_ANSWER_COUNT_PRP$'] = self._pos_gram_count_answer(
-                    row, "PRP$")
-                row['GRAM_IN_ANSWER_COUNT_RB'] = self._pos_gram_count_answer(
-                    row, "RB")
-                row['GRAM_IN_ANSWER_COUNT_RBR'] = self._pos_gram_count_answer(
-                    row, "RBR")
-                row['GRAM_IN_ANSWER_COUNT_RBS'] = self._pos_gram_count_answer(
-                    row, "RBS")
-                row['GRAM_IN_ANSWER_COUNT_RP'] = self._pos_gram_count_answer(
-                    row, "RP")
-                row['GRAM_IN_ANSWER_COUNT_TO'] = self._pos_gram_count_answer(
-                    row, "TO")
-                row['GRAM_IN_ANSWER_COUNT_VB'] = self._pos_gram_count_answer(
-                    row, "VB")
-                row['GRAM_IN_ANSWER_COUNT_VBD'] = self._pos_gram_count_answer(
-                    row, "VBD")
-                row['GRAM_IN_ANSWER_COUNT_VBG'] = self._pos_gram_count_answer(
-                    row, "VBG")
-                row['GRAM_IN_ANSWER_COUNT_VBN'] = self._pos_gram_count_answer(
-                    row, "VBN")
-                row['GRAM_IN_ANSWER_COUNT_VBP'] = self._pos_gram_count_answer(
-                    row, "VBP")
-                row['GRAM_IN_ANSWER_COUNT_VBZ'] = self._pos_gram_count_answer(
-                    row, "VBZ")
-                row['GRAM_IN_ANSWER_COUNT_WDT'] = self._pos_gram_count_answer(
-                    row, "WDT")
-                row['GRAM_IN_ANSWER_COUNT_WP'] = self._pos_gram_count_answer(
-                    row, "WP")
-                row['GRAM_IN_ANSWER_COUNT_WP$'] = self._pos_gram_count_answer(
-                    row, "WP$")
-                row['GRAM_IN_ANSWER_COUNT_WRB'] = self._pos_gram_count_answer(
-                    row, "WRB")
-                row = self._ner_features(row)
-                if not row.empty:
-                    rows.append(row)
-                    print "processing %d out of %d" % (idx, len(candidates))
-                else:
-                    continue
-            except:
-                continue
-        df = pd.concat(rows, axis=1)
+        # rows = []
+        # for idx, row in df.iterrows():
+        #     try:
+        #         row = self._num_token_in_answer(row)
+        #         row = self._num_token_in_sentence(row)
+        #         row = self._num_row_tokens_matching_in_out(row)
+        #         row = self._percentage_token_in_answer(row)
+        #         row = self._percentage_token_in_out_answer(row)
+        #         row = self._answer_capitalized_word_density(row)
+        #         row = self._answer_stop_word_density(row)
+        #         row = self._answer_end_with_quantifier(row)
+        #         row = self._answer_start_with_quantifier(row)
+        #         row = self._answer_quantifier_density(row)
+        #         row = self._percentage_capitalized_word_in_answer(row)
+        #         row = self._percentage_pronoun_in_answer(row)
+        #         row = self._sentence_start_with_discourse(row)
+        #         row['GRAM_AFTER_ANSWER_quoation'] = self._pos1_gram_after_answer(
+        #             row, "'")
+        #         row['GRAM_AFTER_ANSWER_comma'] = self._pos1_gram_after_answer(
+        #             row, ",")
+        #         row['GRAM_AFTER_ANSWER_LRB'] = self._pos1_gram_after_answer(
+        #             row, "LRB")
+        #         row['GRAM_AFTER_ANSWER_RRB'] = self._pos1_gram_after_answer(
+        #             row, "RRB")
+        #         row['GRAM_AFTER_ANSWER_Stop'] = self._pos1_gram_after_answer(
+        #             row, ".")
+        #         row['GRAM_AFTER_ANSWER_Colon'] = self._pos1_gram_after_answer(
+        #             row, ":")
+        #         row['GRAM_AFTER_ANSWER_CC'] = self._pos1_gram_after_answer(
+        #             row, "CC")
+        #         row['GRAM_AFTER_ANSWER_CD'] = self._pos1_gram_after_answer(
+        #             row, "CD")
+        #         row['GRAM_AFTER_ANSWER_DT'] = self._pos1_gram_after_answer(
+        #             row, "DT")
+        #         row['GRAM_AFTER_ANSWER_EX'] = self._pos1_gram_after_answer(
+        #             row, "EX")
+        #         row['GRAM_AFTER_ANSWER_IN'] = self._pos1_gram_after_answer(
+        #             row, "IN")
+        #         row['GRAM_AFTER_ANSWER_JJ'] = self._pos1_gram_after_answer(
+        #             row, "JJ")
+        #         row['GRAM_AFTER_ANSWER_JJR'] = self._pos1_gram_after_answer(
+        #             row, "JJR")
+        #         row['GRAM_AFTER_ANSWER_JJS'] = self._pos1_gram_after_answer(
+        #             row, "JJS")
+        #         row['GRAM_AFTER_ANSWER_MD'] = self._pos1_gram_after_answer(
+        #             row, "MD")
+        #         row['GRAM_AFTER_ANSWER_NN'] = self._pos1_gram_after_answer(
+        #             row, "NN")
+        #         row['GRAM_AFTER_ANSWER_NNP'] = self._pos1_gram_after_answer(
+        #             row, "NNP")
+        #         row['GRAM_AFTER_ANSWER_NNPS'] = self._pos1_gram_after_answer(
+        #             row, "NNPS")
+        #         row['GRAM_AFTER_ANSWER_NNS'] = self._pos1_gram_after_answer(
+        #             row, "NNS")
+        #         row['GRAM_AFTER_ANSWER_POS'] = self._pos1_gram_after_answer(
+        #             row, "POS")
+        #         row['GRAM_AFTER_ANSWER_PRP'] = self._pos1_gram_after_answer(
+        #             row, "PRP")
+        #         row['GRAM_AFTER_ANSWER_RB'] = self._pos1_gram_after_answer(
+        #             row, "RB")
+        #         row['GRAM_AFTER_ANSWER_RBR'] = self._pos1_gram_after_answer(
+        #             row, "RBR")
+        #         row['GRAM_AFTER_ANSWER_RBS'] = self._pos1_gram_after_answer(
+        #             row, "RBS")
+        #         row['GRAM_AFTER_ANSWER_RP'] = self._pos1_gram_after_answer(
+        #             row, "RP")
+        #         row['GRAM_AFTER_ANSWER_TO'] = self._pos1_gram_after_answer(
+        #             row, "TO")
+        #         row['GRAM_AFTER_ANSWER_VB'] = self._pos1_gram_after_answer(
+        #             row, "VB")
+        #         row['GRAM_AFTER_ANSWER_VBD'] = self._pos1_gram_after_answer(
+        #             row, "VBD")
+        #         row['GRAM_AFTER_ANSWER_VBG'] = self._pos1_gram_after_answer(
+        #             row, "VBG")
+        #         row['GRAM_AFTER_ANSWER_VBN'] = self._pos1_gram_after_answer(
+        #             row, "VBN")
+        #         row['GRAM_AFTER_ANSWER_VBP'] = self._pos1_gram_after_answer(
+        #             row, "VBP")
+        #         row['GRAM_AFTER_ANSWER_VBZ'] = self._pos1_gram_after_answer(
+        #             row, "VBZ")
+        #         row['GRAM_AFTER_ANSWER_WDT'] = self._pos1_gram_after_answer(
+        #             row, "WDT")
+        #         row['GRAM_AFTER_ANSWER_WP'] = self._pos1_gram_after_answer(
+        #             row, "WP")
+        #         row['GRAM_AFTER_ANSWER_WRB'] = self._pos1_gram_after_answer(
+        #             row, "WRB")
+        #         row['GRAM_BEFORE_ANSWER_Comma'] = self._pos1_gram_before_answer(
+        #             row, ",")
+        #         row['GRAM_BEFORE_ANSWER_LRB'] = self._pos1_gram_before_answer(
+        #             row, "LRB")
+        #         row['GRAM_BEFORE_ANSWER_RRB'] = self._pos1_gram_before_answer(
+        #             row, "RRB")
+        #         row['GRAM_BEFORE_ANSWER_Colon'] = self._pos1_gram_before_answer(
+        #             row, ":")
+        #         row['GRAM_BEFORE_ANSWER_CC'] = self._pos1_gram_after_answer(
+        #             row, "CC")
+        #         row['GRAM_BEFORE_ANSWER_CD'] = self._pos1_gram_before_answer(
+        #             row, "CD")
+        #         row['GRAM_BEFORE_ANSWER_DT'] = self._pos1_gram_before_answer(
+        #             row, "DT")
+        #         row['GRAM_BEFORE_ANSWER_EX'] = self._pos1_gram_before_answer(
+        #             row, "EX")
+        #         row['GRAM_BEFORE_ANSWER_IN'] = self._pos1_gram_before_answer(
+        #             row, "IN")
+        #         row['GRAM_BEFORE_ANSWER_JJ'] = self._pos1_gram_before_answer(
+        #             row, "JJ")
+        #         row['GRAM_BEFORE_ANSWER_MD'] = self._pos1_gram_before_answer(
+        #             row, "MD")
+        #         row['GRAM_BEFORE_ANSWER_NN'] = self._pos1_gram_before_answer(
+        #             row, "NN")
+        #         row['GRAM_BEFORE_ANSWER_NNP'] = self._pos1_gram_before_answer(
+        #             row, "NNP")
+        #         row['GRAM_BEFORE_ANSWER_NNPS'] = self._pos1_gram_before_answer(
+        #             row, "NNPS")
+        #         row['GRAM_BEFORE_ANSWER_NNS'] = self._pos1_gram_before_answer(
+        #             row, "NNS")
+        #         row['GRAM_BEFORE_ANSWER_POS'] = self._pos1_gram_before_answer(
+        #             row, "POS")
+        #         row['GRAM_BEFORE_ANSWER_PRP$'] = self._pos1_gram_before_answer(
+        #             row, "PRP$")
+        #         row['GRAM_BEFORE_ANSWER_RB'] = self._pos1_gram_before_answer(
+        #             row, "RB")
+        #         row['GRAM_BEFORE_ANSWER_RBS'] = self._pos1_gram_before_answer(
+        #             row, "RBS")
+        #         row['GRAM_BEFORE_ANSWER_RP'] = self._pos1_gram_before_answer(
+        #             row, "RP")
+        #         row['GRAM_BEFORE_ANSWER_TO'] = self._pos1_gram_before_answer(
+        #             row, "TO")
+        #         row['GRAM_BEFORE_ANSWER_VB'] = self._pos1_gram_before_answer(
+        #             row, "VB")
+        #         row['GRAM_BEFORE_ANSWER_VBD'] = self._pos1_gram_before_answer(
+        #             row, "VBD")
+        #         row['GRAM_BEFORE_ANSWER_VBG'] = self._pos1_gram_before_answer(
+        #             row, "VBG")
+        #         row['GRAM_BEFORE_ANSWER_VBN'] = self._pos1_gram_before_answer(
+        #             row, "VBN")
+        #         row['GRAM_BEFORE_ANSWER_VBP'] = self._pos1_gram_before_answer(
+        #             row, "VBP")
+        #         row['GRAM_BEFORE_ANSWER_VBZ'] = self._pos1_gram_before_answer(
+        #             row, "VBZ")
+        #         row['GRAM_BEFORE_ANSWER_WDT'] = self._pos1_gram_before_answer(
+        #             row, "WDT")
+        #         row['GRAM_BEFORE_ANSWER_WP'] = self._pos1_gram_before_answer(
+        #             row, "WP")
+        #         row['GRAM_BEFORE_ANSWER_WRB'] = self._pos1_gram_before_answer(
+        #             row, "WRB")
+        #         row['GRAM_IN_ANSWER_COUNT_Quotation'] = self._pos_gram_count_answer(
+        #             row, "'")
+        #         row['GRAM_IN_ANSWER_COUNT_Comma'] = self._pos_gram_count_answer(
+        #             row, ",")
+        #         row['GRAM_IN_ANSWER_COUNT_LRB'] = self._pos_gram_count_answer(
+        #             row, "LRB")
+        #         row['GRAM_IN_ANSWER_COUNT_RRB'] = self._pos_gram_count_answer(
+        #             row, "RRB")
+        #         row['GRAM_IN_ANSWER_COUNT_Colon'] = self._pos_gram_count_answer(
+        #             row, ":")
+        #         row['GRAM_IN_ANSWER_COUNT_CC'] = self._pos_gram_count_answer(
+        #             row, "CC")
+        #         row['GRAM_IN_ANSWER_COUNT_CD'] = self._pos_gram_count_answer(
+        #             row, "CD")
+        #         row['GRAM_IN_ANSWER_COUNT_DT'] = self._pos_gram_count_answer(
+        #             row, "DT")
+        #         row['GRAM_IN_ANSWER_COUNT_EX'] = self._pos_gram_count_answer(
+        #             row, "EX")
+        #         row['GRAM_IN_ANSWER_COUNT_IN'] = self._pos_gram_count_answer(
+        #             row, "IN")
+        #         row['GRAM_IN_ANSWER_COUNT_JJ'] = self._pos_gram_count_answer(
+        #             row, "JJ")
+        #         row['GRAM_IN_ANSWER_COUNT_JJR'] = self._pos_gram_count_answer(
+        #             row, "JJR")
+        #         row['GRAM_IN_ANSWER_COUNT_JJS'] = self._pos_gram_count_answer(
+        #             row, "JJS")
+        #         row['GRAM_IN_ANSWER_COUNT_MD'] = self._pos_gram_count_answer(
+        #             row, "MD")
+        #         row['GRAM_IN_ANSWER_COUNT_NN'] = self._pos_gram_count_answer(
+        #             row, "NN")
+        #         row['GRAM_IN_ANSWER_COUNT_NNP'] = self._pos_gram_count_answer(
+        #             row, "NNP")
+        #         row['GRAM_IN_ANSWER_COUNT_NNPS'] = self._pos_gram_count_answer(
+        #             row, "NNPS")
+        #         row['GRAM_IN_ANSWER_COUNT_NNS'] = self._pos_gram_count_answer(
+        #             row, "NNS")
+        #         row['GRAM_IN_ANSWER_COUNT_POS'] = self._pos_gram_count_answer(
+        #             row, "POS")
+        #         row['GRAM_IN_ANSWER_COUNT_PRP'] = self._pos_gram_count_answer(
+        #             row, "PRP")
+        #         row['GRAM_IN_ANSWER_COUNT_PRP$'] = self._pos_gram_count_answer(
+        #             row, "PRP$")
+        #         row['GRAM_IN_ANSWER_COUNT_RB'] = self._pos_gram_count_answer(
+        #             row, "RB")
+        #         row['GRAM_IN_ANSWER_COUNT_RBR'] = self._pos_gram_count_answer(
+        #             row, "RBR")
+        #         row['GRAM_IN_ANSWER_COUNT_RBS'] = self._pos_gram_count_answer(
+        #             row, "RBS")
+        #         row['GRAM_IN_ANSWER_COUNT_RP'] = self._pos_gram_count_answer(
+        #             row, "RP")
+        #         row['GRAM_IN_ANSWER_COUNT_TO'] = self._pos_gram_count_answer(
+        #             row, "TO")
+        #         row['GRAM_IN_ANSWER_COUNT_VB'] = self._pos_gram_count_answer(
+        #             row, "VB")
+        #         row['GRAM_IN_ANSWER_COUNT_VBD'] = self._pos_gram_count_answer(
+        #             row, "VBD")
+        #         row['GRAM_IN_ANSWER_COUNT_VBG'] = self._pos_gram_count_answer(
+        #             row, "VBG")
+        #         row['GRAM_IN_ANSWER_COUNT_VBN'] = self._pos_gram_count_answer(
+        #             row, "VBN")
+        #         row['GRAM_IN_ANSWER_COUNT_VBP'] = self._pos_gram_count_answer(
+        #             row, "VBP")
+        #         row['GRAM_IN_ANSWER_COUNT_VBZ'] = self._pos_gram_count_answer(
+        #             row, "VBZ")
+        #         row['GRAM_IN_ANSWER_COUNT_WDT'] = self._pos_gram_count_answer(
+        #             row, "WDT")
+        #         row['GRAM_IN_ANSWER_COUNT_WP'] = self._pos_gram_count_answer(
+        #             row, "WP")
+        #         row['GRAM_IN_ANSWER_COUNT_WP$'] = self._pos_gram_count_answer(
+        #             row, "WP$")
+        #         row['GRAM_IN_ANSWER_COUNT_WRB'] = self._pos_gram_count_answer(
+        #             row, "WRB")
+        #         row = self._ner_features(row)
+        #         if not row.empty:
+        #             rows.append(row)
+        #             print "processing %d out of %d" % (idx, len(candidates))
+        #         else:
+        #             continue
+        #     except:
+        #         continue
+        # df = pd.concat(rows, axis=1)
         return df.transpose()
