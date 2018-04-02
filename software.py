@@ -13,9 +13,6 @@ app = Flask(__name__)
 def hello_world():
     return  render_template("welcome.html")
 
-@app.route('/index4')
-def hello_world8():
-    return  render_template("index4.php")
 
 @app.route('/index.html')
 def hello_world1():
