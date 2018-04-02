@@ -26,9 +26,8 @@ from utils.gap_selection import GapSelection
 from utils.sentence_selection import SentenceSelection
 from utils.feature_construction import FeatureConstruction
 from utils.question_formation import QuestionFormation
-from utils.pdfgenration import pdfgeneration as pdf
 from dotenv import load_dotenv, find_dotenv
-from mail_agent import mail_agent as ma
+
 print "find_dotenv() : ", find_dotenv()
 load_dotenv(find_dotenv())
 
@@ -91,7 +90,7 @@ class Application:
 
 
     # if __name__ == '__main__':
-    def ques_application(self,filename, outputformat):
+    def ques_application(self,filename, outputformat, Email):
         
     #    parser = argparse.ArgumentParser()
     #    parser.add_argument("-f", "--input", help="input document")
@@ -117,13 +116,10 @@ class Application:
             print " "
         
         print "0: bad question; 1: okay question; 2: good question"
-        f = open("test_dataframe.txt","w+")
-        print("DICTIONARY")
-        print(question_ans_dataframe)
+        # f = open("test_dataframe.txt","w+")
+        # print("DICTIONARY")
+        # print(question_ans_dataframe)
         
-        f.close()
-        pdf2 = pdf()
-        pdf2.generate_pdf_quesans(question_ans_dataframe)
-        mail_age = ma()
-        mail_age.mail_pdf("sagarparikh2010@gmail.com")
+        # f.close()
+       
         return question_ans_dataframe

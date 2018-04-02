@@ -4,7 +4,7 @@
 <!-- Mirrored from www.lab.westilian.com/srabon-admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Mar 2018 18:16:57 GMT -->
 <head>
 <meta charset="utf-8">
-<title>SRABON - Responsive, Touch Friendly Admin Template</title>
+<title>Automatic Question Generation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Admin Panel Template">
 <meta name="author" content="Westilian: Kamrujaman Shohel">
@@ -16,7 +16,7 @@
 <link href="static/css/elfinder.min.css" rel="stylesheet">
 <link href="static/css/elfinder.theme.css" rel="stylesheet">
 <link href="static/css/fullcalendar.css" rel="stylesheet">
-<link href="static/js/plupupload/jquery.plupload.queue/static/css/jquery.plupload.queue.css" rel="stylesheet">
+<link href="static/css/jquery.plupload.queue.css" rel="stylesheet">
 <link href="static/css/styles.css" rel="stylesheet">
 <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="static/css/icons-sprite.css" rel="stylesheet">
@@ -42,7 +42,7 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <div class="branding">
-        <div class="logo"> <a href="index.html"><img src="img/logo.png" width="168" height="40" alt="Logo"></a> </div>
+        <div class="logo"> <a href="index.html"><img src="static/img/logo.png" width="168" height="40" alt="Logo"></a> </div>
       </div>
       <ul class="nav pull-right">
         <li class="dropdown search-responsive"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="nav-icon magnifying_glass"></i><b class="caret"></b></a>
@@ -56,12 +56,12 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="lang-icons"><img src="img/flag-icons/us.png" width="16" height="11" alt="language"></i><b class="caret"></b></a>
+        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="lang-icons"><img src="static/img/flag-icons/us.png" width="16" height="11" alt="language"></i><b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/gb.png" width="16" height="11" alt="language"></i> English UK</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/fr.png" width="16" height="11" alt="language"></i> French</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/sa.png" width="16" height="11" alt="language"></i> Arabic</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/it.png" width="16" height="11" alt="language"></i> Italian</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/gb.png" width="16" height="11" alt="language"></i> English UK</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/fr.png" width="16" height="11" alt="language"></i> French</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/sa.png" width="16" height="11" alt="language"></i> Arabic</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/it.png" width="16" height="11" alt="language"></i> Italian</a></li>
           </ul>
         </li>
         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Admin <span class="alert-noty">20</span><i class="white-icons admin_user"></i><b class="caret"></b></a>
@@ -129,7 +129,7 @@
       <div class="widget-content">
         <div class="widget-searchbox">
           <ul>
-            <li class="row-counts">Total User: 30</li>
+            <!-- <li class="row-counts">Total User: 30</li> -->
             <li class="right">
               <form action="#" method="get">
                 <div class="input-prepend"> <span class="add-on"><i class="icon-search"></i></span>
@@ -156,7 +156,7 @@
             {% for que in qad: %}
               <tr>
                 <td class="center tr-user-check"><input type="checkbox" name="checkbox12"></td>
-                <!-- <td class="center"><span class="user-thumb"><img src="img/user-thumb.png" width="40" height="40" alt="User"></span></td> -->
+                <!-- <td class="center"><span class="user-thumb"><img src="static/img/user-thumb.png" width="40" height="40" alt="User"></span></td> -->
                 <td>{{ que["Full_qus"] }}<span class="user-position">{{ que["Answer"] }}</span></td>
               </tr>
             {% endfor %}

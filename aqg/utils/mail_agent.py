@@ -4,17 +4,20 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 class mail_agent:
-    def mail_pdf(self,email_id, name_of_file = "sample.pdf") :
+    def mail_pdf(self,Email, name_of_file = "question_answer_output.pdf", flag=0) :
         fromaddr = "johncool8866@gmail.com"
-        toaddr = email_id
+        toaddr = Email
 
         msg = MIMEMultipart()
 
         msg['From'] = fromaddr
         msg['To'] = toaddr
-        msg['Subject'] = "Question Answer of PDF "
+        if flag == 0:
+            msg['Subject'] = "PDF of Question Answer."
+        elif flag == 1:
+            msg['Subject'] = "PDF of Summarized Text. "
 
-        body = "Please Check for Attachments. Badlo"
+        body = "Please Check for Attachments."
 
         msg.attach(MIMEText(body, 'plain'))
 
@@ -44,7 +47,7 @@ class mail_agent:
 
         msg['From'] = fromaddr
         msg['To'] = toaddr
-        msg['Subject'] = "Question Answer of PDF "
+        msg['Subject'] = "Question Answer of Txt "
 
         body = "Please Check for Attachments."
 

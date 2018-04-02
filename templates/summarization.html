@@ -4,7 +4,7 @@
 <!-- Mirrored from www.lab.westilian.com/srabon-admin/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Mar 2018 18:16:57 GMT -->
 <head>
 <meta charset="utf-8">
-<title>SRABON - Responsive, Touch Friendly Admin Template</title>
+<title>Automatic Question Generation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Admin Panel Template">
 <meta name="author" content="Westilian: Kamrujaman Shohel">
@@ -16,7 +16,7 @@
 <link href="static/css/elfinder.min.css" rel="stylesheet">
 <link href="static/css/elfinder.theme.css" rel="stylesheet">
 <link href="static/css/fullcalendar.css" rel="stylesheet">
-<link href="static/js/plupupload/jquery.plupload.queue/static/css/jquery.plupload.queue.css" rel="stylesheet">
+<link href="static/css/jquery.plupload.queue.css" rel="stylesheet">
 <link href="static/css/styles.css" rel="stylesheet">
 <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
 <link href="static/css/icons-sprite.css" rel="stylesheet">
@@ -31,18 +31,18 @@
 <link rel="stylesheet" type="text/css" href="static/css/ie/ie9.css" />
 <![endif]-->
 <!--fav and touch icons -->
-<link rel="shortcut icon" href="ico/favicon.ico">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="static/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="static/ico/apple-touch-icon-57-precomposed.png">
 </head>
 <body>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">
       <div class="branding">
-        <div class="logo"> <a href="index.html"><img src="img/logo.png" width="168" height="40" alt="Logo"></a> </div>
+        <div class="logo"> <a href="index.html"><img src="static/img/logo.png" width="168" height="40" alt="Logo"></a> </div>
       </div>
       <ul class="nav pull-right">
         <li class="dropdown search-responsive"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="nav-icon magnifying_glass"></i><b class="caret"></b></a>
@@ -56,12 +56,12 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="lang-icons"><img src="img/flag-icons/us.png" width="16" height="11" alt="language"></i><b class="caret"></b></a>
+        <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="lang-icons"><img src="static/img/flag-icons/us.png" width="16" height="11" alt="language"></i><b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/gb.png" width="16" height="11" alt="language"></i> English UK</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/fr.png" width="16" height="11" alt="language"></i> French</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/sa.png" width="16" height="11" alt="language"></i> Arabic</a></li>
-            <li><a href="#"><i class="lang-icons"><img src="img/flag-icons/it.png" width="16" height="11" alt="language"></i> Italian</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/gb.png" width="16" height="11" alt="language"></i> English UK</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/fr.png" width="16" height="11" alt="language"></i> French</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/sa.png" width="16" height="11" alt="language"></i> Arabic</a></li>
+            <li><a href="#"><i class="lang-icons"><img src="static/img/flag-icons/it.png" width="16" height="11" alt="language"></i> Italian</a></li>
           </ul>
         </li>
         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Admin <span class="alert-noty">20</span><i class="white-icons admin_user"></i><b class="caret"></b></a>
@@ -115,35 +115,45 @@
           </div>
           <div class="widget-content">
             <div class="widget-box">
-              <form class="form-horizontal well">
+              <form class="form-horizontal well" action="summarized.html" method="POST" enctype = "multipart/form-data">
                 <fieldset>
                     
-                  <div class="control-group">
-                    <label class="control-label" for="input01">Name</label>
-                    <div class="controls">
-                      <input type="text" class="input-xlarge text-tip" id="name" title="Name">
+                    <div class="control-group">
+                      <label class="control-label" for="input01">Name</label>
+                      <div class="controls">
+                        <input type="text" class="input-xlarge text-tip" id="name" title="Name" name="Name">
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="control-group">
-                    <label class="control-label" for="input01">Phone Number</label>
-                    <div class="controls">
-                      <input type="number" class="input-xlarge text-tip" id="phonenub" title="Phone Number">
+                    <div class="control-group">
+                      <label class="control-label" for="input01">Phone Number</label>
+                      <div class="controls">
+                        <input type="number" class="input-xlarge text-tip" id="phonenub" title="Phone Number" name="Number">
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="control-group">
-                    <label class="control-label">Email Address</label>
-                    <div class="controls">
-                      <input id="email" class="input-xlarge text-tip" name="email" type="email" title="Email Address" data-validation="email"/>
-                      <p class="help-block">
-                         You will recieve the output file as a mail on this Email.
-                      </p>
+                    <div class="control-group">
+                      <label class="control-label">Email Address</label>
+                      <div class="controls">
+                        <input id="email" class="input-xlarge text-tip" name="Email" type="email" title="Email Address" data-validation="email"/>
+                        <p class="help-block">
+                           You will recieve the output file as a mail on this Email.
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                   
+                   <div class="control-group">
+                      <label class="control-label" for="input01">Output Ratio</label>
+                      <div class="controls">
+                        <input type="number" class="input-xlarge text-tip" id="Nolines" title="Output Lines" name="Nolines" value="10">
+                        <p class="help-block">
+                           Insert the number of lines you want as an output.
+                        </p>
+                      </div>
+                    </div>
 
-                  <div class="control-group">
-                    <label class="control-label">Select the mode of input :</label>
+                   <div class="control-group">
+                    <label class="control-label">Select the mode of Input :</label>
                     <div class="controls">
                       <label class="radio">
                         <input type="radio" value="text" name="optionsRadios" id="text1">
@@ -164,7 +174,7 @@
                     <div class="control-group">
                       <label class="control-label">Textarea</label>
                       <div class="controls">
-                        <textarea class="input-xlarge" rows="6"></textarea>
+                        <textarea class="input-xlarge" rows="6" name="Text1"></textarea>
                       </div>
                     </div>
                   </div>
@@ -173,7 +183,7 @@
                     <div class="control-group">
                       <label class="control-label">File input</label>
                       <div class="controls">
-                        <input class="input-file" type="file">
+                        <input class="input-file" type="file" name="File1">
                       </div>
                     </div>
                   </div>
@@ -182,7 +192,7 @@
                     <div class="control-group linkinput">
                       <label class="control-label" for="input01">Link Input</label>
                       <div class="controls">
-                        <input type="text" class="input-xlarge text-tip" id="input01" title="Link Input">
+                        <input type="text" class="input-xlarge text-tip" id="input01" title="Link Input" name="Link1">
                         <p class="help-block">
                            Paste your link here.
                         </p>
@@ -194,7 +204,7 @@
 
 
                   <div class="form-actions">
-                    <button type="submit" class="btn btn-info">Generate Question</button>
+                    <button type="submit" class="btn btn-info">Summarize</button>
                     <!-- <button class="btn btn-warning">Cancel</button> -->
                   </div>
                 </fieldset>

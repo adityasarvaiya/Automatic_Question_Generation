@@ -8,13 +8,13 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer as Summarizer
 from sumy.nlp.stemmers import Stemmer
 from sumy.utils import get_stop_words
-from aqg.utils.pdfgenration import pdfgeneration
 
-class project_tokenizer:
 
-    def __init__(self):
+class TextSummarizer:
+
+    def __init__(self, count=10):
         self.LANGUAGE = "czech"
-        self.SENTENCES_COUNT = 10 
+        self.SENTENCES_COUNT = count
 
 
     def summarize_from_url(self,url):
@@ -67,7 +67,7 @@ class project_tokenizer:
 
 
 
-t  = project_tokenizer()
-t.summarize_from_file("obama_short.txt")
-pdf = pdfgeneration()
-pdf.generate_pdf_summarizer("summarizer_output2.txt")
+# t  = TextSummarizer()
+# t.summarize_from_file("obama_short.txt")
+# pdf = pdfgeneration()
+# pdf.generate_pdf_summarizer("summarizer_output2.txt")

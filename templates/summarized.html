@@ -108,121 +108,22 @@
   </div>
 </div>
 
-<div class="container span8 margin-left200">
-  <div class="nonboxy-widget">
-    <div class="widget-head">
-      <h5> Mode of Input</h5>
-    </div>
-    <div class="widget-content">
-      <div class="widget-box">
-        <form class="form-horizontal well" action="question.html" method="POST" enctype = "multipart/form-data">
-          <fieldset>
-              
-              <div class="control-group">
-                <label class="control-label" for="input01">Name</label>
-                <div class="controls">
-                  <input type="text" class="input-xlarge text-tip" id="name" title="Name" name="Name">
-                </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label" for="input01">Phone Number</label>
-                <div class="controls">
-                  <input type="number" class="input-xlarge text-tip" id="phonenub" title="Phone Number" name="Number">
-                </div>
-              </div>
-
-              <div class="control-group">
-                <label class="control-label">Email Address</label>
-                <div class="controls">
-                  <input id="email" class="input-xlarge text-tip" name="Email" type="email" title="Email Address" data-validation="email"/>
-                  <p class="help-block">
-                     You will recieve the output file as a mail on this Email.
-                  </p>
-                </div>
-              </div>
-             
-             <div class="control-group">
-              <label class="control-label">Question Format Options:</label>
-              <div class="controls">
-                <label class="radio">
-                  <input type="radio" value="blanks" name="outputformat" id="blanks1">
-                  Fill in the blanks
-                </label>
-                <label class="radio">
-                  <input type="radio" value="fullqus" name="outputformat" id="fullqus1">
-                  Full Questions
-                </label>
-                <label class="radio">
-                  <input type="radio" value="both" name="outputformat" id="both1">
-                  Both
-                </label>
-              </div>
+<div id="main-content" class="margin-left300">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span10">
+        <div id="accordion-widget" class="accordion boot-accordion">
+          <div class="accordion-group">
+            <div class="accordion-heading"> <a href="#One" data-parent="#accordion-widget" data-toggle="collapse" class="accordion-toggle"> Summarized Text </a> </div>
+            <div class="accordion-body collapse in" id="One">
+              <div class="accordion-inner"> {{ summarized_text }}</div>
             </div>
-
-             <div class="control-group">
-              <label class="control-label">Select the mode of Input :</label>
-              <div class="controls">
-                <label class="radio">
-                  <input type="radio" value="text" name="optionsRadios" id="text1">
-                  Input as Text
-                </label>
-                <label class="radio">
-                  <input type="radio" value="file" name="optionsRadios" id="file1">
-                  Input as File
-                </label>
-                <label class="radio">
-                  <input type="radio" value="link" name="optionsRadios" id="link1">
-                  Input as Link
-                </label>
-              </div>
-            </div>
-
-            <div class="textinput">
-              <div class="control-group">
-                <label class="control-label">Textarea</label>
-                <div class="controls">
-                  <textarea class="input-xlarge" rows="6" name="Text1"></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="fileinput">
-              <div class="control-group">
-                <label class="control-label">File input</label>
-                <div class="controls">
-                  <input class="input-file" type="file" name="File1">
-                </div>
-              </div>
-            </div>
-
-            <div class="linkinput">
-              <div class="control-group linkinput">
-                <label class="control-label" for="input01">Link Input</label>
-                <div class="controls">
-                  <input type="text" class="input-xlarge text-tip" id="input01" title="Link Input" name="Link1">
-                  <p class="help-block">
-                     Paste your link here.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            
-
-
-            <div class="form-actions">
-              <button type="submit" class="btn btn-info">Generate Question</button>
-              <!-- <button class="btn btn-warning">Cancel</button> -->
-            </div>
-          </fieldset>
-        </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-
 
 <!-- javascript
 ================================================== --> 
@@ -377,61 +278,6 @@ $(function(){
 			]
 		});
 	});
-</script>
-
-<script src="static/js/custom-jquery-3.1.1.js"></script>
-<script>
-$(document).ready(function(){
-        $(".linkinput").hide()
-});
-
-$(document).ready(function(){
-        $(".fileinput").hide()
-});
-
-$(document).ready(function(){
-        $(".textinput").hide()
-});
-
-$(document).ready(function(){
-    $('input[type=radio][name=optionsRadios]').change(function(){
-        if (this.value == 'text') {
-          if( $(".textinput").is(':hidden')){
-            $(".textinput").show();
-            $(".fileinput").hide();
-            $(".linkinput").hide();
-          }
-          else{
-            $(".textinput").hide();
-          }
-
-             
-        }
-        else if (this.value == 'file') {
-            if( $(".fileinput").is(':hidden')){
-              $(".textinput").hide();
-              $(".fileinput").show();
-              $(".linkinput").hide();
-            }
-            else{
-              $(".fileinput").hide();
-            }
-        }
-        else if (this.value == 'link') {
-            if( $(".linkinput").is(':hidden')){
-              $(".textinput").hide();
-              $(".fileinput").hide();
-              $(".linkinput").show();
-            }
-            else{
-              $(".linkinput").hide();
-            }
-        }
-       
-    });
-});
-
-
 </script>
 <script src="static/js/respond.min.js"></script>
 <script src="static/js/ios-orientationchange-fix.js"></script>

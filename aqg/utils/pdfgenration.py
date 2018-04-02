@@ -65,8 +65,8 @@ class pdfgeneration:
         c.line(0,10.5*inch,9*inch,10.5*inch)
         c.save()
     
-    def generate_pdf_summarizer(self,filename):
-        c = canvas.Canvas("summarizer.pdf",pagesize=A4)
+    def generate_pdf_summarizer(self,filename,outputfile):
+        c = canvas.Canvas(outputfile,pagesize=A4)
         file_2 = open(filename,"r+")
         whole_line = file_2.readline()
        
