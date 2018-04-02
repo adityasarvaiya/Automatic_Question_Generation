@@ -13,7 +13,6 @@ app = Flask(__name__)
 def hello_world():
     return  render_template("welcome.html")
 
-
 @app.route('/index.html')
 def hello_world1():
     return  render_template("index.html")
@@ -91,7 +90,7 @@ def hello_world5():
         pdf = pdfgeneration()
         pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
         mail_age = ma()
-        mail_age.mail_pdf(Email,"summarized.pdf")
+        mail_age.mail_pdf(Email,"summarized.pdf",1)
         f = open("summarizer_output.txt")
         summarized_text = f.read()
         return  render_template("summarized.html", summarized_text = summarized_text)
@@ -104,7 +103,7 @@ def hello_world5():
         pdf = pdfgeneration()
         pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
         mail_age = ma()
-        mail_age.mail_pdf(Email,"summarized.pdf")
+        mail_age.mail_pdf(Email,"summarized.pdf",1)
         f = open("summarizer_output.txt")
         summarized_text = f.read()
         return  render_template("summarized.html", summarized_text = summarized_text)
@@ -116,7 +115,7 @@ def hello_world5():
         pdf = pdfgeneration()
         pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
         mail_age = ma()
-        mail_age.mail_pdf(Email,"summarized.pdf")
+        mail_age.mail_pdf(Email,"summarized.pdf",1)
         f = open("summarizer_output.txt")
         summarized_text = f.read()
         return  render_template("summarized.html", summarized_text = summarized_text)
