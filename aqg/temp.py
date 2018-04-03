@@ -126,3 +126,56 @@ print st[:5]
 #                 new_data_frame.insert(count,"Full_ques",que["Full_qus"])
 #                 new_data_frame.insert(count,"Answer",que["Answer"])
 #                 count+=1
+
+
+
+
+@app.route('/summarized.html',methods = ['POST', 'GET'])
+def hello_world5():
+
+    Name = request.form['Name']
+    Number = request.form['Number']
+    Email = request.form['Email']
+    outputformat = request.form['outputformat']
+    optionsRadios = request.form['optionsRadios']
+    
+    if(optionsRadios == "text"):
+        Text1 = request.form['Text1']
+        t  = TextSummarizer()
+        t.summarize_from_text(Text1)
+        pdf = pdfgeneration()
+        pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
+        mail_age = ma()
+        mail_age.mail_pdf(Email,"summarized.pdf")
+        f = open("summarizer_output.txt")
+        summarized_text = f.read()
+        return  render_template("summarized.html", summarized_text = summarized_text)
+
+
+    elif(optionsRadios == "file"):
+        File1 = request.files['File1']
+        File1.save(secure_filename(File1.filename))
+        t  = TextSummarizer()
+        t.summarize_from_file(File1.filename)
+        pdf = pdfgeneration()
+        pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
+        mail_age = ma()
+        mail_age.mail_pdf(Email,"summarized.pdf")
+        f = open("summarizer_output.txt")
+        summarized_text = f.read()
+        return  render_template("summarized.html", summarized_text = summarized_text)
+    
+
+    elif(optionsRadios == "link"):
+        Link1 = request.form['Link1']
+        t  = TextSummarizer()
+        t.summarize_from_url(Link1)
+        pdf = pdfgeneration()
+        pdf.generate_pdf_summarizer("summarizer_output2.txt","summarized.pdf")
+        mail_age = ma()
+        mail_age.mail_pdf(Email,"summarized.pdf")
+        f = open("summarizer_output.txt")
+        summarized_text = f.read()
+        return  render_template("summarized.html", summarized_text = summarized_text)
+    
+    return  render_template("summarization.html")

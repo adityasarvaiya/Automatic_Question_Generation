@@ -7,6 +7,7 @@ from reportlab.pdfbase import pdfmetrics
 class pdfgeneration:
     def __init__(self):
         pass
+        
     def generate_pdf_quesans(self,df,flag_of_display = 0):
         c = canvas.Canvas("question_answer_output.pdf",pagesize=A4)
         count = 0
@@ -65,42 +66,44 @@ class pdfgeneration:
         c.line(0,10.5*inch,9*inch,10.5*inch)
         c.save()
     
+    
     def generate_pdf_summarizer(self,filename,outputfile):
         c = canvas.Canvas(outputfile,pagesize=A4)
         file_2 = open(filename,"r+")
         whole_line = file_2.readline()
-       
-        count = int(len(whole_line.split()))
-        textobject = c.beginText()
-        # print("FONTS")
-        # print(c.getAvailableFonts())
-        textobject.setTextOrigin(0.5*inch, 9.5*inch)
-        textobject.setFont("Helvetica", 13)
-         
-        
-        print(len(whole_line.split()))
-        textobject.setFillGray(0)
-        wraped_text = "\n".join(wrap(whole_line, 70))
-        textobject.textLines(wraped_text,trim = 0)
-        textobject2 =  c.beginText()
-        textobject2.setTextOrigin(2.2*inch, 11*inch)
-        textobject2.setFont("Times-Bold", 20)
-        
-        heading = "Summarizer Output"
-        textobject2.textLine(heading)
-        textobject2.textLine()
-        c.drawText(textobject2)
-        c.line(0,10.5*inch,9*inch,10.5*inch)
-        
-        c.drawText(textobject)
+        words_array = whole_line.split()
+        count = int(len(words_array)/350)
+        for page in range(count+1):
+            if count == 0:
+                pass
+            else:
+                try :
+                    whole_line = " ".join(words_array[page*350:350*(page+1)])
+                except:
+                    whole_line = " ".join(words_array[page*350:])
 
-        c.drawText(textobject)
+            textobject = c.beginText()
+            # print("FONTS")
+            # print(c.getAvailableFonts())
+            textobject.setTextOrigin(0.5*inch, 9.5*inch)
+            textobject.setFont("Helvetica", 13)
+
+
+
+            textobject.setFillGray(0)
+            wraped_text = "\n".join(wrap(whole_line, 70))
+            textobject.textLines(wraped_text,trim = 0)
+            textobject2 =  c.beginText()
+            textobject2.setTextOrigin(2.2*inch, 11*inch)
+            textobject2.setFont("Times-Bold", 20)
+
+            heading = "Summarizer Output"
+            textobject2.textLine(heading)
+            textobject2.textLine()
+            c.drawText(textobject2)
+            c.line(0,10.5*inch,9*inch,10.5*inch)
+
+            c.drawText(textobject)
+            c.showPage()
+
         c.save()
-        
-    
-        
-        
-        
-      
-        
-        

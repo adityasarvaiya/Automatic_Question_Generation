@@ -85,12 +85,12 @@ class QuestionFormation:
                         df['Answer'] = ans
             
             if str(outputformat) == "blanks":
-                if flag == 0:
-                    df['Full_qus'] = candidate['Question']
-                    if ans == 0:
-                        df['Answer'] = candidate['Answer']
-                    else:
-                        df['Answer'] = ans
+                # if flag == 0:
+                df['Full_qus'] = candidate['Question']
+                if ans == 0:
+                    df['Answer'] = candidate['Answer']
+                else:
+                    df['Answer'] = ans
 
             if str(outputformat) == "both":
                 df['Full_qus'] = full_ques[0]

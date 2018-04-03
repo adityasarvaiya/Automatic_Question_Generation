@@ -56,10 +56,10 @@ def hello_world3():
 
     elif(optionsRadios == "link"):
         Link1 = request.form['Link1']
-        t  = TextSummarizer()
+        t  = TextSummarizer(25)
         t.summarize_from_url(Link1)
         apps = Application()
-        question_ans_dataframe = apps.ques_application("summarizer_output.txt",outputformat,Email)
+        question_ans_dataframe = apps.ques_application("summarizer_output2.txt",outputformat,Email)
         pdf2 = pdf()
         pdf2.generate_pdf_quesans(question_ans_dataframe)
         mail_age = ma()
