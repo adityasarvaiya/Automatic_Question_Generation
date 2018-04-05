@@ -1,8 +1,8 @@
-# Automatic_Question_Generation
-
 # [Question Generation](https://github.com/adityasarvaiya/Automatic_Question_Generation)
 
 Learning to generate questions from text.
+
+![Screen Shot](Question_Generator_Slide.JPG)
 
 ## Strategy
 
@@ -25,8 +25,6 @@ cd Automatic_Question_Generation
 ```bash
 pip install -r requirements.txt
 ```
-
-![Screen Shot](Question_Generator_Slide.JPG)
 
 ### Build Stanford Parser & NER
 
@@ -85,7 +83,7 @@ STANFORD_NER_CLASSPATH=/path-to-your-stanford-models/stanford-models/stanford-ne
   </tr>
   <tr>
   <td>2</td>
-  <td>```len(entities) > 7```</td>
+  <td>len(entities) > 7</td>
   <td>aqg/utils/gap_selection line 58</td>
   <td>It elemenates any sentence with more than 7 entities</td>
   </tr>
