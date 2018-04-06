@@ -1,4 +1,4 @@
-# [Question Generation](https://github.com/adityasarvaiya/Automatic_Question_Generation)
+# [Question Generator](https://github.com/adityasarvaiya/Automatic_Question_Generation)
 
 Learning to generate questions from text.
 
