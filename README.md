@@ -1,6 +1,6 @@
 # [Question Generator](https://github.com/adityasarvaiya/Automatic_Question_Generation)
 
-Learning to generate questions from text.
+Learning to generate questions from text.<br>
 [Blog on this project : http://dynamichub.in/aditya/sqg/](http://dynamichub.in/aditya/sqg/)
 
 ![Screen Shot](Question_Generator_Slide.JPG)
