@@ -4,7 +4,7 @@ BOOTSTRAP RESET
 
 
 body {
-	font-size: 12px;
+	font-size: 14px;
 	padding-top:60px;
 	line-height:18px;
 	color:#333;
@@ -335,7 +335,7 @@ select, input[type="file"] {
 }
 
 label, input, button, select, textarea {
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
 }
@@ -474,8 +474,8 @@ blockquote p {
 
 .btn {
 	padding: 4px 10px 4px;
-
-	font-size: 13px;
+	font-size: 15px;
+    font-weight: bold;
 }
 .btn i {
     margin-left: -5px;
@@ -1790,7 +1790,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 .dataTables_filter input {
 	border: 1px solid #D8D8D8;
 	color: #444444;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Georgia", Verdana, Arial, sans-serif, sans-serif;
 	font-size: 12px;
 	padding: 5px 2px 5px 25px;
 	background:#fff url(../img/sprite-icons/icons-a.png) no-repeat 3px -896px;
@@ -3754,7 +3754,7 @@ div.tagsinput span.tag {
 	color: #fff;
 	margin-right: 5px;
 	margin-bottom:5px;
-	font-family: helvetica;
+	font-family:"Georgia", Verdana, Arial, sans-serif;
 	font-size:13px;
 }
 div.tagsinput span.tag a {
@@ -3766,7 +3766,7 @@ div.tagsinput span.tag a {
 div.tagsinput input {
 	width:80px;
 	margin:0px;
-	font-family: helvetica;
+	font-family:"Georgia", Verdana, Arial, sans-serif;
 	font-size: 13px;
 	border:1px solid #ccc;
 	padding:4px 5px 5px 5px;
@@ -4016,7 +4016,7 @@ div.button span {
 	height: 22px;
 	padding-top: 8px;
 	font-weight: bold;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Georgia", Verdana, Arial, sans-serif;
 	font-size: 12px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -4030,7 +4030,7 @@ div.selector {
 }
 div.selector select {
 	min-width: 190px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Georgia", Verdana, Arial, sans-serif;
 	font-size: 12px;
 	border: solid 1px #fff;
 }
@@ -4833,7 +4833,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868686', end
 }
 .rightSide ol li {
 	line-height:1.6667em;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Georgia", Verdana, Arial, sans-serif;
 	margin-left:20px;
 }
 .rightSide ol li a {
