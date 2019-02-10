@@ -33,7 +33,7 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, "Adi@3132332231323322")
+        server.login(fromaddr, "313233")
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
@@ -65,7 +65,7 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, "Adi@3132332231323322")
+        server.login(fromaddr, "313233")
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
