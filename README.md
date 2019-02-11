@@ -107,3 +107,5 @@ STANFORD_NER_CLASSPATH=/path-to-your-stanford-models/stanford-models/stanford-ne
   <td>It elemenates any sentence with more than 7 entities</td>
   </tr>
 </table>
+
+[embed]project.pdf[/embed]
