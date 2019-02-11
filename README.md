@@ -108,4 +108,4 @@ STANFORD_NER_CLASSPATH=/path-to-your-stanford-models/stanford-models/stanford-ne
   </tr>
 </table>
 
-[embed]https://github.com/adityasarvaiya/Automatic_Question_Generation/blob/master/project.pdf[/embed]
+[embed] https://github.com/adityasarvaiya/Automatic_Question_Generation/blob/master/project.pdf [/embed]
