@@ -20,16 +20,20 @@ Learning to generate questions from text.<br>
 ```bash
 Install Python2.7`in your system
 ```
+
 ```bash
 git clone https://github.com/adityasarvaiya/Automatic_Question_Generation.git
 ```
+
 ```bash 
 cd Automatic_Question_Generation 
 ```
+
 ```bash
 pip install -r requirements.txt
 ```
 if you have problem with dotenv package then uninstall dotenv and install python-dotenv
+
 ```bash
 pip install nltk
 python 
