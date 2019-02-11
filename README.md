@@ -1,7 +1,9 @@
 # [Question Generator](https://github.com/adityasarvaiya/Automatic_Question_Generation)
 
 Learning to generate questions from text.<br>
-[Blog on this project : http://dynamichub.in/aditya/sqg/](http://dynamichub.in/aditya/sqg/)
+Blog on this project :
+[Link1 : https://software.intel.com/en-us/articles/using-natural-language-processing-for-smart-question-generation](https://software.intel.com/en-us/articles/using-natural-language-processing-for-smart-question-generation)
+[Link2 : http://dynamichub.in/aditya/sqg/](http://dynamichub.in/aditya/sqg/)
 
 ![Screen Shot](Question_Generator_Slide.JPG)
 
