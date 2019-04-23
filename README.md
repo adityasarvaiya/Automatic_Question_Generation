@@ -1,7 +1,9 @@
 # [Question Generator](https://github.com/adityasarvaiya/Automatic_Question_Generation)
 
 Learning to generate questions from text.<br>
-[Blog on this project : http://dynamichub.in/aditya/sqg/](http://dynamichub.in/aditya/sqg/)
+Blog on this project : </br>
+[Link1 : https://software.intel.com/en-us/articles/using-natural-language-processing-for-smart-question-generation](https://software.intel.com/en-us/articles/using-natural-language-processing-for-smart-question-generation) </br>
+[Link2 : http://dynamichub.in/aditya/sqg/](http://dynamichub.in/aditya/sqg/)
 
 ![Screen Shot](Question_Generator_Slide.JPG)
 
@@ -16,15 +18,32 @@ Learning to generate questions from text.<br>
 ## Build
 
 ### Build Project
+Some details about the project has also been mentioned in procedure.txt file which lies in the home directory itself.
+
+```bash
+Install Python2.7`in your system
+```
 
 ```bash
 git clone https://github.com/adityasarvaiya/Automatic_Question_Generation.git
 ```
+
 ```bash 
 cd Automatic_Question_Generation 
 ```
+
 ```bash
 pip install -r requirements.txt
+```
+if you have problem with dotenv package then uninstall dotenv and install python-dotenv
+
+```bash
+pip install nltk
+python 
+import nltk
+nltk.download("punkt")
+nltk.download("stopwords")
+nltk.download("averaged_perceptron_taggepython r")
 ```
 
 ### Build Stanford Parser & NER
@@ -89,3 +108,5 @@ STANFORD_NER_CLASSPATH=/path-to-your-stanford-models/stanford-models/stanford-ne
   <td>It elemenates any sentence with more than 7 entities</td>
   </tr>
 </table>
+
+[embed] https://github.com/adityasarvaiya/Automatic_Question_Generation/blob/master/project.pdf [/embed]
