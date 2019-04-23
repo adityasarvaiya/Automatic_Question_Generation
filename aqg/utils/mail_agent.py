@@ -33,11 +33,7 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-<<<<<<< HEAD
         server.login(fromaddr, "####<--Your_password-->####")
-=======
-        server.login(fromaddr, "<YourPassword>")
->>>>>>> d1da73cad673d3cb7575d22a1a0aca0b6d3610dc
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
@@ -69,11 +65,7 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-<<<<<<< HEAD
         server.login(fromaddr, "####<--Your_password-->####")
-=======
-        server.login(fromaddr, "<YourPassword>")
->>>>>>> d1da73cad673d3cb7575d22a1a0aca0b6d3610dc
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
