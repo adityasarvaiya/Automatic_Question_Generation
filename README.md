@@ -18,6 +18,7 @@ Blog on this project : </br>
 ## Build
 
 ### Build Project
+Some details about the project has also been mentioned in procedure.txt file which lies in the home directory itself.
 
 ```bash
 Install Python2.7`in your system
