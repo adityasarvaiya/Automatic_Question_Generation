@@ -88,3 +88,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# Mail Utility
+aqg/utils/test
+aqg/utils/mail_agent.py
