@@ -5,7 +5,7 @@ from email.mime.base import MIMEBase
 from email import encoders
 class mail_agent:
     def mail_pdf(self,Email, name_of_file = "question_answer_output.pdf", flag=0) :
-        fromaddr = "johncool8866@gmail.com"
+        fromaddr = "####<--Your_Email-->####"
         toaddr = Email
 
         msg = MIMEMultipart()
@@ -33,14 +33,14 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, "Adi@3132332231323322")
+        server.login(fromaddr, "####<--Your_password-->####")
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
 
 
     def mail_txt(self,email_id, name_of_file = "one.txt") :
-        fromaddr = "johncool8866@gmail.com"
+        fromaddr = "####<--Your_Email-->####"
         toaddr = email_id
 
         msg = MIMEMultipart()
@@ -65,7 +65,7 @@ class mail_agent:
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login(fromaddr, "Adi@3132332231323322")
+        server.login(fromaddr, "####<--Your_password-->####")
         text = msg.as_string()
         server.sendmail(fromaddr, toaddr, text)
         server.quit()
