@@ -32,7 +32,7 @@ configparser==3.5.0
 contextlib2==0.5.5
 corenlp-protobuf==3.8.0
 coverage==4.5.1
-cryptography==2.1.4
+cryptography==3.2
 cycler==0.10.0
 Cython==0.27.3
 cytoolz==0.9.0
