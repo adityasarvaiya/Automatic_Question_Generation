@@ -142,7 +142,7 @@ python-dotenv==0.10.1
 pytz==2017.3
 PyWavelets==0.5.2
 pywinpty==0.5
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==16.0.3
 QtAwesome==0.4.4
 qtconsole==4.3.1
