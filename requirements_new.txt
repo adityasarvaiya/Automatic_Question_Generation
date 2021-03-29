@@ -129,7 +129,7 @@ pycosat==0.6.3
 pycparser==2.18
 pycrypto==2.6.1
 pyflakes==1.6.0
-Pygments==2.2.0
+Pygments==2.7.4
 pylint==1.8.2
 pyodbc==4.0.22
 PyOpenGL==3.1.0
